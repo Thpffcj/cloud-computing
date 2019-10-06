@@ -71,6 +71,12 @@
             <version>${spark.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-graphx_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
         <!-- Note: Flume support is deprecated as of Spark 2.3.0. -->
         <!-- Spark Streaming整合Flume 依赖-->
 <!--        <dependency>-->
