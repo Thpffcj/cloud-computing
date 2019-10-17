@@ -1,0 +1,27 @@
+package cn.edu.nju.util
+
+import java.util.Date
+import org.apache.commons.lang3.time.FastDateFormat
+
+/**
+ * Created by thpffcj on 2019/10/17.
+ */
+object DateUtils {
+
+  val YYYYMMDDHHMMSS_FORMAT = FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss")
+  val TARGE_FORMAT = FastDateFormat.getInstance("yyyyMMddHHmmss")
+
+
+  def getTime(time: String) = {
+    YYYYMMDDHHMMSS_FORMAT.parse(time).getTime
+  }
+
+  def parseToMinute(time :String) = {
+    TARGE_FORMAT.format(new Date(getTime(time)))
+  }
+
+  def main(args: Array[String]): Unit = {
+
+    println(parseToMinute("2017-10-22 14:46:01"))
+  }
+}
