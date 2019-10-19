@@ -1,6 +1,5 @@
 package cn.edu.nju
 
-
 import cn.edu.nju.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
 import cn.edu.nju.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}
 import cn.edu.nju.util.DateUtils
