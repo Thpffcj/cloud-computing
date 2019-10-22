@@ -1,0 +1,207 @@
+{
+  "page": 1,
+  "date": "2019年9月26日",
+  "href": "https://store.steampowered.com/app/678960/CODE_VEIN/?snr=1_7_7_230_150_1",
+  "review_summary": "特别好评<br>4,945 篇用户的游戏评测中有 84% 为好评。",
+  "img_src": "https://media.st.dl.bscstorage.net/steam/apps/678960/capsule_sm_120.jpg?t=1570113292",
+  "name": "CODE VEIN",
+  "game_detail": {
+    "user_reviews": {
+      "开发商:": "BANDAI NAMCO Studios",
+      "发行商:": "BANDAI NAMCO Entertainment",
+      "发行日期:": "2019年9月26日"
+    },
+    "support_tags": [
+      "单人",
+      "在线合作",
+      "Steam 成就",
+      "Steam 集换式卡牌",
+      "部分支持控制器",
+      "Steam 云"
+    ],
+    "user_tags": [
+      "动漫",
+      "角色定制",
+      "类魂系列",
+      "角色扮演",
+      "动作",
+      "合作",
+      "日系角色扮演",
+      "第三人称视角",
+      "吸血鬼",
+      "暴力",
+      "多人",
+      "黑暗奇幻",
+      "困难",
+      "血腥",
+      "动作角色扮演",
+      "单人",
+      "末日",
+      "砍杀",
+      "冒险",
+      "好评原声音轨"
+    ],
+    "reviewsChart": {
+      "rollups": [
+        {
+          "recommendations_up": 2680,
+          "date": 1569456000,
+          "recommendations_down": 549
+        },
+        {
+          "recommendations_up": 907,
+          "date": 1570060800,
+          "recommendations_down": 164
+        },
+        {
+          "recommendations_up": 437,
+          "date": 1570665600,
+          "recommendations_down": 74
+        },
+        {
+          "recommendations_up": 167,
+          "date": 1571270400,
+          "recommendations_down": 34
+        }
+      ],
+      "weeks": [],
+      "start_date": 1569456000,
+      "rollup_type": "week",
+      "end_date": 1571616000,
+      "recent": [
+        {
+          "recommendations_up": 29,
+          "date": 1569456000,
+          "recommendations_down": 9
+        },
+        {
+          "recommendations_up": 918,
+          "date": 1569542400,
+          "recommendations_down": 160
+        },
+        {
+          "recommendations_up": 448,
+          "date": 1569628800,
+          "recommendations_down": 131
+        },
+        {
+          "recommendations_up": 397,
+          "date": 1569715200,
+          "recommendations_down": 88
+        },
+        {
+          "recommendations_up": 374,
+          "date": 1569801600,
+          "recommendations_down": 77
+        },
+        {
+          "recommendations_up": 344,
+          "date": 1569888000,
+          "recommendations_down": 48
+        },
+        {
+          "recommendations_up": 170,
+          "date": 1569974400,
+          "recommendations_down": 36
+        },
+        {
+          "recommendations_up": 197,
+          "date": 1570060800,
+          "recommendations_down": 35
+        },
+        {
+          "recommendations_up": 136,
+          "date": 1570147200,
+          "recommendations_down": 36
+        },
+        {
+          "recommendations_up": 151,
+          "date": 1570233600,
+          "recommendations_down": 37
+        },
+        {
+          "recommendations_up": 131,
+          "date": 1570320000,
+          "recommendations_down": 23
+        },
+        {
+          "recommendations_up": 121,
+          "date": 1570406400,
+          "recommendations_down": 17
+        },
+        {
+          "recommendations_up": 94,
+          "date": 1570492800,
+          "recommendations_down": 8
+        },
+        {
+          "recommendations_up": 77,
+          "date": 1570579200,
+          "recommendations_down": 8
+        },
+        {
+          "recommendations_up": 68,
+          "date": 1570665600,
+          "recommendations_down": 11
+        },
+        {
+          "recommendations_up": 62,
+          "date": 1570752000,
+          "recommendations_down": 21
+        },
+        {
+          "recommendations_up": 68,
+          "date": 1570838400,
+          "recommendations_down": 11
+        },
+        {
+          "recommendations_up": 79,
+          "date": 1570924800,
+          "recommendations_down": 12
+        },
+        {
+          "recommendations_up": 67,
+          "date": 1571011200,
+          "recommendations_down": 5
+        },
+        {
+          "recommendations_up": 54,
+          "date": 1571097600,
+          "recommendations_down": 9
+        },
+        {
+          "recommendations_up": 39,
+          "date": 1571184000,
+          "recommendations_down": 5
+        },
+        {
+          "recommendations_up": 44,
+          "date": 1571270400,
+          "recommendations_down": 7
+        },
+        {
+          "recommendations_up": 32,
+          "date": 1571356800,
+          "recommendations_down": 8
+        },
+        {
+          "recommendations_up": 43,
+          "date": 1571443200,
+          "recommendations_down": 11
+        },
+        {
+          "recommendations_up": 41,
+          "date": 1571529600,
+          "recommendations_down": 7
+        },
+        {
+          "recommendations_up": 7,
+          "date": 1571616000,
+          "recommendations_down": 1
+        }
+      ]
+    }
+  },
+  "price": "¥ 268",
+  "original_price": "¥ 268"
+}

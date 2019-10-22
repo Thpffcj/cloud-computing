@@ -3,7 +3,6 @@ package cn.edu.nju
 import java.sql.DriverManager
 
 import cn.edu.nju.domain.CommentLog
-import cn.edu.nju.test.StatefulWordCount.updateFunction
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
@@ -23,7 +22,7 @@ object HDFSProcess {
     // 如果使用了stateful的算子，必须要设置checkpoint
     // 在生产环境中，建议把checkpoint设置到HDFS的某个文件夹中
     // . 代表当前目录
-    ssc.checkpoint("/Users/thpffcj/Public/file/cloud_checkpoint")
+    ssc.checkpoint("/Users/thpffcj/Public/file/cloud_checkpoint/hdfs_process")
 
 //    val data = ssc.textFileStream("hdfs://thpffcj:9000/cloud-computing/")
     // nc -lk 9999

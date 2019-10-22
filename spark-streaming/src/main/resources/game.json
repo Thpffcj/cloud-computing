@@ -1,0 +1,50 @@
+{
+  "img_src": "https://media.st.dl.bscstorage.net/steam/apps/1085660/capsule_sm_120.jpg?t=1570039639",
+  "game_detail": {
+    "support_tags": [
+      "单人",
+      "在线多人"
+    ],
+    "user_reviews": {
+      "发行商:": "Bungie",
+      "发行日期:": "2019年10月1日",
+      "开发商:": "Bungie"
+    },
+    "user_tags": [
+      "第一人称射击",
+      "多人"
+    ],
+    "reviewsChart": {
+      "weeks": [],
+      "rollup_type": "week",
+      "end_date": 1571529600,
+      "recent": [
+        {
+          "date": 1569888000,
+          "recommendations_up": 5205,
+          "recommendations_down": 1467
+        },
+        {
+          "date": 1569974400,
+          "recommendations_up": 3881,
+          "recommendations_down": 1616
+        }
+      ],
+      "rollups": [
+        {
+          "date": 1569888000,
+          "recommendations_up": 16003,
+          "recommendations_down": 6234
+        }
+      ],
+      "start_date": 1569888000
+    }
+  },
+  "original_price": "免费开玩",
+  "review_summary": "多半好评<br>30,477 篇用户的游戏评测中有 72% 为好评。",
+  "price": "免费开玩",
+  "date": "2019年10月1日",
+  "name": "Destiny 2",
+  "page": 1,
+  "href": "https://store.steampowered.com/app/1085660/Destiny_2/?snr=1_7_7_230_150_1"
+}

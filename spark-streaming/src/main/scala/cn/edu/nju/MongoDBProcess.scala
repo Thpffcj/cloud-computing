@@ -10,18 +10,21 @@ import org.apache.spark.sql.DataFrame
 object MongoDBProcess {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
+
   def main(args: Array[String]): Unit = {
 
     import org.apache.spark.sql.SparkSession
 
     val spark = SparkSession.builder()
-      .master("local")
-      .appName("MongoSparkConnectorIntro")
-      .config("spark.mongodb.input.uri", "mongodb://127.0.0.1/test.doubanmovies")
+      .master("local[2]")
+      .appName("MongoDBProcess")
+      .config("spark.mongodb.input.uri", "mongodb://steam:steam@101.132.176.87:27017/steam_db.China.games")
       .getOrCreate()
+
     val frame: DataFrame = MongoSpark.load(spark)
-    frame.createTempView("movies")
-    val res: DataFrame = spark.sql("SELECT star, bd, quote, title from movies")
+    frame.createTempView("games")
+
+    val res: DataFrame = spark.sql("SELECT name from games")
     res.show()
   }
 }
