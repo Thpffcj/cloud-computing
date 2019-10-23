@@ -57,15 +57,14 @@ object HDFSProcess {
   }
 
   /**
-   * 把当前的数据去更新已有的或者是老的数据
-   * @param currentValues  当前的
-   * @param preValues  老的
+   * 把当前的数据去更新已有的或者是旧的数据
+   * @param currentValues 当前数据
+   * @param preValues 旧数据
    * @return
    */
   def updateFunction(currentValues: Seq[Int], preValues: Option[Int]): Option[Int] = {
     val current = currentValues.sum
     val pre = preValues.getOrElse(0)
-
     Some(current + pre)
   }
 

@@ -8,13 +8,10 @@ import com.alibaba.fastjson.JSONObject
  * @param img_src
  * @param game_detail
  * @param original_price
- * @param review_summary
  * @param price
+ * @param review_summary
  * @param date
  * @param name
- * @param page
- * @param href
  */
-case class SteamLog(img_src: String, game_detail: JSONObject, original_price: String,
-                    review_summary: String, price: String, date: String, name: String,
-                    page: Int, href: String)
+case class SteamLog(img_src: String, game_detail: String, original_price: String,
+                    price: String, review_summary: String, date: String, name: String)
