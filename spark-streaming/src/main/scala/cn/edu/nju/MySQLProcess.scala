@@ -1,7 +1,7 @@
 package cn.edu.nju
 
+import java.text.SimpleDateFormat
 import java.util
-import java.util.ArrayList
 
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -9,7 +9,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
  * Created by thpffcj on 2019/10/24.
  */
-class BatchProcessTest {
+class MySQLProcess {
 
   def getTimeFieldData(startTime: Int, endTime: Int): ApiReturnObject = {
 
@@ -29,7 +29,9 @@ class BatchProcessTest {
         val gameObject = new GameObject("id", row.getAs("name"), row.getAs("recommendations_up"), "color")
         broadcast.value.add(gameObject)
       })
-      val timeFieldObject = new TimeFieldObject(time.toString, broadcast.value)
+
+      val newTime :String = new SimpleDateFormat("yyyy-MM-dd").format(time * 1000)
+      val timeFieldObject = new TimeFieldObject(newTime, broadcast.value)
       timeFieldObjects.add(timeFieldObject)
     }
 

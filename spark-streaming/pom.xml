@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>cn.edu.nju</groupId>
     <artifactId>spark-streaming</artifactId>
     <version>1.0</version>
@@ -40,6 +40,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -80,11 +86,11 @@
         </dependency>
 
         <!-- Kafka 依赖-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.kafka</groupId>-->
-<!--            <artifactId>kafka_2.11</artifactId>-->
-<!--            <version>${kafka.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.kafka</groupId>-->
+        <!--            <artifactId>kafka_2.11</artifactId>-->
+        <!--            <version>${kafka.version}</version>-->
+        <!--        </dependency>-->
 
         <!-- Hadoop 依赖-->
         <dependency>
@@ -138,11 +144,11 @@
             <version>${spark.version}</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.fasterxml.jackson.module</groupId>-->
-<!--            <artifactId>jackson-module-scala_2.11</artifactId>-->
-<!--            <version>2.6.5</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.fasterxml.jackson.module</groupId>-->
+        <!--            <artifactId>jackson-module-scala_2.11</artifactId>-->
+        <!--            <version>2.6.5</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.elasticsearch</groupId>
@@ -156,11 +162,11 @@
             <version>1.2.47</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--            <artifactId>jackson-databind</artifactId>-->
-<!--            <version>2.6.0</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.fasterxml.jackson.core</groupId>-->
+        <!--            <artifactId>jackson-databind</artifactId>-->
+        <!--            <version>2.6.0</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>net.jpountz.lz4</groupId>
@@ -181,15 +187,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.flume.flume-ng-clients</groupId>
-            <artifactId>flume-ng-log4jappender</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.18.Final</version>
+            <version>4.1.42.Final</version>
         </dependency>
 
     </dependencies>
