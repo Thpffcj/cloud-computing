@@ -1,4 +1,4 @@
-package cn.edu.nju
+package cn.edu.nju.test
 
 import cn.edu.nju.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
 import cn.edu.nju.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}

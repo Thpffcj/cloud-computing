@@ -67,12 +67,4 @@ object HDFSProcess {
     val pre = preValues.getOrElse(0)
     Some(current + pre)
   }
-
-  /**
-   * 获取MySQL的连接
-   */
-  def createConnection() = {
-    Class.forName("com.mysql.jdbc.Driver")
-    DriverManager.getConnection("jdbc:mysql://localhost:3306/spark", "root", "000000")
-  }
 }

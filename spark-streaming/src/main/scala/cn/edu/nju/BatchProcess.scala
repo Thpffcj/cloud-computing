@@ -1,7 +1,10 @@
 package cn.edu.nju
 
+import java.sql.DriverManager
+import java.util.Properties
+
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.{DataFrame, SQLContext}
+import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 
 /**
  * Created by thpffcj on 2019/10/19.
@@ -16,12 +19,26 @@ object BatchProcess {
 
     val sqlContext = new SQLContext(sc)
 
-    val data: DataFrame = sqlContext.read.format("com.databricks.spark.csv")
-      .option("header", "true") //在csv第一行有属性"true"，没有就是"false"
-      .option("inferSchema", true.toString) //这是自动推断属性列的数据类型
-      .load("/Users/thpffcj/Public/file/steam.csv")
+    val time = 1398902400
+    val tableName = "(select * from roll_up where time = " + time + " order by recommendations_up desc limit 10) as roll_up"
+    val data: DataFrame = readMysqlTable(sqlContext, tableName)
 
-    data.show()
+    val properties = new Properties()
+    properties.setProperty("user", "root")
+    properties.setProperty("password", "000000")
+    data.write.mode(SaveMode.Append).jdbc("jdbc:mysql://localhost:3306/steam", "top10", properties)
 
+    sc.stop()
+  }
+
+  def readMysqlTable(sqlContext: SQLContext, tableName: String) = {
+    sqlContext
+      .read
+      .format("jdbc")
+      .option("url", "jdbc:mysql://localhost:3306/steam")
+      .option("user", "root")
+      .option("password", "000000")
+      .option("dbtable", tableName)
+      .load()
   }
 }
