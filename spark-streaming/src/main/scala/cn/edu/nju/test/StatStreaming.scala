@@ -2,7 +2,7 @@ package cn.edu.nju.test
 
 import cn.edu.nju.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
 import cn.edu.nju.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}
-import cn.edu.nju.util.DateUtils
+import cn.edu.nju.utils.DateUtils
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}

@@ -1,13 +1,12 @@
-package steamserverdemo;
-
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
+package cn.edu.nju;
 
 import javax.websocket.EncodeException;
 import javax.websocket.Encoder;
 import javax.websocket.EndpointConfig;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
 
 public class ApiObjectEncoder implements Encoder.Text<ApiReturnObject> {
     @Override

@@ -1,4 +1,4 @@
-package steamserverdemo;
+package cn.edu.nju;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

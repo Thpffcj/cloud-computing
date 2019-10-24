@@ -1,4 +1,4 @@
-package cn.edu.nju.util
+package cn.edu.nju.utils
 
 import java.util.Date
 import org.apache.commons.lang3.time.FastDateFormat

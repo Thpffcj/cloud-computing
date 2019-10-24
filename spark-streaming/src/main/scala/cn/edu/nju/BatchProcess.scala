@@ -19,7 +19,7 @@ object BatchProcess {
 
     val sqlContext = new SQLContext(sc)
 
-    val time = 1398902400
+    val time = 1401580800
     val tableName = "(select * from roll_up where time = " + time + " order by recommendations_up desc limit 10) as roll_up"
     val data: DataFrame = readMysqlTable(sqlContext, tableName)
 

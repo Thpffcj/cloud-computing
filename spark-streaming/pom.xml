@@ -119,20 +119,6 @@
             <version>${spark.version}</version>
         </dependency>
 
-        <!-- Note: Flume support is deprecated as of Spark 2.3.0. -->
-        <!-- Spark Streaming整合Flume 依赖-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.spark</groupId>-->
-<!--            <artifactId>spark-streaming-flume_2.11</artifactId>-->
-<!--            <version>${spark.version}</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>org.apache.spark</groupId>-->
-<!--            <artifactId>spark-streaming-flume-sink_2.11</artifactId>-->
-<!--            <version>${spark.version}</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
@@ -170,11 +156,11 @@
             <version>1.2.47</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.6.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--            <artifactId>jackson-databind</artifactId>-->
+<!--            <version>2.6.0</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>net.jpountz.lz4</groupId>
