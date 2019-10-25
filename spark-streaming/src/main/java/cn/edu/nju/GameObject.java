@@ -5,12 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.Serializable;
 
 public class GameObject implements Serializable{
-    GameObject(String id, String label, int value, String color){
-        this.id = id;
-        this.label = label;
-        this.value = value;
-        this.color = color;
-    }
 
     @Autowired
     private String id;
@@ -20,6 +14,13 @@ public class GameObject implements Serializable{
     private int value;
     @Autowired
     private String color;
+
+    GameObject(String id, String label, int value, String color){
+        this.id = id;
+        this.label = label;
+        this.value = value;
+        this.color = color;
+    }
 
     public String getId() {
         return id;

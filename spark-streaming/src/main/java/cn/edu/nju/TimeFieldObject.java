@@ -6,15 +6,17 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class TimeFieldObject implements Serializable{
+
+    @Autowired
+    private String name;
+
+    @Autowired
+    private ArrayList<GameObject> values;
+
     public TimeFieldObject(String name, ArrayList<GameObject> values) {
         this.name = name;
         this.values = values;
     }
-
-    @Autowired
-    private String name;
-    @Autowired
-    private ArrayList<GameObject> values;
 
     public String getName() {
         return name;

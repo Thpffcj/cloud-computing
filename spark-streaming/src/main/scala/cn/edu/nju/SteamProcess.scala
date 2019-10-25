@@ -24,9 +24,15 @@ object SteamProcess {
 //    val rawData = ssc.socketTextStream("localhost", 9999)
     val rawData = ssc.textFileStream("hdfs://thpffcj:9000/cloud-computing/")
 
-
     val gameNameSet: Set[String] = Set()
 
+    /**
+     * 过滤空行
+     * 过滤日期为空的数据
+     * 过滤重复的数据，使用游戏名称过滤
+     * 过滤game_detail为空的数据
+     * 为了game_detail为bundle的数据
+     */
     val data = rawData.filter(rdd => !rdd.isEmpty).map(line=> {
       val log = line.split("\t")
       SteamLog(log(0), log(1), log(2), log(3), log(4), log(5),log(6))
@@ -41,22 +47,22 @@ object SteamProcess {
 
 
     // 取出用户标签
-//    val userTags = data.map(steamLog => {
-//      val gameDetail = jsonToGameDetail(steamLog.game_detail)
-//      gameDetail.user_tags.toString.replace(" ", "")
-//    })
+    val userTags = data.map(steamLog => {
+      val gameDetail = jsonToGameDetail(steamLog.game_detail)
+      gameDetail.user_tags.toString.replace(" ", "")
+    })
 
-//
-//    // 标签统计
-//    val tagsNumber = userTags.flatMap(line => line.substring(1, line.length - 1).split(","))
-//        .map(tag => (tag, 1)).updateStateByKey[Int](updateFunction _)
+    // 标签统计
+    val tagsNumber = userTags.flatMap(line => line.substring(1, line.length - 1).split(","))
+        .map(tag => (tag, 1)).updateStateByKey[Int](updateFunction _)
 
-//    tagsNumber.print()
+    tagsNumber.print()
+
 
     /**
+     * (steamLog.name,jsonToReviewsChart(gameDetail.reviewsChart.toString))
      * (CODE VEIN,{recommendations_down=34.0,date=1.5712704E9,recommendations_up=167.0},{recommendations_down=34.0,date=1.5712704E9,recommendations_up=167.0)
      */
-
     val rollups = data.map(steamLog => {
       println(steamLog)
       val gameDetail = jsonToGameDetail(steamLog.game_detail)
@@ -67,8 +73,7 @@ object SteamProcess {
         (reviewsChart._1, line.substring(1, line.length - 2).replace(" ", ""))
     })
 
-    // 将结果写入到MySQL
-    // TODO 会有重复的数据
+    // 将每个游戏好评数写入到MySQL
     rollups.foreachRDD(rdd => {
       rdd.foreachPartition(partitionOfRecords => {
         val connection = createConnection()

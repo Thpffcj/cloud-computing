@@ -31,7 +31,6 @@ object CourseSearchClickCountDAO {
         Bytes.toBytes(qualifer),
         ele.click_count)
     }
-
   }
 
   /**
