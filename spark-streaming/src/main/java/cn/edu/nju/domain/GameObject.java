@@ -1,4 +1,4 @@
-package cn.edu.nju;
+package cn.edu.nju.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,7 +15,7 @@ public class GameObject implements Serializable{
     @Autowired
     private String color;
 
-    GameObject(String id, String label, int value, String color){
+    public GameObject(String id, String label, int value, String color){
         this.id = id;
         this.label = label;
         this.value = value;

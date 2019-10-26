@@ -1,7 +1,9 @@
 package cn.edu.nju
 
 import cn.edu.nju.domain.UserData
-import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
@@ -17,12 +19,23 @@ object KafkaProcess {
 
     ssc.checkpoint("/Users/thpffcj/Public/file/cloud_checkpoint/stream_process")
 
-    val zkQuorum = "thpffcj1:2181"
-    val topicMap = Map("steam" -> 1)
+    val bootstrapServers = "thpffcj1:9092"
     val groupId = "test"
-    val messages = KafkaUtils.createStream(ssc, zkQuorum, groupId, topicMap)
+    val topicName = "steam"
+    val maxPoll = 20000
 
-    val rawData = messages.map(_._2)
+    val kafkaParams = Map(
+      ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG -> bootstrapServers,
+      ConsumerConfig.GROUP_ID_CONFIG -> groupId,
+      ConsumerConfig.MAX_POLL_RECORDS_CONFIG -> maxPoll.toString,
+      ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer],
+      ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer]
+    )
+
+    val messages = KafkaUtils.createDirectStream(ssc, LocationStrategies.PreferConsistent,
+      ConsumerStrategies.Subscribe[String, String](Set(topicName), kafkaParams))
+
+    val rawData = messages.map(_.value())
 
     val data = rawData.map(line => {
       val record = line.split("\t")
@@ -70,14 +83,4 @@ object KafkaProcess {
     val pre = preValues.getOrElse(0)
     Some(current + pre)
   }
-
-//  def addGamePopularity(currentValues: Seq[(Int, Int)], preValues: Option[(Int, Int)]): Option[(Int, Int)] = {
-//    val currentSum = currentValues.map(current => current._1).sum
-//    val currentNumber = currentValues.map(current => current._2).sum
-//
-//    val preSum = preValues.map(current => current._1).getOrElse(0)
-//    val preNumber = preValues.map(current => current._2).getOrElse(0)
-//
-//    Some((currentSum + preSum, currentNumber + preNumber))
-//  }
 }

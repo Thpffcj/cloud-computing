@@ -9,7 +9,7 @@ object DateTest {
 
   def main(args: Array[String]): Unit = {
 
-    val startDate = "2017-01-01 08:00:00"
+    val startDate = "2017-03-01 08:00:00"
     val startTime: Int = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(startDate).getTime / 1000).toInt
 
     val endDate = "2019-10-01 08:00:00"

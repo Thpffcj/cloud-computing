@@ -1,5 +1,6 @@
 package cn.edu.nju;
 
+import cn.edu.nju.domain.GameObject;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;

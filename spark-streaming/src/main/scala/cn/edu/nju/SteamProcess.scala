@@ -109,11 +109,31 @@ object SteamProcess {
 //      })
 //    })
 
+    // 单条插入
+//    rollups.foreachRDD(rdd => {
+//      rdd.foreachPartition(partitionOfRecords => {
+//        val connection = createConnection()
+//        partitionOfRecords.foreach(record => {
+//          record._2.split("},").foreach(data => {
+//            val rollUp = jsonToRollUp(data + "}")
+//            val sql = "insert into roll_up(name, time, recommendations_up, recommendations_down) values('" + record._1.replace("'", "") + "'," + rollUp.date + "," + rollUp.recommendations_up + "," + rollUp.recommendations_down + ")"
+//            connection.createStatement().execute(sql)
+//          })
+//        })
+//        connection.close()
+//      })
+//    })
+
     rollups.print()
 
     ssc.start()
     ssc.awaitTermination()
   }
+
+//  def createConnection() = {
+//    Class.forName("com.mysql.jdbc.Driver")
+//    DriverManager.getConnection("jdbc:mysql://localhost:3306/steam?useUnicode=true&characterEncoding=utf-8", "root", "000000")
+//  }
 
   def jsonToGameDetail(jsonStr: String): GameDetail = {
     try {

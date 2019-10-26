@@ -3,8 +3,10 @@ package cn.edu.nju.test
 import cn.edu.nju.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
 import cn.edu.nju.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}
 import cn.edu.nju.utils.DateUtils
+import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
-import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 import scala.collection.mutable.ListBuffer
@@ -13,27 +15,33 @@ import scala.collection.mutable.ListBuffer
  * Created by thpffcj on 2019/10/17.
  */
 object StatStreaming {
+
   def main(args: Array[String]): Unit = {
-
-    if (args.length != 4) {
-      println("Usage: StatStreaming <zkQuorum> <group> <topics> <numThreads>")
-      System.exit(1)
-    }
-
-    val Array(zkQuorum, groupId, topics, numThreads) = args
 
     val sparkConf = new SparkConf().setAppName("StatStreaming") //.setMaster("local[5]")
     val ssc = new StreamingContext(sparkConf, Seconds(60))
 
-    val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
+    val bootstrapServers = "thpffcj1:9092"
+    val groupId = "test"
+    val topicName = "test"
+    val maxPoll = 20000
 
-    val messages = KafkaUtils.createStream(ssc, zkQuorum, groupId, topicMap)
+    val kafkaParams = Map(
+      ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG -> bootstrapServers,
+      ConsumerConfig.GROUP_ID_CONFIG -> groupId,
+      ConsumerConfig.MAX_POLL_RECORDS_CONFIG -> maxPoll.toString,
+      ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer],
+      ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer]
+    )
+
+    val messages = KafkaUtils.createDirectStream(ssc, LocationStrategies.PreferConsistent,
+      ConsumerStrategies.Subscribe[String, String](Set(topicName), kafkaParams))
 
     // 测试步骤一：测试数据接收
     // messages.map(_._2).count().print
 
     // 测试步骤二：数据清洗
-    val logs = messages.map(_._2)
+    val logs = messages.map(_.value())
     val cleanData = logs.map(line => {
       val infos = line.split("\t")
 

@@ -1,4 +1,6 @@
-package cn.edu.nju;
+package cn.edu.nju.api;
+
+import cn.edu.nju.TimeFieldObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;
