@@ -10,5 +10,5 @@ package cn.edu.nju.domain
  * @param rollups
  * @param start_date
  */
-case class ReviewsChart(weeks: Object, rollup_type: String, end_date: Int, recent: Object,
-                        rollups: Object, start_date: Int)
+case class ReviewsChart(weeks: Object, rollup_type: String, end_date: Float, recent: Object,
+                        rollups: Object, start_date: Float)
