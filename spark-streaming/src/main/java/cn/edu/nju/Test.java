@@ -15,8 +15,7 @@ public class Test {
 
         ApiReturnObject apiReturnObject = mySQLProcess.getTimeFieldData(DateUtils.getSteamDates());
 
-        TagReturnObject tagReturnObject = mySQLProcess.getTagData();
-
+        TagReturnObject tagReturnObject = mySQLProcess.getTagData(2);
 
         System.out.println("hello");
     }

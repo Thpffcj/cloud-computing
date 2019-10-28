@@ -8,20 +8,21 @@ import cn.edu.nju.domain.{GameObject, TagObject}
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.util.Random
 
 /**
  * Created by thpffcj on 2019/10/24.
  */
 class MySQLProcess {
 
-  val sparkConf = new SparkConf().setMaster("local[1]").setAppName("MySQLProcess")
-  val sc = new SparkContext(sparkConf)
-
-  val sqlContext = new SQLContext(sc)
-
   def getTimeFieldData(dates: ListBuffer[String]): ApiReturnObject = {
 
+    val sparkConf = new SparkConf().setMaster("local[1]").setAppName("MySQLProcess")
+    val sc = new SparkContext(sparkConf)
+
+    val sqlContext = new SQLContext(sc)
 
     val timeFieldObjects = new util.ArrayList[TimeFieldObject]
 
@@ -32,16 +33,32 @@ class MySQLProcess {
 
       val gameObjects = new util.ArrayList[GameObject]
       val broadcast = sc.broadcast(gameObjects)
+      var id = 1
       data.foreach(row => {
-        val gameObject = new GameObject("id", row.getAs("name"), row.getAs("recommendations_up"), "color")
+
+        val name = row.getAs("name").toString
+        var color = ""
+        if (MySQLProcess.map.containsKey(name)) {
+          color = MySQLProcess.map.get(name).toString
+        } else {
+          // rgb(218, 198, 76)
+          color = "rgb(" + Random.nextInt(255) + ", " + Random.nextInt(255) + ", " + Random.nextInt(255) + ")"
+          MySQLProcess.map.put(name, color)
+        }
+
+        val gameObject = new GameObject(id.toString, name, row.getAs("recommendations_up"), color)
         broadcast.value.add(gameObject)
+        id = id + 1
       })
 
-      val timeFieldObject = new TimeFieldObject(date, broadcast.value)
+      val name = "截止" + date.substring(0, 4) + "年" + date.substring(5, 7) + "月" + "好评累计总数"
+      val timeFieldObject = new TimeFieldObject(name, broadcast.value)
       timeFieldObjects.add(timeFieldObject)
     }
 
     val apiReturnObject = new ApiReturnObject(timeFieldObjects)
+
+    sc.stop()
 
     apiReturnObject
   }
@@ -50,9 +67,15 @@ class MySQLProcess {
    * 返回词云需要的数据
    * @return
    */
-  def getTagData(): TagReturnObject = {
+  def getTagData(round: Int): TagReturnObject = {
 
-    val tableName = "tag"
+    val sparkConf = new SparkConf().setMaster("local[1]").setAppName("MySQLProcess")
+    val sc = new SparkContext(sparkConf)
+
+    val sqlContext = new SQLContext(sc)
+
+    val tableName = "(select * from tag limit " + 0 + "," + round * 50 + ") as top10"
+    println(tableName)
     val data: DataFrame = readMysqlTable(sqlContext, tableName)
 
     val tagObjects =new util.ArrayList[TagObject]
@@ -63,6 +86,9 @@ class MySQLProcess {
     })
 
     val tagReturnObject = new TagReturnObject(tagObjects)
+
+    sc.stop()
+
     tagReturnObject
   }
 
@@ -71,10 +97,15 @@ class MySQLProcess {
       .read
       .format("jdbc")
       .option("driver", "com.mysql.jdbc.Driver")
-      .option("url", "jdbc:mysql://localhost:3306/steam")
+      .option("url", "jdbc:mysql://172.19.240.128:3306/steam")
       .option("user", "root")
-      .option("password", "000000")
+      .option("password", "root")
       .option("dbtable", tableName)
       .load()
   }
+}
+
+object MySQLProcess {
+
+  val map = new util.HashMap[String, String]()
 }

@@ -1,5 +1,6 @@
 package cn.edu.nju.utils
 
+import java.text.SimpleDateFormat
 import java.util.Date
 
 import org.apache.commons.lang3.time.FastDateFormat
@@ -63,8 +64,14 @@ object DateUtils {
     dates
   }
 
+  def tranTimestampToString(tm: Int): String={
+    val fm = new SimpleDateFormat("yyyy/MM")
+    val tim = fm.format(new Date(tm.toLong * 1000))
+    tim
+  }
+
   def main(args: Array[String]): Unit = {
 
-    println(parseToMinute("2017-10-22 14:46:01"))
+    println(tranTimestampToString(1569888000))
   }
 }
