@@ -20,7 +20,7 @@ object ConnectedComponentsExample {
     val sc = new SparkContext(conf)
 
     // 构建出来图有多种方式
-    val graph = GraphLoader.edgeListFile(sc, "src/test/resources/follows.txt")
+    val graph = GraphLoader.edgeListFile(sc, "src/main/resources/follows.txt")
     graph.vertices.foreach(println(_))
 
     /** 就是把所有的数字作为key，value都写为1
@@ -50,7 +50,7 @@ object ConnectedComponentsExample {
      * (2,1)
      *
      */
-    val users = sc.textFile("src/test/resources/user.txt").map(line => {
+    val users = sc.textFile("src/main/resources/user.txt").map(line => {
       // 因为要join，所以要变成kv形式
       val fields = line.split(",")
       (fields(0).toLong, fields(1))

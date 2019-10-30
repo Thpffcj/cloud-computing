@@ -8,7 +8,6 @@ import cn.edu.nju.domain.{GameObject, TagObject}
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
-import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
 
@@ -17,6 +16,11 @@ import scala.util.Random
  */
 class MySQLProcess {
 
+  /**
+   * 返回动态图所需数据
+   * @param dates
+   * @return
+   */
   def getTimeFieldData(dates: ListBuffer[String]): ApiReturnObject = {
 
     val sparkConf = new SparkConf().setMaster("local[1]").setAppName("MySQLProcess")

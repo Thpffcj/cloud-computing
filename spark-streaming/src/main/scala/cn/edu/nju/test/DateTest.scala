@@ -2,6 +2,8 @@ package cn.edu.nju.test
 
 import java.text.SimpleDateFormat
 
+import cn.edu.nju.utils.DateUtils
+
 /**
  * Created by thpffcj on 2019/10/25.
  */
@@ -15,7 +17,8 @@ object DateTest {
     val endDate = "2019-10-01 08:00:00"
     val endTime : Int = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(endDate).getTime / 1000).toInt
 
-    println(startTime)
-    println(endTime)
+    for (date <- DateUtils.getSteamDates()) {
+      println((new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date).getTime / 1000).toInt)
+    }
   }
 }

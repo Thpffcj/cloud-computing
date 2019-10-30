@@ -1,7 +1,5 @@
 package cn.edu.nju
 
-import java.sql.DriverManager
-
 import cn.edu.nju.dao.{RollUpDAO, TagDAO}
 import cn.edu.nju.domain.{GameDetail, ReviewsChart, RollUp, SteamLog, Tag}
 import com.google.gson.Gson
@@ -18,13 +16,16 @@ object SteamProcess {
 
   def main(args: Array[String]): Unit = {
 
-    val sparkConf = new SparkConf().setMaster("local[2]").setAppName("HDFSProcess")
+//    val sparkConf = new SparkConf().setMaster("local[2]").setAppName("HDFSProcess")
+    val sparkConf = new SparkConf().setMaster("spark://thpffcj:7077").setAppName("SteamProcess")
 
-    val ssc = new StreamingContext(sparkConf, Seconds(20))
+    val ssc = new StreamingContext(sparkConf, Seconds(5))
 
+    // 如果使用了stateful的算子，必须要设置checkpoint
+    // 在生产环境中，建议把checkpoint设置到HDFS的某个文件夹中
+    // . 代表当前目录
     ssc.checkpoint("/Users/thpffcj/Public/file/cloud_checkpoint/hdfs_process")
 
-    //    val rawData = ssc.socketTextStream("localhost", 9999)
     val rawData = ssc.textFileStream("hdfs://thpffcj:9000/cloud-computing/")
 
     val gameNameSet: Set[String] = Set()
@@ -69,15 +70,13 @@ object SteamProcess {
 //    writeTagToMysql(tagsNumber)
     tagsNumber.print()
 
-//    tagsNumber.saveAsTextFiles("/Users/thpffcj/Public/local-repository/cloud-computing/spark-streaming/src/main/resources/tag.txt")
-
     /**
      * (steamLog.name,jsonToReviewsChart(gameDetail.reviewsChart.toString))
      * (CODE VEIN,{recommendations_down=34.0,date=1.5712704E9,recommendations_up=167.0},{recommendations_down=34.0,date=1.5712704E9,recommendations_up=167.0)
      */
     val rollups = data.map(steamLog => {
       val gameDetail = jsonToGameDetail(steamLog.game_detail)
-//      println(gameDetail)
+
       // 过滤 reviewsChart["start_date"] 和 reviewsChart["end_date"] 为空的数据
       if ((gameDetail != null) && (gameDetail.reviewsChart.get("start_date") != "None")
         && (gameDetail.reviewsChart.get("end_date") != "None")) {
@@ -94,20 +93,20 @@ object SteamProcess {
       })
 
     // 将每个游戏好评数写入到MySQL
-//    rollups.foreachRDD(rdd => {
-//      rdd.foreachPartition(partitionOfRecords => {
-//        val list = new ListBuffer[(String, Int, Int, Int)]
-//
-//        partitionOfRecords.foreach(record => {
-//          record._2.split("},").foreach(data => {
-//            val rollUp = jsonToRollUp(data + "}")
-//            list.append((record._1, rollUp.date, rollUp.recommendations_up, rollUp.recommendations_down))
-//          })
-//        })
-//
-//        RollUpDAO.insertRollUp(list)
-//      })
-//    })
+    rollups.foreachRDD(rdd => {
+      rdd.foreachPartition(partitionOfRecords => {
+        val list = new ListBuffer[(String, Int, Int, Int)]
+
+        partitionOfRecords.foreach(record => {
+          record._2.split("},").foreach(data => {
+            val rollUp = jsonToRollUp(data + "}")
+            list.append((record._1, rollUp.date, rollUp.recommendations_up, rollUp.recommendations_down))
+          })
+        })
+
+        RollUpDAO.insertRollUp(list)
+      })
+    })
 
     // 单条插入
 //    rollups.foreachRDD(rdd => {
@@ -184,6 +183,10 @@ object SteamProcess {
     Some(current + pre)
   }
 
+  /**
+   * 标签数据写入MySQL
+   * @param tagsNumber
+   */
   def writeTagToMysql(tagsNumber: DStream[(String, Int)]): Unit = {
 
     tagsNumber.foreachRDD(rdd => {
@@ -196,5 +199,4 @@ object SteamProcess {
       })
     })
   }
-
 }
