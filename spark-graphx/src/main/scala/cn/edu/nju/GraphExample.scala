@@ -11,13 +11,10 @@ object GraphExample {
 
   def main(args: Array[String]): Unit = {
 
-    val conf = new SparkConf()
-    conf.setAppName("GraphTest")
-    conf.setMaster("local")
-
+    val conf = new SparkConf().setAppName("GraphTest").setMaster("local")
     val sc = new SparkContext(conf)
 
-    //构建顶点 返回的这个Long其实是VertexId类型，都是一样的
+    // 构建顶点 返回的这个Long其实是VertexId类型，都是一样的
     val users: RDD[(Long, (String, String))] =
       sc.parallelize(
         Array((3L, ("rxin", "student")),
@@ -25,7 +22,7 @@ object GraphExample {
         (5L, ("franklin", "prof")),
         (2L, ("istoica", "prof"))))
 
-    //构建边 （边有个独特的类Edge，某种程度讲代表的就是一些关系）
+    // 构建边 （边有个独特的类Edge，某种程度讲代表的就是一些关系）
     val relationships: RDD[Edge[String]] =
       sc.parallelize(
         Array(Edge(3L, 7L, "collab"),
@@ -33,7 +30,7 @@ object GraphExample {
           Edge(2L, 5L, "colleague"),
           Edge(5L, 7L, "pi")))
 
-    //顶点和边，这样就构建了我们的图
+    // 顶点和边，这样就构建了我们的图
     val graph = Graph(users, relationships)
 
     // .vertices获取到这个图中所有的顶点

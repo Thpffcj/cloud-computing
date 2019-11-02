@@ -185,7 +185,7 @@ object GraphTest {
     val graphWeapon = mergeGraphs(graph13, graph14).cache()
 
     // 输出到文件
-    val outputPath = "src/main/resources/output"
+    val outputPath = "src/main/resources/output/"
     val pw1 = new PrintWriter(outputPath + "graph.gexf")
     pw1.write(toGexf(graphAll))
     val pw2 = new PrintWriter(outputPath + "isolate.txt")
