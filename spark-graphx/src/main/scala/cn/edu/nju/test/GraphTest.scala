@@ -81,7 +81,6 @@ object GraphTest {
       g.edges.map(e => "  <edge source=\"" + e.srcId + "\" target=\"" + e.dstId + "\" weight=\"" + e.attr + "\"/>\n").
         collect().mkString +
       "</edges>\n        </graph>\n      </gexf>"
-
   }
 
   /**
@@ -164,12 +163,7 @@ object GraphTest {
     val graphAll = mergeGraphs(graph3, graph4).cache()
 
     val minDegreeArray = minDegrees(graphAll)
-    //    val graphMin = graphAll.subgraph(vpred = (id,attr)=>minDegreeArray.contains(id),epred = e=>minDegreeArray.contains(e.srcId) || minDegreeArray.contains(e.dstId))
     val graphMin = graphAll.subgraph(epred = e => (minDegreeArray.contains(e.srcId) || minDegreeArray.contains(e.dstId)))
-    //    graphMin.edges.collect().foreach(println)
-    //    println(graphAll.edges.collect().length)
-    //    graphAll.edges.map(e=>((e.dstId,e.srcId),e.attr)).reduceByKey(_+_).map(e=>Edge(e._1._1,e._1._2,e._2)).foreach(println)
-
 
     val folderPath2 = "src/main/resources/人物与武功秘籍/"
     val graph11 = creatGraph(sc, folderPath2 + "result1/hero.txt",
