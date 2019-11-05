@@ -13,13 +13,26 @@ object MongoDBProcess {
 
   def main(args: Array[String]): Unit = {
 
-//    val conf = new SparkConf().setMaster("local").setAppName("MongoDBProcess")
-//    conf.set("spark.mongodb.input.uri", "mongodb://127.0.0.1/test.China.reviews")
-//    conf.set("spark.mongodb.input.partitioner","MongoPaginateBySizePartitioner")
-//
-//    val spark = SparkSession.builder().config(conf).getOrCreate()
+    val conf = new SparkConf().setMaster("local").setAppName("MongoDBProcess")
+    conf.set("spark.mongodb.input.uri", "mongodb://127.0.0.1/test.China.reviews")
+    conf.set("spark.mongodb.input.partitioner","MongoPaginateBySizePartitioner")
 
-    val frame: DataFrame = readFromMongodb()
+    val spark = SparkSession.builder().config(conf).getOrCreate()
+
+    val frame: DataFrame = MongoSpark.load(spark)
+
+    frame.foreach(row => {
+      val jsonPlayer = row.getAs("user").toString.split(",")
+      val player = jsonPlayer(1).substring(0, jsonPlayer(1).length - 1)
+
+      val jsonGame = row.getAs("game").toString.split(",")
+      val game = jsonGame(0).substring(1)
+
+      val content = row.getAs("content").toString
+
+//      println(player + " " + game + " " + content)
+
+    })
 
 //    writeToMongodb(frame)
 

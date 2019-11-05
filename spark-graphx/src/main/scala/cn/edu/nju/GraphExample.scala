@@ -36,7 +36,7 @@ object GraphExample {
     // .vertices获取到这个图中所有的顶点
     val count = graph.vertices.filter {
       case (id, (name, pos)) => {
-        //计算我们这个图中有多少个postdoc博士后
+        // 计算我们这个图中有多少个postdoc博士后
         pos == "postdoc"
       }
     }.count()
