@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+<graph defaultedgetype="directed" mode="static">
+<attributes class="node" mode="static">
+<attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+</attributes>
+<nodes>
+ <node id="4" label="user-湛蓝色">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="0" label="test-test">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="null"></viz:size>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="8" label="user-double ve">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1" label="user-25143121">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="9" label="user-振宇白">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5" label="user-giff me ma">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="6" label="user-bab">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="10" label="user-ailbaba">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2" label="game-CODE VEIN">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="400"></viz:size>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="11" label="user-セン">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3" label="user-Kurokane">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="7" label="user-Ns.Sa">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="200"></viz:size>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+</nodes>
+  <edges>
+<edge source="0" target="0" label="" weight="1.0"/>
+<edge source="8" target="2" label="本来我想拒绝的，可是实在是太大了" weight="1.0"/>
+<edge source="6" target="2" label="游戏挺好的，唯一不足就是捏脸捏着捏着就过了退款时限" weight="1.0"/>
+<edge source="7" target="2" label="目前找到一个可以跟好友100%成功联机的方法：不设置密码，同一地图同一区域同时开始联机希望更多的人可以看到" weight="1.0"/>
+<edge source="9" target="2" label="游戏五分钟，捏脸俩小时." weight="1.0"/>
+<edge source="1" target="2" label="这游戏算是通了好结局，但其实看完剧情还是很伤感的，不多剧透了。总体说一说这个游戏的好坏，我没玩过ge系列所以不太知道之前他们家怎么样。好的方面包括：1 捏人（可以说8/10 到 9/10 看个人）2 剧情（老套但是做得好，给个8-9）3 伙伴npc（作为只玩过nioh，sekiro，ds3的菜鸡，我深刻体会到了队友的重要性。无数次mia，八云，io带我翻盘，给10分）4 血码和技能系统做的确实很好，花样繁多而且重复率不是很高，各种特色都有，可以给7-8分。5 boss战还可以吧，我比较手残，大概是那种20级打浸润行刑者打半小时才过的水平。能感觉到难度慢慢升高。有些人说到最后才难，我觉得可能是战术和技能配的比较好，或者大佬技术好，或者等级高(我是88级通的)，前面强一点的不能发挥出来。但这个boss战，总的来讲我能给7分。后面boss涨的速度比前期快了一点，所以会有后期难的感觉。中等的地方包括：6 地图，这一作地图我觉得有优有劣，好的是火街，沙城的特色和地图的安排，让人觉得猜不到。差的是白血和棺塔，素材重复太多，无效道路太多。其他的地图我觉得只能说一般般。地图我是真的只能给5分（火街我能给7-8，垃圾白我只给3）7 打击感，火枪是个垃圾无疑，攻击低要mp射程短，这肯定3分。长枪还可以但是手感非常一般般，大约6分。单手剑已经吐槽爆了，但动作还是帅气的，给个5.5吧。大锤的挥动没有力量感，没有我尽力一锤的感觉，但伤害可以，消韧也好，给个6分及格。双手大剑类的武器算是6.5的分数，刚刚够到还可以的线。做的不太好的部分：Dear 万代 地图上下层你不标的吗？武器消韧一直固定你傻吗？攻速一直固定吗？我的韧性是0是吗？、、、、总之，如果这个游戏卖100以下，我叫他巨佬，这个游戏卖200以下，我叫他大佬，这个游戏卖300以下，我叫他大哥，但这个游戏现在卖368，我只能叫他弟弟了。希望这个弟弟，把地图改一改，把打击改一改，把剧情搞个io不出事的，把武器改一改，他会一路upload的。总分  柰子值多少，游戏就值多少。以上Vida 10.1" weight="1.0"/>
+<edge source="4" target="2" label="我只是想说一句话 可以改键位" weight="1.0"/>
+<edge source="10" target="2" label="ign懂个球？" weight="1.0"/>
+<edge source="3" target="2" label="带妹子也就图一乐,打架还得靠云哥" weight="1.0"/>
+<edge source="5" target="2" label="正式开始游戏后第一个画面就是膝枕加奶子，所以我好评了。还有Human qua human真的好听，可以说就算为了这首歌再辛苦一遍心痛一遍也值得。为传承献身植树的IO留下的意志，这献身大输血我是带定了。" weight="1.0"/>
+<edge source="11" target="2" label="这是一个捏二次元老婆顺便过过剧情的休闲步行模拟器，缺点是路上会冒出很多抢我老婆的量产痴汉坏人。" weight="1.0"/>
+</edges>
+</graph>
+</gexf>

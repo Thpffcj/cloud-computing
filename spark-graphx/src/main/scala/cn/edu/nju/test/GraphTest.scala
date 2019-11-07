@@ -24,7 +24,7 @@ object GraphTest {
     val textFile = sc.textFile(path)
     val counts = textFile.map(word => (word, 1))
       .reduceByKey(_ + _).filter(_._2 > num)
-    //    counts.collect().foreach(println)
+
     counts
   }
 
@@ -92,7 +92,6 @@ object GraphTest {
    * @return
    */
   def minDegrees[VD, ED](g: GraphOps[VD, ED]) = {
-    //    g.degrees.filter(_._2<3).map(_._1).collect().mkString("\n")
     g.degrees.filter(_._2 < 3).map(_._1).collect().map(a => a.toInt)
   }
 
