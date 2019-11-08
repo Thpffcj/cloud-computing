@@ -5,103 +5,953 @@
 <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
 </attributes>
 <nodes>
- <node id="4" label="user-湛蓝色">
+ <node id="1344" label="彩虹六号CN">
 <attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
+<attvalue for="modularity_class" value="1"></attvalue>
 </attvalues>
-<viz:size value="200"></viz:size>
+<viz:size value="9"></viz:size>
+<viz:position x="7122" y="-9039" z="0.0"></viz:position>
 <viz:color r="236" g="81" b="72"></viz:color>
 </node>
-<node id="0" label="test-test">
+<node id="3416" label="oneness629">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="-1670" y="-3030" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="940" label="LonvonMnteuffel">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="-1041" y="-2204" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="13300" label="利益相关者的交易结构">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="4764" y="-2055" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3824" label="Toto">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="15"></viz:size>
+<viz:position x="9283" y="-1601" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3484" label="songjiyu001">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="14"></viz:size>
+<viz:position x="-1053" y="194" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1868" label="Silver01NOOB">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="10"></viz:size>
+<viz:position x="-4110" y="566" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="732" label="无闷">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="2969" y="5670" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2216" label="CtFlint">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-5435" y="9077" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2048" label="天外飞仙">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="5899" y="-5940" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2052" label="Ruby酱">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="9684" y="258" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5932" label="Tining">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-5178" y="-815" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1320" label="药荚">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="14"></viz:size>
+<viz:position x="-3438" y="-6339" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2112" label="COOKIES">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="3826" y="5053" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3248" label="MrLuckyPnts">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-8656" y="4361" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3476" label="Illy">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="17"></viz:size>
+<viz:position x="-8921" y="5522" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="376" label="WllerEngine">
 <attvalues>
 <attvalue for="modularity_class" value="0"></attvalue>
 </attvalues>
-<viz:size value="null"></viz:size>
+<viz:size value="20"></viz:size>
+<viz:position x="-2417" y="-6204" z="0.0"></viz:position>
 <viz:color r="236" g="181" b="72"></viz:color>
 </node>
-<node id="8" label="user-double ve">
+<node id="1276" label="PlnetZoo">
 <attvalues>
 <attvalue for="modularity_class" value="0"></attvalue>
 </attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="1" label="user-25143121">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="9" label="user-振宇白">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="5" label="user-giff me ma">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="6" label="user-bab">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="10" label="user-ailbaba">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="200"></viz:size>
-<viz:color r="236" g="81" b="72"></viz:color>
-</node>
-<node id="2" label="game-CODE VEIN">
-<attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
-</attvalues>
-<viz:size value="400"></viz:size>
+<viz:size value="60"></viz:size>
+<viz:position x="1391" y="6558" z="0.0"></viz:position>
 <viz:color r="236" g="181" b="72"></viz:color>
 </node>
-<node id="11" label="user-セン">
+<node id="4692" label="作对">
 <attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
+<attvalue for="modularity_class" value="1"></attvalue>
 </attvalues>
-<viz:size value="200"></viz:size>
+<viz:size value="7"></viz:size>
+<viz:position x="6694" y="-2670" z="0.0"></viz:position>
 <viz:color r="236" g="81" b="72"></viz:color>
 </node>
-<node id="3" label="user-Kurokane">
+<node id="1380" label="Julius">
 <attvalues>
-<attvalue for="modularity_class" value="0"></attvalue>
+<attvalue for="modularity_class" value="1"></attvalue>
 </attvalues>
-<viz:size value="200"></viz:size>
+<viz:size value="14"></viz:size>
+<viz:position x="-3206" y="-4369" z="0.0"></viz:position>
 <viz:color r="236" g="81" b="72"></viz:color>
 </node>
-<node id="7" label="user-Ns.Sa">
+<node id="8236" label="红鲤鱼与绿鲤鱼与驴">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-4821" y="-7240" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="524" label="LdyLu">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="3832" y="7398" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2448" label="789cs">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="13"></viz:size>
+<viz:position x="-126" y="8100" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1348" label="9N908">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="2359" y="7716" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3628" label="巨大仙人掌">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8128" y="6922" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2044" label="EntertheGungeon">
 <attvalues>
 <attvalue for="modularity_class" value="0"></attvalue>
 </attvalues>
-<viz:size value="200"></viz:size>
+<viz:size value="90"></viz:size>
+<viz:position x="-5671" y="-1407" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="3100" label="LilitleQueen">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="14"></viz:size>
+<viz:position x="6362" y="-6966" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1444" label="殘念">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="-3152" y="-5605" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2497" label="秋风为哀">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="16"></viz:size>
+<viz:position x="-3208" y="2131" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2053" label="DunkLikeGriffin">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="7841" y="-7440" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="897" label="Godie">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-5977" y="9655" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="7005" label="YANER">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="8192" y="3686" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="4105" label="流觞">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2699" y="6171" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="45" label="HunFllFlt">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="-7551" y="4328" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="13281" label="大吉丨霸王">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-9139" y="-7537" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3261" label="Northgrd">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="2759" y="8697" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="3329" label="BorderlndsThePre-Sequel">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="30"></viz:size>
+<viz:position x="-3720" y="47" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="4621" label="逍遥喵">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-9395" y="837" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="4593" label="Globlission">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-4341" y="-8641" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1349" label="執手迗涯">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-9233" y="5200" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1197" label="SoM">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-5184" y="4606" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1921" label="Jsy">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="11"></viz:size>
+<viz:position x="9076" y="-1822" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1329" label="Nonno">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="1275" y="-6709" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5297" label="F12018">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="9900" y="7010" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="5133" label="紫龙博爱粉">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="-8309" y="-5368" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1573" label="vgn">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="13"></viz:size>
+<viz:position x="-1325" y="-165" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2533" label="2019年要加油哦">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="3749" y="-3369" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="493" label="盐酥味的秋刀虫">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-4147" y="-7014" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="6305" label="Ryn">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-6386" y="-4608" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2109" label="snren">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-886" y="-8819" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="8097" label="CrytoftheNecroDncer">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="6799" y="-4799" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="137" label="GrndTheftAutoV">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="-5439" y="-2299" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="537" label="DEADORALIVEXtreeVenusVction">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="29"></viz:size>
+<viz:position x="-358" y="7591" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2069" label="純真的西瓜">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-1593" y="-5623" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1345" label="南方嬉皮士">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-176" y="2196" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5409" label="建信养老飞越8766">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-1564" y="1287" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="941" label="LTE">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-1022" y="-3170" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2049" label="V丶柒木">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-5833" y="-3025" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5221" label="Mtrix">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-6668" y="-1115" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2045" label="Mbel">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-7306" y="4909" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2070" label="阿披ver充实工作">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="10"></viz:size>
+<viz:position x="2827" y="-216" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2874" label="Leon">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-6180" y="-9523" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1346" label="Rzgriz">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="7299" y="4517" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="990" label="OxygenNotIncluded">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="9401" y="838" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2050" label="Seeeeei">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="8160" y="-317" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2458" label="observer2049">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-6229" y="3694" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3094" label="梦欠片">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="5830" y="-3300" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2046" label="意大利炮">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="6121" y="7893" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="810" label="呆罗">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="2193" y="7062" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5142" label="沙雕之路">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="30"></viz:size>
+<viz:position x="-3572" y="7848" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="126" label="Destiny2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="18" y="-1137" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="442" label="WrherVerintide2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="-8933" y="2966" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="1150" label="Mirror">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="7751" y="8374" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="930" label="BiGK">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-3023" y="879" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="482" label="麒麟问天">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="7734" y="8087" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2142" label="llystr">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="10"></viz:size>
+<viz:position x="-7603" y="-9624" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1350" label="SesonsSkur">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="10"></viz:size>
+<viz:position x="-5307" y="2990" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2202" label="Wrher40">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="79"></viz:size>
+<viz:position x="-2986" y="-6" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="3962" label="爱与正义诺瓦玲">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-1351" y="4253" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3034" label="L">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="11"></viz:size>
+<viz:position x="-3351" y="-7189" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="946" label="RS5DiDi">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="3754" y="3256" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2554" label="结力老狗比">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-6399" y="5924" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2022" label="TeFortress2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="-1633" y="-642" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2094" label="驯龙的鹿法师">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="11"></viz:size>
+<viz:position x="-5983" y="-1567" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3506" label="小熊饼干">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-6197" y="2690" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="5378" label="Bnished">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="224" y="-7544" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="1650" label="PCBuildingSiultor">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="739" y="9287" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="5251" label="核子樱桃">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7257" y="621" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2051" label="ClusyCt">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-3235" y="-3569" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3411" label="TioPlto">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="13"></viz:size>
+<viz:position x="-6118" y="571" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1875" label="Snd">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="32"></viz:size>
+<viz:position x="7874" y="-304" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1351" label="独一無二的遊戯">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-7395" y="2853" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="495" label="个性酷女孩">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="770" y="9513" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3803" label="十变哥">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="3107" y="-5352" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2231" label="NueLny">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="1199" y="2239" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1343" label="InsurgencySndstor">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="90"></viz:size>
+<viz:position x="5674" y="5869" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="3363" label="玉米粒">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-1399" y="-450" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="191" label="AtelierRyzEverDrknesstheSecretHideout">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="5545" y="1025" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="1295" label="奈何風花雪月">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7476" y="2356" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2535" label="Devenge">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="4305" y="-5071" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1719" label="BrbieQ">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-5425" y="-606" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2967" label="Gren">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="17"></viz:size>
+<viz:position x="6317" y="7857" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3051" label="GrndTheftAutoSnAndres">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="-7391" y="3002" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2103" label="晓荼">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-5020" y="-5215" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1443" label="孤岛上的眺望">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="3279" y="-1568" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2047" label="宁负苍天不负层丶">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-4620" y="-8071" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1147" label="FlintStone">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="12"></viz:size>
+<viz:position x="3738" y="-4214" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1099" label="学习ython中">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2538" y="7934" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1347" label="秋裤一定得掖在袜子里">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="9"></viz:size>
+<viz:position x="-9565" y="-9024" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="4395" label="大丁丁">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="11"></viz:size>
+<viz:position x="4255" y="9002" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="6511" label="ecer">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="1577" y="-3717" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="1043" label="NARUTOSHIPPUDENUltiteNinjSTORM4">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="19"></viz:size>
+<viz:position x="-8288" y="-9156" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="947" label="UzeroVdy">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="4406" y="-5068" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="4195" label="NEKOPARAVol.2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="20"></viz:size>
+<viz:position x="2623" y="2848" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2395" label="凯威尔斯">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="7573" y="4335" z="0.0"></viz:position>
 <viz:color r="236" g="81" b="72"></viz:color>
 </node>
 </nodes>
   <edges>
-<edge source="0" target="0" label="" weight="1.0"/>
-<edge source="8" target="2" label="本来我想拒绝的，可是实在是太大了" weight="1.0"/>
-<edge source="6" target="2" label="游戏挺好的，唯一不足就是捏脸捏着捏着就过了退款时限" weight="1.0"/>
-<edge source="7" target="2" label="目前找到一个可以跟好友100%成功联机的方法：不设置密码，同一地图同一区域同时开始联机希望更多的人可以看到" weight="1.0"/>
-<edge source="9" target="2" label="游戏五分钟，捏脸俩小时." weight="1.0"/>
-<edge source="1" target="2" label="这游戏算是通了好结局，但其实看完剧情还是很伤感的，不多剧透了。总体说一说这个游戏的好坏，我没玩过ge系列所以不太知道之前他们家怎么样。好的方面包括：1 捏人（可以说8/10 到 9/10 看个人）2 剧情（老套但是做得好，给个8-9）3 伙伴npc（作为只玩过nioh，sekiro，ds3的菜鸡，我深刻体会到了队友的重要性。无数次mia，八云，io带我翻盘，给10分）4 血码和技能系统做的确实很好，花样繁多而且重复率不是很高，各种特色都有，可以给7-8分。5 boss战还可以吧，我比较手残，大概是那种20级打浸润行刑者打半小时才过的水平。能感觉到难度慢慢升高。有些人说到最后才难，我觉得可能是战术和技能配的比较好，或者大佬技术好，或者等级高(我是88级通的)，前面强一点的不能发挥出来。但这个boss战，总的来讲我能给7分。后面boss涨的速度比前期快了一点，所以会有后期难的感觉。中等的地方包括：6 地图，这一作地图我觉得有优有劣，好的是火街，沙城的特色和地图的安排，让人觉得猜不到。差的是白血和棺塔，素材重复太多，无效道路太多。其他的地图我觉得只能说一般般。地图我是真的只能给5分（火街我能给7-8，垃圾白我只给3）7 打击感，火枪是个垃圾无疑，攻击低要mp射程短，这肯定3分。长枪还可以但是手感非常一般般，大约6分。单手剑已经吐槽爆了，但动作还是帅气的，给个5.5吧。大锤的挥动没有力量感，没有我尽力一锤的感觉，但伤害可以，消韧也好，给个6分及格。双手大剑类的武器算是6.5的分数，刚刚够到还可以的线。做的不太好的部分：Dear 万代 地图上下层你不标的吗？武器消韧一直固定你傻吗？攻速一直固定吗？我的韧性是0是吗？、、、、总之，如果这个游戏卖100以下，我叫他巨佬，这个游戏卖200以下，我叫他大佬，这个游戏卖300以下，我叫他大哥，但这个游戏现在卖368，我只能叫他弟弟了。希望这个弟弟，把地图改一改，把打击改一改，把剧情搞个io不出事的，把武器改一改，他会一路upload的。总分  柰子值多少，游戏就值多少。以上Vida 10.1" weight="1.0"/>
-<edge source="4" target="2" label="我只是想说一句话 可以改键位" weight="1.0"/>
-<edge source="10" target="2" label="ign懂个球？" weight="1.0"/>
-<edge source="3" target="2" label="带妹子也就图一乐,打架还得靠云哥" weight="1.0"/>
-<edge source="5" target="2" label="正式开始游戏后第一个画面就是膝枕加奶子，所以我好评了。还有Human qua human真的好听，可以说就算为了这首歌再辛苦一遍心痛一遍也值得。为传承献身植树的IO留下的意志，这献身大输血我是带定了。" weight="1.0"/>
-<edge source="11" target="2" label="这是一个捏二次元老婆顺便过过剧情的休闲步行模拟器，缺点是路上会冒出很多抢我老婆的量产痴汉坏人。" weight="1.0"/>
+<edge source="493" target="1650" label="抢先体验版本评测真特么上瘾本来就喜欢没事鼓弄硬件这款游戏让我爽到心坎恳请官方尽快推出dlc比如软件dlc不能总搞硬件错误嘛装个系统排查个逻辑错误丢卷什么的也挺好搞个外设dlc比如显示器啦打印机啦鼠标啦什么的赚钱嘛换个色带墨盒什么的也可以啊搞个服务器dlc八u16内存20块硬盘走起搞个90年代dlc搞个千禧年dlc把80386酷睿扣肉2的全部硬件加上什么PCIAGPVISAISA往死里搞搞个危险dlc比如漏电爆炸等等电路板故障搞起来还有进口设备220v110v的问题以上请官方务必采纳我可以马上滚过去上班" weight="1.0"/>
+<edge source="1344" target="1343" label="我给差评原因不是游戏公司制作水平那些鸡毛蒜皮的原因给差评是身为中国人看见亚服被国人外挂搞臭不仅是游戏搞臭中国人素质形象也搞臭还狂刷QQ 微信群开着大麦克在那恬不知耻很多老外听着的情况下卖一个绝地求生让中国形象因为外挂出名国外玩家联名要求锁中国区忘了嘛我洗完看到这条评论的人能帮帮忙顶上去让官方看见" weight="1.0"/>
+<edge source="1349" target="1343" label="一位富商就要死了他把三个年轻的儿子叫到床头      他问大儿子你要我的多少家产呢      大儿子想我是大哥理应分得最多于是他说我要你所有的钱富商听了说拿去吧摇了摇头      他又把二儿子叫过来你又想要什么呢二儿子想大哥真是笨钱财总有用光的一天于是他说我要你所有的房屋t地还有店铺家当富商淡淡的说拿去吧仍然摇了摇头      然后他用最后的力气拉着小儿子的手说你最小也最聪明但我什么也不剩了小儿子毫不犹豫地指了指父亲腰间的钱袋说我只要这个富商听了笑着把钱袋递给小儿子摸了摸他的头咽下了最后一口气      从父亲的房间出来大儿子和二儿子不解地凑上前来问为什么父亲给我们遗产时都摇头而给你时却笑了呢      小儿子说我也不知道但我得到了我想要的这就足够了      贪心的大哥和二哥想了一下他们觉得其中必有蹊跷我看这钱袋里有鬼说不定是更值钱的东西于是他们决定打开钱袋看个究竟小儿子毕竟力气敌不过大哥和哥于是说你们打开看就是      了两个哥哥打开钱袋后发现里面只是普普通通的100枚钱币是父亲做生意一直带 在身边的现钱罢了但是两个不讲理的哥哥仍然不信就这么完了于是他们决定一人拿走一 枚钱币 并且带走了装钱的袋子回去弄清楚为止      两个哥哥走远后小儿子拿着剩下的钱币开心的笑了这是父亲留给我的最宝贵的东西即使是一枚钱币也是父亲对我的无限期望 哥哥们终究没有理解父亲的期盼啊                          于是他拿着剩下的98枚钱币去购买了Insurgency Sandstorm" weight="1.0"/>
+<edge source="1350" target="5142" label="抢先体验版本评测这游戏好像很好玩的样子  算了说不定是个垃圾游戏  万一真的很好玩呢  算了我不会花钱买这个的  可是不试试怎么知道  算了不想花时间玩  可是看封面的猫好有趣啊  算了说不定是个乔碧萝呢  可是视频里的战斗系统好酷炫呀  算了我还是喜欢唱跳rap篮球  我突然抑制不住想买  算了我的钱包不想  可是现在打折促销呀  算了85再买吧  可是犹豫就会败北啊  算了果断肯定会白给  可是封面这只猫咪好像在说大爷快来玩呀  算了说不定封面上这只猫咪其实在说谁买谁沙雕  可是说不定会有人送我这游戏  算了我在想屁吃  那我用自己的饭钱买吧  算了我就是饿死死外边从这里跳下去我也不会买的  我仿佛闻到了蛋炒饭的香气  算了我宁愿吃烤面筋  但介四偶没有丸过的船新版本挤需体验三番钟里造会干我一样  干个鬼有这事睡了睡了  其实我第一次看到这游戏我是拒绝的因为我不能看到这名字是沙雕之路就去买来玩首先我要确定是否真的沙雕因为我不愿意买来以后玩完就退款然后加一些虚假评论进去脑袋咣的一下很爽很刺激这样玩家出来一定会骂我说这游戏根本不好玩说我完全就是发出来报复社会的就证明我说的是假话了所以我要让玩家看到我玩完之后是这个样子你们玩完之后也是这个样子  算了 反正也没有人给我点赞  但是我这么可爱说不定大家会给我点赞呢  算了我在丢人  等等我突然感觉沙雕之路仿佛在召唤我  算了我买我沙雕好吧  zzzzzzzZZZZZZZ   我怎么觉得刚才说了很多莫名其妙的话那是我在做梦  这可真是一个奇怪的梦   说什么如果我买这游戏我就是沙雕笑死我了这么沙雕的游戏我才不会买呢   我是沙雕" weight="1.0"/>
+<edge source="2045" target="2044" label="脸黑的我该怎么过五关斩六将但是太好玩了忙活了半天适合来一把然后第二把第三把第四把啊救命我停不下来了Face black how I should go through five to cut a six But its so much fun its a good time to have a good day and then the second the third the fourth Help I cant stop Machine translation hahaha 颜黒私间面白适慌半日第二把第三第四把救命私止机械翻訳" weight="1.0"/>
+<edge source="2046" target="2044" label="玩的时候总有一种手机QQ响了的错觉实际上有游戏内部音效不要被坑了" weight="1.0"/>
+<edge source="2051" target="2044" label="玩过以撒和泰坦之魂以撒经过200有些未记录的游戏时间的锻炼还经常打不通的水平因为是boss苦手泰坦之魂也是只刷过一个boss的水平在这里目前只能过第一关不看测评我永远不会知道这游戏有五关哭哭哪天能看见第五个boss我就心满意足啦虽然苦手但是推荐喜欢挑战这种一不留神就死翘的游戏哈哈好像有莫名的抖M特质" weight="1.0"/>
+<edge source="2053" target="2044" label="我要中文我要中文CHINESECHINESE" weight="1.0"/>
+<edge source="13300" target="2044" label="太难" weight="1.0"/>
+<edge source="1329" target="3261" label="抢先体验版本评测太长不看北境是一款糅合了生存4X即时战略等多元素类型难度硬核策略受限的简化版类工人物语类佳作注意因为我太菜了所以没有体验多人模式听前辈说节奏很快如果有描述不当的地方请原谅 硬核的游戏难度和持续的生存挑战 流畅的操作感和出色的单位响应速度多样的胜利方式与策略方向选择 出色的风格化画面细节与音效表现 持续接受玩家意见并保持更新热情的制作组 策略受限的设计与相对流程化的选择 不同部落种族差异过小 简化的机制和杂乱的元素导致RTS核心特质的缺失目前游戏还处于EA阶段没有战役模式即将上线这并不是RTS本节仅起到情感铺垫作用与游戏内容无关我爱RTS各种类型的RTS都喜欢不论是英雄连战锤战争黎明的真实动作与占点还是星际争霸魔兽争霸命令与征服的快节奏与竞技性还是国家的崛起帝国时代的历史传承感还是冲突世界战争游戏红龙的战场模拟还是工人物语要塞的精细化经济系统还是王权Majesty的自动AI还是家园太阳帝国的原罪的太空战斗还是全战的大规模兵团控制 等等等等全都可以乐在其中然而然而一夜之间所有开发者突然都不会做RTS了我从不信所谓的RTS已死的论调因为这只是所有不会做RTS的开发组的借口不要说超越了他们就连接近任意一部经典作品的水平都做不到很多就连RTS的根本特性指哪打哪都能缺失看到那些捉急的寻路系统与编队系统无比迟钝的单位响应真是令人欲哭无泪其实RTS玩家想要的很简单哪怕只是经典作品的重制都可以引来巨大关注例如今年的星际争霸重制和明年的帝国时代1和2的重制哪怕什么都不做只是看两大坨兵打乱战都可以满足毫无游戏性的Ultimate Epic Battle Simulator都可以卖那么好但制作组知道的只是一味的简化简化简化建造省了单位省了最后连战斗也省掉算了创新创新创新向流行元素例如MOBA靠拢干脆哪天再做个大逃杀RTS好了然而细节越来越粗糙节奏越来越慢系统越来越简单最后连RTS最基本的乐趣都消失了RTS新作现在只剩下星际2被两个大谐星撑着和全战系列还算可以玩其实今年上市的RTS新作并不少但没有一部真正达到了期望提起那一系列经典作品续作的滑铁卢就令人掩面突袭4哥萨克3战锤战争黎明3等说好听点是情怀平庸作说难听点根本就是狗尾续貂其他的佳作也有不少但都差那么一点咒语力量3还可以但仅就是还可以而已尾牙这翻译质量非常出色但体量较小光环战争评分很高但为兼容手柄简化太多接下来该期待什么质量过硬融合了塔防元素的They Are Billions看起来唯一值得期待的的帝国时代4还是永无止境的全战续作对于RTS玩家而言选择真的不多了已经没有什么值得去爱了回归正题本作北境是一款出色的独立游戏类型上参考了很多经典游戏是一个综合类型的杂糅体但我在20小时的游戏进程后虽然深深沉浸其中但依然不认为这能算作即时战略游戏不是RTS那是什么如果真的要找一个类比的话北境可以算是加入策略生存4X等元素但被套上枷锁的简化版工人物语我相信你可以和我一样喜欢上它但前提是不要将其当作传统RTS来看如果看商店介绍和相关评测虽然糅合了许多元素提及最多的就是4X和桌游但这本质是依然是一款RTS游戏真的是这样吗北境最大的特点是整个地图被划分成了多个区块解锁区块需要逐次提高的食物资源且每个区块的建筑数量和资源类型都被严格限定只有先派遣侦察员来探索该区域之后才能访问新的区域不然连战斗单位都不能进入而使用食物资源解锁后才能在新区域建筑和采集资源这些资源有提供食物的鱼塘猎场和农田提供知识用于解锁科技的石圈提供建筑升级资源的石矿和提供工具升级的铁矿等即使是一块什么资源都没有的空地也有额外建筑的价值此外还有很多特殊的区块有些提供了特殊的贸易资源有些提供了额外的胜利条件但所有这些区域依据重要程度都有强度不同的野怪把守只有全部消灭掉才能占领游戏中无法建造新的单位只能由主基地自动产生公民产生的频率由快乐度等指标决定住房人口不能被限制住公民可以在不同的功能建筑转化成为农民渔民伐木工侦查员和战斗等单位可以转换任意多次但大部分转职都需要消耗一定的资源游戏有多种胜利方式可以通过传统的区域征服模式来获胜也可以通过借鉴文明和帝国时代系列的知识贸易等多样方式胜利此外还有铸造武器等许多特殊胜利事件所以玩家可以根据情况在游戏进程中随时调整策略选择最佳的胜利方式生存元素是游戏主要的难点屏幕左下角有一个季节滚动日历实时显示季节变化时间表和预计产生的影响而冬季则是最大的考验当霜冻来临时食物和木材柴火资源都会以极快的速度消耗食物资源无法采集或变慢自然灾害与疫病不时发生战士会在雪地遭受惩罚等等如果在夏季的规划不当很容易在这个阶段game over所以玩家的前几局必定是一个试错的过程因为大多数时间战斗还未开始就会被严酷的大自然击败由于这些硬核的设计导致了持续的生存压力和稀缺的公民资源贯穿始终除非放弃生存去rush不然战斗单位必然很少每座战斗建筑仅能提供34的战斗人口导致中后期的一坨大部队也就是几十个而已虽然游戏的操作十分流畅单位的寻路系统也有很出色的表现伤员后拉这样的传统操作也能很好的影响战斗结果但这样的时刻实在太少了玩家大多数时间只是在与寒冷疾病和食物短缺战斗RTS特性实在有限策略受限的设计随着游戏持续更新越来越多的玩点和胜利方式被添加了进来加上愈发复杂的机制感觉游戏应该有形态各异的各类玩法和策略但实际体验却很微妙由于战斗单位规模的严格限制导致良好的微操作并不能带来胜利所以发展流程就成为了重中之重但由于选择的有限必须步步小心一次错误的决策就会导致满盘皆输玩家在游戏进程中会发现如果不及时将药草屋升级到二级并且升级萨满就一定会在下一次疫病爆发时游戏结束一次草率的扩张就会导致食物短缺从而在下一次冬天游戏结束一次不必要的建筑升级就会导致木材耗尽从而在下一次冬天战败这样的小失误几乎是无法挽回的因为游戏有一套设计过的连锁效应系统缺少食物和柴火就会导致快乐度急剧减少快乐度减少会导致食物木材减产并且公民产出停滞疫病会不断传染直到全员死亡地震烧毁的房屋会一直燃烧直到崩塌而由于单位和生产的停滞熬过这样的危机几乎不可能这些因素互相影响最终陷入无法挽回的死循环玩家除了认输重开新局以外没有其他的选择所以预防所有的灾害发生并且时刻小心翼翼的保持食物与木材储备就变成了唯一的选择这一定会很受硬核玩家的赞赏然而久而久之玩家就会总结出一套固定的流程必须在X时刻拖动N个公民去伐木必须在X时刻派出N个侦查员 太多的必须因为不这样做就会在敌人接近之前自己认输当总结出一套流程后游戏可以很容易过渡到后期但是玩家会感觉到自己全程就像被套上了手铐脚镣一样步步受限值得欣慰的是随机生成的地图和资源类型会在很大程度上影响玩法玩家可以根据资源分布选择适当的胜利条件作为发展策略游戏有多部落设计不同的部落间虽然差异不大大多数建筑与单位都一样但是都有适合某一种特定玩法的特质从而在使用不同部落时游戏策略有很大差异性由于探索和资源对于区块扩张的严格限制而且单位的移动速度相对缓慢导致不熟悉的情况下单局游戏时间通常都十分冗长对于新人来说几个小时都结束不了一局是家常便饭但听前辈说网上的高手对战通常都在半小时之内且十分精彩也许体验后之后会有截然不同的感觉游戏节奏紧凑玩家不能在任意时刻放松警惕所以不知不觉就会沉迷其中细节与质量Shiro Games这个来自法国葡萄酒之乡波尔多的独立制作组并不是十分出名但提起前作进化之地12玩家们应该都很熟悉这一次他们初尝北欧神话风格的游戏继承了其一贯的卡通风格与用心的细节设计又一次交出了令人满意的答卷北境在画面表现和音乐音效上维持了一贯的高水准在这方面大可放心所有角色都有男女之分生产过程和转职都十分顺畅没有被分配职业时小人们也会就地收集食物没有了闲置单位之说所以观察这些小人忙碌的工作就有很大的乐趣但由于其卡通化的风格和初始区块的限制让我在一开始有了加强版部落战争的错觉差点弃了快一年的时间过去了开发组依然保持着很高的更新频率不停润色着游戏社区玩家的各类建议都被认真考虑从游戏刚发布时的3个种族现在已经扩充6个还会继续更新承诺的多人游戏已经加入战役初章也即将上线北境已经有条不紊的逐渐接近完成体成功者准则好消息是制作组在销量上取得了初步成功这就意味着他们获得了相对充足的资金而有了资金就可以保持热情对游戏做出持续的改进所以在成品质量上不应有过多怀疑众所周知购买一款成功者的EA游戏总比购买一个在生存线上挣扎的EA游戏要靠谱得多总体而言这是一部值得购入的佳作但却不是我一直期待中的RTS而是一个崭新的类型期待制作组能够如期高质量的完成明年的正式版发布和战役模式而我则会继续满怀希望的等待下一款真正的RTS佳作出现" weight="1.0"/>
+<edge source="1348" target="1343" label="请正视这条留言优化真的很差但是并不代表我玩不下去如果你一直不优化的话我就滚回去玩彩6了" weight="1.0"/>
+<edge source="2049" target="2044" label="各方面都挺好继续努力做的更好" weight="1.0"/>
+<edge source="2050" target="2044" label="之前买完就没怎么玩一直玩有汉化的盗版了求官方中文啊过来好评一发" weight="1.0"/>
+<edge source="1147" target="1343" label="PVP什么的不存在的光打电脑就够我玩几年游戏里的AI是我玩过的所有FPS游戏里最棒的没有之一你将要对付的电脑AI精通技能一枪爆头火瓶砸脸绕后爆菊手雷三杀皮卡索命而你将会碰到的玩家队友精通技能人体描边炮火TK后撤堵路踹门自杀守点不进这个游戏的PVE模式真正的让我领教到了什么叫做不怕神一样的对手就怕猪一样的队友吐血推荐" weight="1.0"/>
+<edge source="1345" target="1343" label="开挂的卖挂的国人  丢死你仙人勒老脸咯   操your mothers " weight="1.0"/>
+<edge source="1346" target="1343" label="请立刻马上加入举报功能亚洲区每居游戏几乎都有外挂" weight="1.0"/>
+<edge source="1350" target="1343" label="我想举报AI透视自瞄走位手榴弹燃烧瓶RPG堪比卫星定位准度直接糊你一脸我甚至怀疑子弹多会拐弯当我一个人开本地游戏时我是怎么死的多不知道" weight="1.0"/>
+<edge source="2048" target="2044" label="难度挺大第一层还没有过" weight="1.0"/>
+<edge source="1347" target="1343" label="游戏是个好游戏但是万人血书你们继续做优化还有把枪声不断这个bug修复了脑瓜子疼110000" weight="1.0"/>
+<edge source="1351" target="1343" label="万人血书求优化我们需要游戏优化We need game optimizationNous avons besoin dune optimisation des jeuxNecesitamos optimizar el juegoWir brauchen Spieloptimierung" weight="1.0"/>
+<edge source="2047" target="2044" label="非常棒的Rogue类游戏真的非常推荐不过游戏用手柄玩感觉很不好控制瞄准可能是我手比较残的缘故不过还是很推荐的不要犹豫了赶紧买买买" weight="1.0"/>
+<edge source="2052" target="2044" label="真心好玩 这种类型游戏真的好好玩0 0  可惜我英语不好" weight="1.0"/>
+<edge source="2533" target="990" label="抢先体验版本评测一颗尚未雕琢完成的钻石前言作为一款尚属于抢先体验模式下的游戏来说Oxygen Not Included缺氧非同凡响我把这款游戏看作一颗尚未雕琢完成的钻石非常看好它的前景最近难得忙里偷闲沉迷了两日玩到废寝忘食不说我甚至不想浪费时间来写评测生怕耽误了我玩游戏好想一直玩下去啊后来想了想把好游戏推荐给大家也是一种责任所以挤了挤时间写下这篇文字作为一名非专业级策略模拟类游戏爱好者我觉得这款游戏非常赞游戏里的系统和设计理念很有想法就是跟开发商Klei Entertainment制作的另一款同样属于生存策略类游戏Dont Starve Together饥荒来比较在我看来也毫不逊色能与业已开发成熟的独立佳作相提并论而且游戏性也不遑多让我觉得真是难能可贵呃对于我这种游戏菜鸟来说能找到一款适合自己的游戏而且还能从中获得成就感实在是殊为不易一锅好汤一般来说游戏开发商在某一游戏领域开发出了一款上佳作品很多时候再推新作时会有意避开原有游戏类型一是连续推出同一类型游戏容易让玩家产生审美疲劳也容易给自己打上不思进取的开发标签二来也会对原先作品造成冲击玩家和游戏媒体自然会拿之前开发的经典与之比较万一新作遭遇滑铁卢就会让之前辛苦赚下的口碑损失殆尽从而万劫不复所以Klei选择在已推出饥荒的前提下继续在生存策略类游戏领域开发新作首先勇气可嘉其实缺氧与饥荒绝非简单重复而是大不同下文会加以说明近年来上市的游戏不像以往都是比较单一的游戏类型为主现在流行多元化的游戏类型务必要求能更好的吸引和服务不同的游戏玩家群体这款游戏也不例外作为一款建造模拟生存类的沙盒游戏游戏揉入了很多游戏元素缺氧这个游戏名字突出生存元素骨架仍是策略模拟这一经典游戏类型模拟类自然少不了建筑建造还是沙盒式的开放世界自然是冒险类游戏为了能与前作饥荒区别开那融入科幻太空模拟自然最好不过再加入幽默和困难等元素既能拉住休闲玩家群体又能抓住硬核玩家群体的心以上多元元素汇入看似成了一锅大杂烩却被klei烹调得有滋有味这等游戏设计功力可不简单作为顶尖策略模拟类游戏开发商不得不佩服一声果然厉害起名新颖对于末日题材来说一般比较注重文明发展史无论背景设定为历史或是科幻题材大多脱离不了类地球的人类文明历史发展过程大都从原始人开始早期吃不饱穿不暖人力不足力量弱小然后文明慢慢起步各种发明发现解锁新技术攀升科技树历经各种艰难险阻一步步发展壮大开枝散叶然后鲸吞兼并其他文明最终称霸世界甚至宇宙对于通晓人类东西方文明发展史且熟读各类末日题材YY小说的我来说这类的生存策略游戏完全就是小儿科根本不在话下嘛直到看到游戏名称缺氧我只想转身说一句对不起打扰了缺氧是什么鬼啊氧气都能缺少的嘛或许是太过重要重要到从没认真思考过氧气这一与人类密切相关却又最容易被忽视的生存元素以至于想当然觉得氧气是理所当然不可缺少的不会也不能出问题啊好吧毕竟不在地球在外星殖民氧气的补给自然是头等大事作为一款带科幻元素的生存游戏不得不说开发商对游戏名称的选择真是拿捏得恰到好处缺氧还用来给游戏命名不得不说这个起名很有想法既然氧气都成了问题那其他生存问题更得让玩家细加思索其他优点游戏里设计的各类系统非常庞杂不止有包含氧气的空气系统还有电力系统食物系统水系统压力系统温度系统生物系统管道系统等等每项系统里还包含有子系统分类之间关系非常复杂环环相扣诸多细节设定非常科学严谨至于音乐音效保持一贯的高水准整体画风也很赞小人造型动作都很萌特别是困了趴着睡觉和饿了大口往嘴巴里塞食物的动作设计得非常可爱这篇评测我不想写成简单的游戏说明所以这些内容只是点到为止具体详情还请玩家在游戏里自行体验这些系统虽然庞杂但是并不晦涩难懂游戏技巧下面简单说一说我挖掘到的10个技巧其实写的时候才发现远远不止10个最后我硬是给塞进10个里面了1开局选人技巧Artist艺术家非常重要鉴于进入游戏后周期随机给的小人可能不容易随机到Creativity创造力很高的属性所以开局选人还是需要保持耐心多点点随机按钮吧毕竟后期急需蒙娜丽莎这样的名画来减压此外前期一个Learning学习属性高的Scientist科学家也很重要可以加快科技方面的研究速度在当前病菌版本对Immunity免疫力的属性要求也比较高下次更新的石油版本可能对这一属性要求会降低至于特性方面记得别选互相抵触的即可比如你找来一个烹饪属性高的厨师却发现他有厨房恐惧症根本不能下厨房又或是找来一个科学家却是个笨蛋不能从事研究工作这样的话就要跳脚了另外用口呼吸这类需要吸入更多氧气以及胃胀气这类施放有毒气体的不良属性坚决不能要2善用有利BUG注不喜运用BUG的玩家请忽略掉此部分内容修仙BUG对提升工作效率十分有效趁还未修复大家还是用用吧可以在前期显著降低游戏难度而BUG门则对于隔绝有害气体和细菌很重要特别是当前病菌版本来说很关键至于具体BUG使用说明请参见本文末尾BUG与平衡部分3简单建造技巧第一天Cot小床Outhouse茅厕取水用的Liquid Bottler压水泵和清洁用的Wash Basin洗手盆最好尽快建好茅厕记得稍稍远离未来的住宿区和工作区记得在厕所相邻位置建上一间洗手盆这样小人每次上完厕所就会很自觉洗手了从幼儿园开始老师就教导我们饭前便后要洗手呀4提前规划前期发电主要靠Manual Generator人力发电机记得旁边建一个Tiny Battery小电池再扯上一根Wire电线这样就可以储存多余电力不会浪费能源了食物的话前期除了收割野生作物外还需要用Plantern Box培植箱栽种作物游戏里设定作物生长周期比较长所以食物部分需要提前规划切莫玩成饥荒跟其他任何策略模拟类游戏一样前期早出Research Station研究台尽快攀升科技总是没错的不过研究台需要400单位的原生金属还需要电力驱动所以记得先挖Copper Ore铜矿和建好人力发电机5生物系统各种生物都有各的妙用具体请自行体验如果不是被它们折腾的太厉害还是放下屠刀不要杀生了记住你玩的是缺氧不是饥荒6注意提示左上角有贴心的小提示多半是当前游戏开局急需解决的问题记得随时查看并尽快解决氧气食物等关系小人生死的基本元素都需要特别注意右上角还有很多可供选择的OVERLAYS滤镜还有当前地图可以直接获取的各类材料数量请特别留心重要材料的数量变化以及及时使用各种分析滤镜来观察周边生态环境变化及时做出预先发展调整建造建筑时部分建筑物可以选用不同的材料来建造注意一下别让稀有材料浪费在建造普通物品上了7收集分类不建立储藏物品的Storage Compactor存储压缩机建好后却不进行储藏分类设定小人是不会主动收集挖掘时掉落的各项资源的不过这些资源不会消失被生物吃掉除外对了作为一个现代文明人垃圾记得分类哦8循环利用瞧见Polluted Water污染的水记得及时用右下角的Mop打扫进行清理并尽早在地图下方位置建好Bottle Emptier瓶装清空器收集起来以免滋生细菌和病毒也就是建好之后把瓶装清空器设置成收集液体受污染的水对了目前防水压最好的是Airflow Tile透气瓷砖因此建立污水池最好地步和两侧全用透气瓷砖搭建安排任务比较多时如果突然遇到需要紧急处理的新任务可以点击屏幕右下方的Prioritize优先度改变顺序这样就能改变安排给小人的任务顺序了如果小人经常自动变更任务比如学习属性高适合做研究的科学家老是跑去踩人力发电机而学习属性一塌糊涂的其他小人却老是霸占研究台不走那可以点左上角的JOBS工作按钮取消小人的错误工作勾选筛选最契合小人属性的工作让他来做9建造美学每个人心目中都有一个哈姆雷特每位玩家的艺术细胞和审美观也不尽相同所以这里自然不会给到你所谓的最科学的建造流程和方法请各位尽情发挥想象力和创造力开创你们的太空殖民地吧呃好吧还是小声说一句一般812格左右呈井字或丰字分布Ladder梯子再向两侧和上下拓展还是比较合适的哈你说你是完美主义者还是强迫症玩家一定要布局美观大方就是管道布线也要一板一眼符合对称美学行都可以小人可以在一格之内攀爬跳跃所以很多地方需要修建瓷砖铺路小人才能穿行和工作10 因地制宜最后请牢记一条看菜下饭因地制宜这是沙盒式的开放世界除非你使用了固定的地图种子不然每局游戏都是随机生成的世界所以切莫被固有的发展套路限制住了请务必根据现有地图的资源分布进行科学化的规划和发展切莫一根筋要学会随机应变哦这款游戏很看重玩家的规划和平衡能力跟现实一样人热了不行冷了不行没氧气不行氧气太多又是浪费没水不行水被污染了也不行没吃的不行吃的太多腐败了也不行没电力不行电力太多又是浪费所有的一切都需要玩家进行平衡这是一款脑力竞技的生存游戏忘记提最为致命的Stress压力系统了现代社会也是一样越是发达的国家和地区社会压力问题就愈加严重现代人压力很大工作上生活上社会上亲朋好友方方面面都会产生各种压力每个人的承受能力不同心理素质也不同有的人天生乐观向上有的人选择信仰走入宗教有的人选择各种降压方法找各种好的比如度假旅行或者不好的方式比如酗酒放松自己有的人会定期光顾心理医生有很多人在重压之下崩溃了甚至引发心理疾病比如抑郁症最后酿成很多社会悲剧现在十一和中秋假期到了大家记得陪陪家人出外旅行一下放松放松当然对我来说宅在家里打游戏也是一种减压方式游戏里也是小人的压力需要时刻注意前期降压的按摩床后期则需要在住房区和工作区摆放大量装饰油画这些都需要创造力属性高的艺术家小人及时制作版本更新记录我查了下游戏自发售以来的大版本更新列表如下观察可知每一次版本大更新都对上一版本过份设定重新进行了平衡大都是让游戏变得更为简便我有些后悔玩这款游戏有些晚早期这些版本都没有体验上虽然会有很多BUG和不平衡的地方但是也是一种特殊体验方式可以体会和享受开发商对这款游戏雕琢和打磨的过程而且也很有挑战性不是吗BUG与平衡当然作为一款尚在抢先体验模式下的游戏来说缺点也是非常明显且不乏致命的1BUG有点多各种说不清道不明的BUG实在有些多无关紧要的有各种贴图和小人动作BUG这些好说不明就里的各种卡死BUG就比较致命了稍有不慎甚至会让你的小人直接殒命比如莫名卡在某个危险角落回不去安全局域遇到这一类的BUG只能提取前一日的存档不过也有一些属于可以善加利用的有益类BUG下面列举两个例子可以极大降低游戏难度当然对使用BUG反感人士请注意回避谢谢A修仙BUG这个BUG可以让你的小人晚上不用上床休息这样自然可以在前期提升非常多的工作效率为了减轻小人压力不建议后期继续使用使用方法游戏开局时有3个小人你可以在第一天建好3张Cot小床然后左键选择小床在展开菜单左边的Assignment分配里把小床分给小人一人一张床再点展开菜单的右下角的Enable Building禁用建筑把小床给禁用掉这样到了第一天晚上小人就不能回到床上睡觉而是趴在地上睡觉但是等到以后到了晚上小人就不再休息而是继续修仙工作到天亮以后相应周期增添新的小人可以陆续增添同数目的小床然后依样画葫芦照旧分配再禁用进行操作即可这样可以非常有效的提升前期的工作效率到了后期还是建议乖乖的设定住宅区让小人安心上床休息吧不然压力系统会教你做人记得在床铺上方挂满艺术家小人创作的油画也就是在Decor装饰里的Blank Canvas空白画布上即兴创作得来的前面让玩家选择小人时尽量选择随机一个创造性属性高的小人用意即在此高属性才能创作出杰作蒙娜丽莎更好的降低小人的压力值嗯这跟人类发展史类似前期资本主义发展时期无限剥削工人增加工作时间和工作强度降低薪资到后面进入文明时期自然劳工们不答应了成立工会或者号召罢工来维权要求降低工时和增加薪酬两厢妥协加上很多的血与泪才有了现在的每天8小时工作制和一周双休啊BBUG门这个BUG可以阻隔危险区域的各种有毒气体避免蔓延到主要的工作区和生活区适用位置这个有点复杂我详细说一下首先需要先在Research研究里解锁Pressure Management压力管理因为里面的其中一种门需要解锁此项科技才能建造然后就是选择放置位置了一般安置在正常区域与有毒有害气体液体区域或是布满Germs细菌的区域临近的狭窄路口也可以安置在人为加瓷砖造成一夫当关万夫莫开的关键路口处制作方法先放上一个左下角Food食物里的Planter Box培植箱然后在上面安置一个左下角Base基础里最后的那个Mechanized Airlock机械阀门等小人建好之后这时点培植箱是不能在上面直接种植作物的接下来你去找一个已经种植好作物的培植箱再左键点击展开菜单里右边的Copy Settings复制设置再返回到刚才建好的机械阀门下方的培植箱用左键拖动刷一下这样就可以种作物了然后就可以在原先放机械阀门的地方再加一道Pneumatic Door气动门等小人建好了这样BUG门就做好了做出来的BUG门可以完美的阻隔有毒有害的气体和液体而且小人还能自由穿行对了制作横向放置的BUG门也是可以的只要下面安放两盆培植箱然后上面横放一个机械阀门再照上面步骤制作好BUG门之后这时可以使用右下角的拆解工具挖掉一个培植箱最后架上梯子就可以做成垂直向的BUG门了这对于向下延伸开发有毒的病菌岩层很有用处2平衡难以解决游戏平衡一直是衡量一款游戏是佳作还是平庸之作的分水岭好的游戏甚至只是平衡做的好其他部分平淡无奇也会获得很高评价这款游戏目前病菌版本来说病菌的威胁过于强大不是一个平衡度很高的游戏版本疾病目前来说过于强力外星文明难以存续不过介于上面提到每次新上线大版本就会对旧版本进行平衡性调整更新所以敬请期待即将上线的石油版本吧如果对游戏里的各类系统平衡非常介意我想可能要到正式版发布之后才能解决吧3缺乏新手引导跟很多西方游戏类似这款游戏对新手玩家的引导过于简略很多都需要玩家在游戏里自行摸索就是左下角的各类建造也是一样很多建筑物都会有副产品或是副作用也几乎没有任何说明不过对于喜欢探索游戏乐趣的玩家来说这条可能不算缺点结束语静水流年未来可期我期待着明年这颗钻石雕琢完工的那一刻应该会光彩照人璀璨夺目吧" weight="1.0"/>
+<edge source="3248" target="5142" label="抢先体验版本评测这个游戏的槽点太多都不知道该从哪里说起穿模严重动作鬼畜广大却单调的世界不堪入目的场景刻画但是游戏人物的配音非常棒那种贫穷感在刚刚进游戏就能感觉的到不过考虑到整个游戏都是一个人做的起的名字又叫沙雕之路游戏里面的内容几乎全都是在玩梗玩的时候不禁让人莞尔一笑看了看其他人的评测于是我就去B站去补了一下同名视频可以肯定这个游戏完全没有购买必要直接去看视频就行了笑因为你玩的感觉没人家视频做的好笑啊正经说一下这个游戏首先对配置的要求太高了显卡要求GTX1070这是什么神仙要求我玩3A大作1070都够了这个配置就导致我四五年前的老平台玩这个游戏卡的不成样子优化问题不过玩这个就是因为看了视频才过来试一试的所以无所谓了最后强调一下这个游戏叫沙雕之路所以这个游戏的沙雕大家都知道没有必要死抓这个凑个热闹玩一玩试一试看看游戏如何沙雕就行了反正馆叔也说了就算买了不喜欢退款也没关系嘛" weight="1.0"/>
+<edge source="13281" target="1343" label="正式服3天就有挂还加让qq群开挂死全家官方也没有举报玩家的地方请重视建设健康游戏环境抵制外挂" weight="1.0"/>
 </edges>
 </graph>
 </gexf>

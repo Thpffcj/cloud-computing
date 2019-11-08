@@ -4,7 +4,7 @@ import java.io.PrintWriter
 import java.util
 
 import com.mongodb.spark.MongoSpark
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.SparkConf
 import org.apache.spark.graphx.{Edge, Graph}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -15,7 +15,7 @@ import scala.util.Random
 /**
  * Created by thpffcj on 2019/11/2.
  */
-object GraphProcess {
+object GraphProcessTest {
 
   val pointMap = new util.HashMap[String, Long]()
   // 评论边
