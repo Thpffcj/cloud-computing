@@ -3,9 +3,10 @@ package cn.edu.nju
 import java.io.PrintWriter
 import java.util
 
+import com.alibaba.fastjson.JSON
 import com.mongodb.spark.MongoSpark
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.graphx.{Edge, Graph}
+import org.apache.spark.graphx.{Edge, Graph, VertexId, VertexRDD}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.bson.Document
@@ -17,20 +18,25 @@ import scala.util.Random
  */
 object GraphProcess {
 
+  // 点集，根据用户id或游戏名找点id
   val pointMap = new util.HashMap[String, Long]()
+
   // 评论边
   val edgeMap1 = new util.HashMap[(Long, Long), String]()
+
   // 时长边
   val edgeMap2 = new util.HashMap[(Long, Long), String]()
-  //  点权重map，根据id得到权重
+
+  //  点权重map，根据图中点id得到权重
   val weightMap = new util.HashMap[Long, Int]()
+
   //  点权重map，根据id得到权重
   val topGameSet = new util.HashSet[Long]()
 
   def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf().setMaster("local[4]").setAppName("GraphProcess")
-    conf.set("spark.mongodb.input.uri", "mongodb://localhost:27017/test.China.reviews")
+    conf.set("spark.mongodb.input.uri", "mongodb://localhost:27017/test.China.reviews_official")
     conf.set("spark.mongodb.input.partitioner", "MongoPaginateBySizePartitioner")
 
     val spark = SparkSession.builder().config(conf).getOrCreate()
@@ -41,84 +47,59 @@ object GraphProcess {
 
     frame.foreach(row => {
 
-      /**
-       * 用户信息
-       * 过滤非法输入符号
-       */
-      val jsonPlayer = row.getAs("user").toString.split(",")
-      var player = ""
-      if (jsonPlayer.length > 2) {
-        player = jsonPlayer(jsonPlayer.length - 1)
-        player = player.substring(0, player.length - 1)
-      } else if (jsonPlayer(0).contains("帐户内")) {
-        player = jsonPlayer(1)
-        player = player.substring(0, player.length - 1)
-      } else {
-        player = jsonPlayer(0)
-        player = player.substring(1, player.length)
-      }
-
+      val gameArray = row.getAs("game").toString.split(",")
+      var game = gameArray(0)
+      game = game.substring(1, game.length)
       // 过滤前端无法识别非法字符，比如表情等
-      val namePatterns1 = "[`~!@#$%^&*()+=|{}':;',\\[\\]<>/?~！@#� \uE009\uF8F5￥%……& amp;*（）——+|{}【】‘；：”“’。，、？]".r
-      val namePatterns2 = "[^\\u4e00-\\u9fa5a-zA-Z0-9]".r
-      player = namePatterns1.replaceAllIn(player, "")
-      player = namePatterns2.replaceAllIn(player, "")
-      if (player.length == 0) {
-        player = "anonymous"
+      val gameNamePatterns = "[^\\u4e00-\\u9fa5a-zA-Z0-9 ]".r
+      // 游戏名称
+      game = gameNamePatterns.replaceAllIn(game, "")
+
+      val jsonAuthor = JSON.parse(row.getAs("author").toString)
+      val authorArray = jsonAuthor.toString.split(",")
+      // 用户id
+      val userId = authorArray(0).substring(1, authorArray(0).length)
+      // 游玩时长
+      val hours = authorArray(3)
+
+      // 评论
+      var review = row.getAs("review").toString
+      val reviewPatterns = "[^\\u4e00-\\u9fa5a-zA-Z0-9 ]".r
+      review = reviewPatterns.replaceAllIn(review, "")
+
+      // 玩家顶点
+      val playerKey = "user_" + userId
+      var playerPoint = 0L
+      if (pointMap.containsKey(playerKey)) {
+        playerPoint = pointMap.get(playerKey)
+        // 权重+1
+        weightMap.put(playerPoint, weightMap.get(playerPoint) + 1)
+      } else {
+        // 点id递增
+        key = key + 1
+        playerPoint = key
+        pointMap.put(playerKey, playerPoint)
+        // 权重赋予1
+        weightMap.put(playerPoint, 1)
       }
 
-      // 过滤用户名过滤后为空的数据
-      if (!player.equals("anonymous")) {
-        // 游戏信息
-        val jsonGame = row.getAs("game").toString.split(",")
-        var game = jsonGame(0).substring(1)
-        game = namePatterns1.replaceAllIn(game, "")
-
-        // 评论
-        var content = row.getAs("content").toString.replace("<br>", "")
-        val contentPatterns = "[^\\u4e00-\\u9fa5a-zA-Z0-9 ]".r
-        content = contentPatterns.replaceAllIn(content, "")
-
-        // 游玩时长
-        val patterns = "[\\u4e00-\\u9fa5]".r  // 匹配汉字
-        val hours = patterns.replaceAllIn(row.getAs("hours").toString, "")
-
-        // 玩家顶点
-        val playerKey = "user_" + player
-        var playerPoint = 0L
-        if (pointMap.containsKey(playerKey)) {
-          playerPoint = pointMap.get(playerKey)
-          // 权重+1
-          weightMap.put(playerPoint, weightMap.get(playerPoint) + 1)
-        } else {
-          key = key + 1
-          playerPoint = key
-          pointMap.put(playerKey, playerPoint)
-          // 权重赋予1
-          weightMap.put(playerPoint, 1)
-        }
-
-        // 游戏顶点
-        val gameKey = "game_" + game
-        var gamePoint = 0L
-        if (pointMap.containsKey(gameKey)) {
-          gamePoint = pointMap.get(gameKey)
-          // 权重+1
-          weightMap.put(gamePoint, weightMap.get(gamePoint) + 1)
-        } else {
-          key = key + 1
-          gamePoint = key
-          pointMap.put(gameKey, gamePoint)
-          // 权重赋予1
-          weightMap.put(gamePoint, 1)
-        }
-
-        edgeMap1.put((playerPoint, gamePoint), content)
-        edgeMap2.put((playerPoint, gamePoint), hours)
+      // 游戏顶点
+      val gameKey = "game_" + game
+      var gamePoint = 0L
+      if (pointMap.containsKey(gameKey)) {
+        gamePoint = pointMap.get(gameKey)
+        // 权重+1
+        weightMap.put(gamePoint, weightMap.get(gamePoint) + 1)
+      } else {
+        key = key + 1
+        gamePoint = key
+        pointMap.put(gameKey, gamePoint)
+        // 权重赋予1
+        weightMap.put(gamePoint, 1)
       }
 
-      // KurokaneSS CODE VEIN 带妹子也就图一乐,打架还得靠云哥
-//      println(player + " " + game + " " + content)
+      edgeMap1.put((playerPoint, gamePoint), review)
+      edgeMap2.put((playerPoint, gamePoint), hours)
     })
 
     // 点集
@@ -134,11 +115,11 @@ object GraphProcess {
     val point_iter = pointSet.iterator
     while (point_iter.hasNext) {
       val key = point_iter.next
-//      println(key)
-      vertexArray = vertexArray :+ (pointMap.get(key), (key.split("_")(0), key.split("_")(1)))
+      val name = key.split("_")
+      vertexArray = vertexArray :+ (pointMap.get(key), (name(0), name(1)))
     }
 
-    // 添加边
+    // 添加评论边
     val edgeSet1 = edgeMap1.keySet()
     // 遍历迭代map
     val edge_iter1 = edgeSet1.iterator
@@ -147,7 +128,7 @@ object GraphProcess {
       edgeArray1 = edgeArray1 :+ Edge(key._1, key._2, edgeMap1.get(key))
     }
 
-    // 添加边
+    // 添加时长边
     val edgeSet2 = edgeMap2.keySet()
     // 遍历迭代map
     val edge_iter2 = edgeSet2.iterator
@@ -163,6 +144,15 @@ object GraphProcess {
 
     // 构造图Graph[VD,ED]
     var contentGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD1)
+
+    // 独立群体检测
+    //    contentGraph.connectedComponents
+    //      .vertices
+    //      .map(_.swap)
+    //      .groupByKey()
+    //      .map(_._2)
+    //      .foreach(println)
+
     // 构建子图，过滤评论为空的边
     contentGraph = contentGraph.subgraph(epred = e => !e.attr.equals(""))
     // 构建子图，过滤游戏权重大于15的
@@ -170,33 +160,42 @@ object GraphProcess {
       ((vd._1.equals("game") & weightMap.get(id) > 15) | (vd._1.equals("user")))
     })
 
-    contentGraph.vertices.foreach(v => {
-      if (v._2._1.equals("game")) {
-        topGameSet.add(v._1)
-      }
+
+    var hourGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD2)
+
+    // TODO 顶点的转换操作，根据用户id寻找用户名称
+    hourGraph = hourGraph.mapVertices {
+      case (id, (types, name)) => (types, name)
+    }
+
+    // 边的转换操作，边的属性*2
+    //    hourGraph.mapEdges(e => e.attr * 2)
+
+
+    hourGraph = hourGraph.subgraph(vpred = (id, vd) => {
+      ((vd._1.equals("game") & weightMap.get(id) > 10) | (vd._1.equals("user")))
+    })
+
+    // 度数>0的点集
+    val degreeArray = hourGraph.degrees.filter(_._2 > 1).map(_._1).collect()
+//    degreeArray.foreach(x => println(x))
+
+    // 去除孤立的点
+    hourGraph = hourGraph.subgraph(vpred = (id, vd) => {
+      degreeArray.contains(id)
     })
 
 
 
-    // 经过过滤后有些顶点是没有边，所以采用leftOuterJoin将这部分顶点去除
-//    val vertices = contentGraph.vertices.leftOuterJoin(vertex).map(x => (x._1, x._2._2.getOrElse("")))
-//    val newGraph: Graph[(String, String), String] = Graph(vertices, edge)
-
-
-    val hourGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD2)
-
-    contentGraph.vertices.foreach(println(_))
-//    println(hourGraph.toString)
-
     // 输出到文件
     val outputPath = "src/main/resources/"
-//    val pw1 = new PrintWriter(outputPath + "hours.xml")
-//    pw1.write(hoursToGexf(hourGraph))
-//    pw1.close()
-
-    val pw2 = new PrintWriter(outputPath + "steam.gexf")
-    pw2.write(gameToGexf(contentGraph))
-    pw2.close()
+    val pw1 = new PrintWriter(outputPath + "hours.gexf")
+    pw1.write(hoursToGexf(hourGraph))
+    pw1.close()
+    //
+    //    val pw2 = new PrintWriter(outputPath + "steam.gexf")
+    //    pw2.write(gameToGexf(contentGraph))
+    //    pw2.close()
 
     spark.close()
   }
@@ -229,6 +228,7 @@ object GraphProcess {
 
   /**
    * 用户-游戏图，相比底下的图需要指定x,y的坐标
+   *
    * @param graph
    * @tparam VD
    * @tparam ED
@@ -263,7 +263,7 @@ object GraphProcess {
           "<viz:size value=\"" + weightMap.get(v._1) + "\"></viz:size>\n" +
           // (x, y) 坐标
           "<viz:position x=\"" + (Random.nextInt(20000) - 10000).toString + "\" y=\"" + (Random.nextInt(20000) - 10000).toString + "\" z=\"0.0\"></viz:position>\n" +
-          "<viz:color " + color +"></viz:color>\n" +
+          "<viz:color " + color + "></viz:color>\n" +
           "</node>\n"
       }).collect().mkString +
       "</nodes>\n  " +
@@ -277,7 +277,7 @@ object GraphProcess {
   }
 
   /**
-   * 输出为指定gexf格式
+   * 时间输出为指定gexf格式
    *
    * @param graph ：图
    * @tparam VD
@@ -306,12 +306,12 @@ object GraphProcess {
           color = "r=\"236\" g=\"181\" b=\"72\""
           attvalue = 0
         }
-        "<node id=\"" + v._1 + "\" label=\"" + types + "-" + name + "\">\n" +
+        "<node id=\"" + v._1 + "\" label=\"" + name + "\">\n" +
           "<attvalues>\n" +
           "<attvalue for=\"modularity_class\" value=\"" + attvalue + "\"></attvalue>\n" +
           "</attvalues>\n" +
           "<viz:size value=\"" + weightMap.get(v._1) + "\"></viz:size>\n" +
-          "<viz:color " + color +"></viz:color>\n" +
+          "<viz:color " + color + "></viz:color>\n" +
           "</node>\n"
       }).collect().mkString +
       "</nodes>\n  " +
