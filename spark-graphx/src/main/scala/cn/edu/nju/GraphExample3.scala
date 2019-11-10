@@ -9,7 +9,7 @@ import org.apache.spark.{SparkConf, SparkContext}
  * 图计算官网案例示范
  * 主要解决项目中遇到的 把同一个用户识别出来，如果是同一个用户就合并到一起
  */
-object ConnectedComponentsExample {
+object GraphExample3 {
 
   def main(args: Array[String]): Unit = {
 

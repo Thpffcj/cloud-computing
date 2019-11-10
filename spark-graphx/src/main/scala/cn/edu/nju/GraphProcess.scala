@@ -5,11 +5,13 @@ import java.util
 
 import com.alibaba.fastjson.JSON
 import com.mongodb.spark.MongoSpark
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx.{Edge, Graph, VertexId, VertexRDD}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.bson.Document
+import org.slf4j.LoggerFactory
 
 import scala.util.Random
 
@@ -38,6 +40,7 @@ object GraphProcess {
     val conf = new SparkConf().setMaster("local[4]").setAppName("GraphProcess")
     conf.set("spark.mongodb.input.uri", "mongodb://localhost:27017/test.China.reviews_official")
     conf.set("spark.mongodb.input.partitioner", "MongoPaginateBySizePartitioner")
+    conf.set("spark.mongodb.output.uri", "mongodb://localhost:27017/test.steam.graph_vertice")
 
     val spark = SparkSession.builder().config(conf).getOrCreate()
 
@@ -58,9 +61,9 @@ object GraphProcess {
       val jsonAuthor = JSON.parse(row.getAs("author").toString)
       val authorArray = jsonAuthor.toString.split(",")
       // 用户id
-      val userId = authorArray(0).substring(1, authorArray(0).length)
+      val userId = authorArray(2)
       // 游玩时长
-      val hours = authorArray(3)
+      val hours = authorArray(0).substring(1, authorArray(0).length)
 
       // 评论
       var review = row.getAs("review").toString
@@ -102,6 +105,9 @@ object GraphProcess {
       edgeMap2.put((playerPoint, gamePoint), hours)
     })
 
+
+    println("foreach 结束")
+
     // 点集
     var vertexArray = Seq((0L, ("test", "test")))
     // 评论边
@@ -119,6 +125,8 @@ object GraphProcess {
       vertexArray = vertexArray :+ (pointMap.get(key), (name(0), name(1)))
     }
 
+    println("遍历点集结束")
+
     // 添加评论边
     val edgeSet1 = edgeMap1.keySet()
     // 遍历迭代map
@@ -127,6 +135,8 @@ object GraphProcess {
       val key = edge_iter1.next
       edgeArray1 = edgeArray1 :+ Edge(key._1, key._2, edgeMap1.get(key))
     }
+
+    println("遍历评论边结束")
 
     // 添加时长边
     val edgeSet2 = edgeMap2.keySet()
@@ -137,6 +147,8 @@ object GraphProcess {
       edgeArray2 = edgeArray2 :+ Edge(key._1, key._2, edgeMap2.get(key))
     }
 
+    println("遍历结束")
+
     // 构造vertexRDD和edgeRDD
     val vertexRDD: RDD[(Long, (String, String))] = spark.sparkContext.parallelize(vertexArray)
     val edgeRDD1: RDD[Edge[String]] = spark.sparkContext.parallelize(edgeArray1)
@@ -145,23 +157,30 @@ object GraphProcess {
     // 构造图Graph[VD,ED]
     var contentGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD1)
 
-    // 独立群体检测
-    //    contentGraph.connectedComponents
-    //      .vertices
-    //      .map(_.swap)
-    //      .groupByKey()
-    //      .map(_._2)
-    //      .foreach(println)
+    println("构造contentGraph结束")
 
     // 构建子图，过滤评论为空的边
     contentGraph = contentGraph.subgraph(epred = e => !e.attr.equals(""))
-    // 构建子图，过滤游戏权重大于15的
+    // 构建子图，过滤游戏权重大于10的
     contentGraph = contentGraph.subgraph(vpred = (id, vd) => {
-      ((vd._1.equals("game") & weightMap.get(id) > 15) | (vd._1.equals("user")))
+      ((vd._1.equals("game") & weightMap.get(id) > 10) | (vd._1.equals("user")))
     })
 
+    // 度数>3的点集
+    val contentDegreeArray = contentGraph.degrees.filter(_._2 > 1).map(_._1).collect()
 
+    // 去除度数符合规定的点
+    contentGraph = contentGraph.subgraph(vpred = (id, vd) => {
+      contentDegreeArray.contains(id)
+    })
+
+    println("处理contentGraph结束")
+
+
+    // 时长图
     var hourGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD2)
+
+    println("构造hourGraph结束")
 
     // TODO 顶点的转换操作，根据用户id寻找用户名称
     hourGraph = hourGraph.mapVertices {
@@ -177,14 +196,37 @@ object GraphProcess {
     })
 
     // 度数>0的点集
-    val degreeArray = hourGraph.degrees.filter(_._2 > 1).map(_._1).collect()
-//    degreeArray.foreach(x => println(x))
+    val hourDegreeArray = hourGraph.degrees.filter(_._2 > 1).map(_._1).collect()
 
     // 去除孤立的点
     hourGraph = hourGraph.subgraph(vpred = (id, vd) => {
-      degreeArray.contains(id)
+      hourDegreeArray.contains(id)
     })
 
+    println("处理hourGraph结束")
+
+    // 独立群体检测
+    //    hourGraph.connectedComponents
+    //      .vertices
+    //      .map(_.swap)
+    //      .groupByKey()
+    //      .map(_._2)
+    //      .foreach(println)
+
+    /**
+     * 将点数据写入MongoDB
+     * Spark的算子是在executor上执行的，数据也是放在executor上。executor和driver并不在同一个jvm（local[*]除外），
+     * 所以算子是不能访问在driver上的SparkSession对象
+     * 如果一定要“在算子里访问SparkSession”，那你只能把数据collect回Driver，然后用Scala 集合的算子去做。这种情况下只能适
+     * 用于数据量不大（多大取决于你分配给Driver的内存）
+     */
+    //    hourGraph.vertices.collect.foreach(v => {
+    //
+    //      val id = v._1.toString
+    //      val name = v._2.toString
+    //
+    //      writeVerticesToMongodb(spark, id, name)
+    //    })
 
 
     // 输出到文件
@@ -192,10 +234,10 @@ object GraphProcess {
     val pw1 = new PrintWriter(outputPath + "hours.gexf")
     pw1.write(hoursToGexf(hourGraph))
     pw1.close()
-    //
-    //    val pw2 = new PrintWriter(outputPath + "steam.gexf")
-    //    pw2.write(gameToGexf(contentGraph))
-    //    pw2.close()
+
+    val pw2 = new PrintWriter(outputPath + "steam.gexf")
+    pw2.write(gameToGexf(contentGraph))
+    pw2.close()
 
     spark.close()
   }
@@ -203,27 +245,16 @@ object GraphProcess {
   /**
    * 数据写入MongoDB
    */
-  def writeToMongodb() = {
+  def writeVerticesToMongodb(spark: SparkSession, id: String, name: String) = {
 
-    val spark = SparkSession.builder()
-      .master("local")
-      .appName("MongoDBProcess")
-      .config("spark.mongodb.output.uri", "mongodb://127.0.0.1/test.China.graph")
-      .getOrCreate()
+    val document = new Document()
+    document.append("verticeId", id).append("name", name)
 
-    // 设置log级别
-    spark.sparkContext.setLogLevel("WARN")
-
-    val document1 = new Document()
-    document1.append("name", "sunshangxiang").append("age", 18).append("sex", "female")
-
-    val seq = Seq(document1)
+    val seq = Seq(document)
     val df = spark.sparkContext.parallelize(seq)
 
     // 将数据写入mongo
     MongoSpark.save(df)
-
-    spark.stop()
   }
 
   /**
