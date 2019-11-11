@@ -2,43 +2,51 @@ package cn.edu.nju
 
 import java.io.PrintWriter
 import java.util
+import java.util.concurrent.ConcurrentHashMap
 
 import com.alibaba.fastjson.JSON
 import com.mongodb.spark.MongoSpark
-import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx.{Edge, Graph, VertexId, VertexRDD}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.bson.Document
-import org.slf4j.LoggerFactory
 
 import scala.util.Random
 
 /**
  * Created by thpffcj on 2019/11/2.
+ * hours_3_10W 53 160
+ * steam_3_10W 53 160
+ * hours_5_20W 98 464
+ * steam_5_20W 96 452
+ * hours_7_30W 103 535
+ * steam_7_30W 103 535
+ * hours_6_30W 103 535
+ * steam_6_30W 103 535
+ *
  */
 object GraphProcess {
 
   // 点集，根据用户id或游戏名找点id
-  val pointMap = new util.HashMap[String, Long]()
+  // user_76561198380840992 1L
+  // game_CODE VEIN 2L
+  val pointMap = new ConcurrentHashMap[String, Long]()
 
   // 评论边
-  val edgeMap1 = new util.HashMap[(Long, Long), String]()
+  val edgeMap1 = new ConcurrentHashMap[(Long, Long), String]()
 
   // 时长边
-  val edgeMap2 = new util.HashMap[(Long, Long), String]()
+  val edgeMap2 = new ConcurrentHashMap[(Long, Long), String]()
 
   //  点权重map，根据图中点id得到权重
-  val weightMap = new util.HashMap[Long, Int]()
-
-  //  点权重map，根据id得到权重
-  val topGameSet = new util.HashSet[Long]()
+  // 1L 10
+  val weightMap = new ConcurrentHashMap[Long, Int]()
 
   def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf().setMaster("local[4]").setAppName("GraphProcess")
-    conf.set("spark.mongodb.input.uri", "mongodb://localhost:27017/test.China.reviews_official")
+    conf.set("spark.mongodb.input.uri", "mongodb://localhost:27017/test.China.reviews_official_30W")
     conf.set("spark.mongodb.input.partitioner", "MongoPaginateBySizePartitioner")
     conf.set("spark.mongodb.output.uri", "mongodb://localhost:27017/test.steam.graph_vertice")
 
@@ -48,7 +56,8 @@ object GraphProcess {
 
     var key = 0L
 
-    frame.foreach(row => {
+    // 需要collect到一个节点上，key递增
+    frame.collect().foreach(row => {
 
       val gameArray = row.getAs("game").toString.split(",")
       var game = gameArray(0)
@@ -61,9 +70,9 @@ object GraphProcess {
       val jsonAuthor = JSON.parse(row.getAs("author").toString)
       val authorArray = jsonAuthor.toString.split(",")
       // 用户id
-      val userId = authorArray(2)
+      val userId = authorArray(4)
       // 游玩时长
-      val hours = authorArray(0).substring(1, authorArray(0).length)
+      val hours = authorArray(5)
 
       // 评论
       var review = row.getAs("review").toString
@@ -79,8 +88,10 @@ object GraphProcess {
         weightMap.put(playerPoint, weightMap.get(playerPoint) + 1)
       } else {
         // 点id递增
-        key = key + 1
-        playerPoint = key
+        this.synchronized {
+          key = key + 1
+          playerPoint = key
+        }
         pointMap.put(playerKey, playerPoint)
         // 权重赋予1
         weightMap.put(playerPoint, 1)
@@ -94,19 +105,39 @@ object GraphProcess {
         // 权重+1
         weightMap.put(gamePoint, weightMap.get(gamePoint) + 1)
       } else {
-        key = key + 1
-        gamePoint = key
+        this.synchronized {
+          key = key + 1
+          gamePoint = key
+        }
         pointMap.put(gameKey, gamePoint)
         // 权重赋予1
         weightMap.put(gamePoint, 1)
       }
 
+//      println(gameKey + " " + gamePoint)
+
+
+//      println("---------")
+//      println(playerPoint)
+//      println(gamePoint)
+
       edgeMap1.put((playerPoint, gamePoint), review)
       edgeMap2.put((playerPoint, gamePoint), hours)
     })
 
-
     println("foreach 结束")
+
+//    val weightSet = weightMap.keySet()
+//    val weight_iter = weightSet.iterator
+//    while (weight_iter.hasNext) {
+//      val key = weight_iter.next
+//      if (weightMap.get(key) > 5000) {
+//        println("----------")
+//        println(key)
+//        println(weightMap.get(key))
+//        println("-----------")
+//      }
+//    }
 
     // 点集
     var vertexArray = Seq((0L, ("test", "test")))
@@ -117,7 +148,7 @@ object GraphProcess {
 
     // 添加点
     val pointSet = pointMap.keySet()
-    // 遍历迭代map
+    // TODO 遍历迭代map，这个阶段非常耗时，如何改进？
     val point_iter = pointSet.iterator
     while (point_iter.hasNext) {
       val key = point_iter.next
@@ -166,16 +197,20 @@ object GraphProcess {
       ((vd._1.equals("game") & weightMap.get(id) > 10) | (vd._1.equals("user")))
     })
 
-    // 度数>3的点集
-    val contentDegreeArray = contentGraph.degrees.filter(_._2 > 1).map(_._1).collect()
+    val degreeThreshold = 6
+    // 度数>degreeThreshold的点集
+    val contentDegreeArray = contentGraph.degrees.filter(_._2 > degreeThreshold).map(_._1).collect()
 
-    // 去除度数符合规定的点
+    // 保留度数符合规定的点
     contentGraph = contentGraph.subgraph(vpred = (id, vd) => {
       contentDegreeArray.contains(id)
     })
 
-    println("处理contentGraph结束")
+    // 边的转换操作，去除前端无法识别的字符，如评论表情等
+    val reviewPatterns = "[^\\u4e00-\\u9fa5a-zA-Z0-9 ]".r
+    contentGraph.mapEdges(e => e.attr = reviewPatterns.replaceAllIn(e.attr, ""))
 
+    println("处理contentGraph结束")
 
     // 时长图
     var hourGraph: Graph[(String, String), String] = Graph(vertexRDD, edgeRDD2)
@@ -187,16 +222,12 @@ object GraphProcess {
       case (id, (types, name)) => (types, name)
     }
 
-    // 边的转换操作，边的属性*2
-    //    hourGraph.mapEdges(e => e.attr * 2)
-
-
     hourGraph = hourGraph.subgraph(vpred = (id, vd) => {
       ((vd._1.equals("game") & weightMap.get(id) > 10) | (vd._1.equals("user")))
     })
 
     // 度数>0的点集
-    val hourDegreeArray = hourGraph.degrees.filter(_._2 > 1).map(_._1).collect()
+    val hourDegreeArray = hourGraph.degrees.filter(_._2 > degreeThreshold).map(_._1).collect()
 
     // 去除孤立的点
     hourGraph = hourGraph.subgraph(vpred = (id, vd) => {
@@ -206,12 +237,12 @@ object GraphProcess {
     println("处理hourGraph结束")
 
     // 独立群体检测
-    //    hourGraph.connectedComponents
-    //      .vertices
-    //      .map(_.swap)
-    //      .groupByKey()
-    //      .map(_._2)
-    //      .foreach(println)
+    hourGraph.connectedComponents
+      .vertices
+      .map(_.swap)
+      .groupByKey()
+      .map(_._2)
+      .foreach(println)
 
     /**
      * 将点数据写入MongoDB
@@ -220,22 +251,22 @@ object GraphProcess {
      * 如果一定要“在算子里访问SparkSession”，那你只能把数据collect回Driver，然后用Scala 集合的算子去做。这种情况下只能适
      * 用于数据量不大（多大取决于你分配给Driver的内存）
      */
-    //    hourGraph.vertices.collect.foreach(v => {
-    //
-    //      val id = v._1.toString
-    //      val name = v._2.toString
-    //
-    //      writeVerticesToMongodb(spark, id, name)
-    //    })
+    hourGraph.vertices.collect.foreach(v => {
+
+      val id = v._1.toString
+      val name = v._2.toString
+
+      writeVerticesToMongodb(spark, id, name)
+    })
 
 
     // 输出到文件
     val outputPath = "src/main/resources/"
-    val pw1 = new PrintWriter(outputPath + "hours.gexf")
+    val pw1 = new PrintWriter(outputPath + "steam/hours_6_30W.gexf")
     pw1.write(hoursToGexf(hourGraph))
     pw1.close()
 
-    val pw2 = new PrintWriter(outputPath + "steam.gexf")
+    val pw2 = new PrintWriter(outputPath + "steam/steam_6_30W.gexf")
     pw2.write(gameToGexf(contentGraph))
     pw2.close()
 
@@ -243,12 +274,27 @@ object GraphProcess {
   }
 
   /**
-   * 数据写入MongoDB
+   * 点数据写入MongoDB
    */
   def writeVerticesToMongodb(spark: SparkSession, id: String, name: String) = {
 
     val document = new Document()
     document.append("verticeId", id).append("name", name)
+
+    val seq = Seq(document)
+    val df = spark.sparkContext.parallelize(seq)
+
+    // 将数据写入mongo
+    MongoSpark.save(df)
+  }
+
+  /**
+   * 边据写入MongoDB
+   */
+  def writeEdgesToMongodb(spark: SparkSession, srcId: String, dstId: String, attr: String) = {
+
+    val document = new Document()
+    document.append("srcId", srcId).append("dstId", dstId).append("attr", attr)
 
     val seq = Seq(document)
     val df = spark.sparkContext.parallelize(seq)

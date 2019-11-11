@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+<graph defaultedgetype="directed" mode="static">
+<attributes class="node" mode="static">
+<attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+</attributes>
+<nodes>
+ <node id="75752" label="76561198097664968">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="9086" y="670" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="76768" label="76561198210071884">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-3205" y="9939" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="3836" label="CounterStrike Global Offensive">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="236" y="6150" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="23800" label="PLAYERUNKNOWNS BATTLEGROUNDS">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="9696" y="-5172" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="1776" label="76561198280012481">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="4381" y="-6226" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="75272" label="76561198195475359">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-3693" y="-5205" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="21436" label="76561198214706041">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="6894" y="-4042" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="43520" label="Dota 2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="-2603" y="-8908" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="105500" label="theHunter Call of the Wild">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="8479"></viz:size>
+<viz:position x="-5237" y="1573" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="82184" label="76561198137856415">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-9155" y="-943" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="84388" label="76561198292729315">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="4806" y="9646" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="98252" label="76561198322168763">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="4925" y="6059" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="78260" label="76561198108947918">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="7434" y="-4578" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="21656" label="76561198107817639">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-5756" y="9669" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="21672" label="76561198325716039">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-8984" y="-1595" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="51736" label="76561198319604691">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-4291" y="-8651" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="60840" label="76561198016483954">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-5136" y="-8417" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="15204" label="76561198125080244">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-7883" y="9343" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="56032" label="76561198260743572">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-963" y="-7906" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2468" label="幻想乡萃夜祭">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="1394"></viz:size>
+<viz:position x="7770" y="-1233" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="51920" label="76561198099997081">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-6073" y="4086" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="33764" label="Destiny 2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="-7810" y="-7917" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="2912" label="76561198192166873">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8604" y="6532" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="62504" label="76561198068386727">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-4357" y="3443" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="82984" label="Total War WARHAMMER II">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="5987"></viz:size>
+<viz:position x="1224" y="-7620" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="1920" label="76561198260534106">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-6768" y="6958" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="78184" label="76561198401744630">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="3728" y="-6962" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="17085" label="76561198103817890">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-9337" y="7094" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="173253" label="Europa Universalis IV">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="3122"></viz:size>
+<viz:position x="885" y="-5554" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="23465" label="76561198315102191">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8410" y="-5670" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="156349" label="The Witcher 3 Wild Hunt">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="-2291" y="2931" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="87413" label="Human Fall Flat">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="-7990" y="-4715" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="54545" label="76561198820721913">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8667" y="-8382" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="53041" label="76561198384469260">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="9427" y="-29" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="73429" label="76561198011000172">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="4445" y="-3684" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="175357" label="Grand Theft Auto V">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="5910"></viz:size>
+<viz:position x="-8934" y="4555" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="76465" label="76561198259387618">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-5135" y="-8996" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="79529" label="76561198239948034">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8209" y="-6358" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="77669" label="76561198359797029">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2788" y="1921" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="55021" label="76561198192842297">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8449" y="9953" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="23537" label="76561198830900982">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-6482" y="-4553" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="58157" label="76561198197063603">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-9074" y="-980" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="82481" label="76561198089935069">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="2515" y="-5767" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="84921" label="76561198262474615">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8874" y="-9362" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="144761" label="Overcooked 2">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="4680"></viz:size>
+<viz:position x="3448" y="-1223" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="55125" label="76561198429247403">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8781" y="-861" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="58541" label="76561198362432629">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-8942" y="-3459" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="103485" label="76561198299699363">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2707" y="-1044" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="61266" label="76561198080755349">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="6853" y="-2963" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="72674" label="76561198138757579">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7283" y="6898" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="23422" label="76561198158781233">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-4824" y="9397" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="59962" label="76561198376012065">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-8171" y="2467" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="70842" label="76561198416359353">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-5358" y="237" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="2" label="CODE VEIN">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="2465"></viz:size>
+<viz:position x="-6098" y="6220" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="56862" label="76561198372908009">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7711" y="-2770" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="20674" label="76561198143482144">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-195" y="-465" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="54210" label="76561198053195478">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7256" y="5611" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="62854" label="Warframe">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="9900"></viz:size>
+<viz:position x="5593" y="-1249" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="41454" label="76561198168431501">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2708" y="-7734" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="22070" label="76561198371242893">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-9416" y="8489" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="70698" label="76561198205912319">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-9592" y="-9671" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="55898" label="76561198049449252">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-6974" y="6717" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="22542" label="76561198140974111">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-976" y="3502" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="113162" label="Arma 3">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="7088"></viz:size>
+<viz:position x="-7290" y="-3683" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="77634" label="Total War WARHAMMER">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="5671"></viz:size>
+<viz:position x="-3278" y="-1152" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="96738" label="Total War THREE KINGDOMS">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="7179" y="9952" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="127870" label="Tom Clancys Rainbow Six Siege">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="600" y="-9349" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="4810" label="76561198073163385">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-898" y="4227" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="42142" label="76561198150474687">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-6518" y="-3484" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="13883" label="Wallpaper Engine">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="9999"></viz:size>
+<viz:position x="3243" y="2926" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="21391" label="76561198374530934">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-7503" y="3978" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="119303" label="Sid Meiers Civilization VI">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="4511" y="1029" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="16559" label="76561198452640879">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-3542" y="-7031" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="78423" label="76561198358523230">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-4262" y="1726" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="23003" label="76561198011954055">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-3422" y="1745" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="44715" label="76561198870197622">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="6593" y="-1620" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="22791" label="76561198346788299">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="2591" y="-1924" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="39711" label="76561198280949964">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="4187" y="-3481" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="53323" label="Assassins Creed Odyssey">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="3743" y="-8918" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="72219" label="World of Warships">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="5702"></viz:size>
+<viz:position x="4853" y="-8734" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="77727" label="76561198198511046">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="8019" y="44" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="136983" label="Stellaris">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="-75" y="9708" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="38923" label="76561198848768235">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="7538" y="-9128" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="52955" label="76561198110323799">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="5410" y="-6030" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="13831" label="Lords Mobile">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="52"></viz:size>
+<viz:position x="-5450" y="4830" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="148855" label="Cities Skylines">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="9550"></viz:size>
+<viz:position x="1734" y="-3618" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="22891" label="76561198106094963">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="5583" y="170" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="77683" label="76561198204536772">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="-9674" y="-5583" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="65879" label="76561198080900012">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="8"></viz:size>
+<viz:position x="-9080" y="-6966" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="24147" label="76561198246084842">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-7487" y="2416" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="164639" label="MONSTER HUNTER WORLD">
+<attvalues>
+<attvalue for="modularity_class" value="0"></attvalue>
+</attvalues>
+<viz:size value="10000"></viz:size>
+<viz:position x="7652" y="-2735" z="0.0"></viz:position>
+<viz:color r="236" g="181" b="72"></viz:color>
+</node>
+<node id="41691" label="76561198399868049">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-2192" y="3511" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="15847" label="76561198360263689">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="7"></viz:size>
+<viz:position x="3866" y="-4090" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="69739" label="76561198352067026">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-5234" y="6243" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="86643" label="76561198260648727">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="-1284" y="-8432" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+<node id="58323" label="76561198061921887">
+<attvalues>
+<attvalue for="modularity_class" value="1"></attvalue>
+</attvalues>
+<viz:size value="6"></viz:size>
+<viz:position x="1885" y="8103" z="0.0"></viz:position>
+<viz:color r="236" g="81" b="72"></viz:color>
+</node>
+</nodes>
+  <edges>
+<edge source="1776" target="2" label="21小时一周目 很不错的jrpg 就是有点短了" weight="1.0"/>
+<edge source="1776" target="173253" label="下个盗版吧 游戏体验比正版好 p社你没了" weight="1.0"/>
+<edge source="2912" target="119303" label="bquote欢迎订阅我的鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquoteb卡通低智AI骗钱DLC版文明" weight="1.0"/>
+<edge source="4810" target="3836" label="好" weight="1.0"/>
+<edge source="15204" target="82984" label="相比较锤1的只有旧世界大陆锤2加入新世界地图  增加了高精暗精蜥蜴人鼠人四个新种族8个派系 后续又加入了古墓王鼠人高精8个派系可选派系数量差不多翻了一倍地图也扩大了将近3倍因为派系的大量增多过场可能会比一代慢但游戏性有增无减魔法伤害比一代增强了很多 不在是仅仅是观赏性的杀伤能力而 相对于本土势力的增强混沌势力也相应增强不再是只有混沌本部还增加了混沌的仆从军队从世界各地的海陆进攻这不是诺斯卡那样的一样从北方来这样就不会倒是遇到攻击的只有旧大路而是世界各地都遭到进攻而产生明显的旧世界悲剧新世界安逸的情况" weight="1.0"/>
+<edge source="15204" target="96738" label="作为全战系列第一部中国题材的作品三国的背景吸引了很多中国玩家这代全战是吸收了战锤的突破 类似于神话奇幻版的全战当然也有史实模式 不过史实模式也挺魔幻的特别是装备加成着重加强了单人英雄的重要性看是战锤的延续纵使游戏还存在一些不完善但是不得不说多次更新正在慢慢改善中效果挺显著的祝全战再推新高越战越勇" weight="1.0"/>
+<edge source="15204" target="136983" label="浩瀚星空无限宇宙所有的种族都在为争霸星域而奋斗你想帮助人族崛起还是掌控异族或者是智能机械人的统治者地位更吸引你的注意又或是成为虫族女皇才是你的目标执掌一方群雄逐鹿击破堕落毁灭末日" weight="1.0"/>
+<edge source="15204" target="156349" label="gay洛特女术士打桩机呀什么怪物猎人和巫师猎人都是副业这才是主业当然还有昆特牌也是主业23333" weight="1.0"/>
+<edge source="15847" target="13883" label="自从有了这玩意我就变成了手冲机器" weight="1.0"/>
+<edge source="16559" target="127870" label="66666" weight="1.0"/>
+<edge source="17085" target="13883" label="物美价廉steam玩家必备" weight="1.0"/>
+<edge source="17085" target="62854" label="趁着圣歌的热度玩下星际战甲steam下载是真的快就是这游戏特么无法更新圣歌下了一天气的好几次想删游戏之后下完又被服务器教育中国玩家的痛苦" weight="1.0"/>
+<edge source="17085" target="148855" label="全dlc273购入p社游戏只能差评因为别人更新游戏是优化用户体验它更新卖钱各dlc之间存档不兼容游戏运行占用电脑内存过大关闭游戏我等不到关闭就强退了综上所述如果没有玩过学习版不建议购买如果不打骨折不建议购买" weight="1.0"/>
+<edge source="21391" target="13883" label="好软件极度推荐" weight="1.0"/>
+<edge source="21391" target="53323" label="好游戏值得购买" weight="1.0"/>
+<edge source="21391" target="105500" label="好游戏推荐" weight="1.0"/>
+<edge source="21436" target="62854" label="良心作品特效很惊艳很肝根本停不下来后期紫卡都玩厌了才慢慢冷却下来希望能有多点其他模式因为一旦什么都不缺的时候脱坑率就直线上升" weight="1.0"/>
+<edge source="21436" target="156349" label="神作世界很丰富人物塑造很成功处处都是故事静下心游玩路人的故事也很精彩                                                                                                                                     叶奈法才是真爱" weight="1.0"/>
+<edge source="21672" target="13883" label="记得当初看见break发动态壁纸很羡慕也想弄一个break便把这款软件告诉了我当时我的电脑是XP系统 买了用不了就退款了后来换win7以后的一天突然想起这款软件就赶紧买了spoiler当时某女还在我家玩还 嘲讽我  spoiler买完先是找了break发的壁纸用了一段时间后来又极乐净土了一段时间往后就是乱七八糟乱换了某天我和我的大佬spoiler闪亮之翼spoiler讨论他的小黄油的时候我去他游戏库数了一下结果他说我数的不对少了一个少的那个就是这个Wallpaper Engine我就震惊了原来这软件也算小黄油的么几天后想起这件事仔细看了一眼这个东西还真算个小黄油知道这件事的时候我游戏时间已经超过1200小时了所以我不是因为它是小黄油才挂它的QAQ然后就没有然后了古明地真好2019913 2000小时可能我比较喜欢色彩鲜艳的东西比较喜欢用鲜艳图片微动态效果的壁纸2019925 这个沙雕壁纸软件还能玩游戏真是醉了" weight="1.0"/>
+<edge source="21672" target="43520" label="我就是个菜鸡可能是因为我玩的时间少但这不是我这个菜鸡的理由之前也拉我玩联盟的朋友来玩dota来着结果毫无疑问 他被虐自闭了现在让他碰他都不碰这款游戏了哈哈哈哈哈 笑死我了" weight="1.0"/>
+<edge source="22070" target="156349" label="良心公司春节打折47入的年度版每次打折列表里都有它代入感很强音乐画面剧情都很优秀有很多幽默搞笑的对话可以当一部超长的电影看战斗系统也不错有多种流派选择战斗结束后还会给个特写本人最爱瘾头猫追求伤害血量变脆行走在死亡边缘坐等波兰蠢驴的2077spoiler 白送一个老婆和女儿舒服滑稽 spoiler" weight="1.0"/>
+<edge source="22542" target="87413" label="啦我一把 好嗎幹 不是推我啦" weight="1.0"/>
+<edge source="22542" target="144761" label="佛心公司佛心公司" weight="1.0"/>
+<edge source="22542" target="148855" label="城市模擬遊戲第一把交椅" weight="1.0"/>
+<edge source="22791" target="13883" label="很好的软件桌面变得好看了" weight="1.0"/>
+<edge source="22791" target="136983" label="打到天亮" weight="1.0"/>
+<edge source="22891" target="119303" label="爽好玩就完事了" weight="1.0"/>
+<edge source="22891" target="136983" label="游戏是个好游不推荐并不等于差评也不会因为没有官方中文而不去推荐一款好玩的游戏戏虽然没中文但是汉化MOD 去创意工坊订阅即可" weight="1.0"/>
+<edge source="23003" target="72219" label="说实话很想买航母大包但是公司联通网进不去只能回家玩玩银币船了" weight="1.0"/>
+<edge source="23422" target="77634" label="你是有中文呢还是没中文呢" weight="1.0"/>
+<edge source="23465" target="119303" label="此游戏重新定义了预购的豪华版应该带什么内容酸萝卜别吃沙滩之子" weight="1.0"/>
+<edge source="23465" target="173253" label="熟悉了玩法之后好玩上瘾但是把有DLC了之后平衡性略微欠佳是一款非常不错的游戏战争的代入感比文明系列强虽然我还是喜欢文明总之如果你是一个策略游戏爱好者那么这款欧陆风云你大可一试" weight="1.0"/>
+<edge source="23537" target="156349" label="前年就玩了  我是傻逼  买了两份啦" weight="1.0"/>
+<edge source="24147" target="23800" label="当时真是为了吃鸡而痴迷为了玩它可没少跑网吧第一次吃鸡带朋友吃鸡LYB吃鸡雾天一打三带女孩子吃鸡这些高光时刻至今记忆犹新后来因为考试和孤儿的原因弃坑了可是还是很怀念那一段时间对一款游戏疯狂地喜爱什么时候能有下一个吃鸡呢另有一段关于网吧的回忆在里面" weight="1.0"/>
+<edge source="38923" target="33764" label="画面绚丽优化不错但是很肝不适合独狼玩家" weight="1.0"/>
+<edge source="38923" target="43520" label="太难了有点玩不来" weight="1.0"/>
+<edge source="38923" target="87413" label="人物很搞笑和朋友一起玩绝对的沙雕游戏" weight="1.0"/>
+<edge source="39711" target="53323" label="起源的威力加强版" weight="1.0"/>
+<edge source="39711" target="77634" label="没玩过这个系列的其他游戏感觉还不错" weight="1.0"/>
+<edge source="39711" target="119303" label="游戏内加了现实时间显示还是一不小心就天亮" weight="1.0"/>
+<edge source="39711" target="136983" label="P社的游戏还是少碰太夸张了" weight="1.0"/>
+<edge source="42142" target="33764" label="欢迎来到大型多人在线游戏闪退2的世界" weight="1.0"/>
+<edge source="42142" target="72219" label="自带简中 免费 多人 裸连 还看个毛 当然好评" weight="1.0"/>
+<edge source="42142" target="82984" label="经历了战锤初代的洗礼终于我们从发售的那一刻就看到了原本就该有的简体中文这是一种进步也是一种态度希望这只是一个开始游戏优化非常棒而且新添加的种族和势力让原本就很耐玩的战锤充满了无限可能好游戏值得推荐" weight="1.0"/>
+<edge source="42142" target="113162" label="很多玩家都提到了突袭3的拟真的确这个游戏有着和其他FPS游戏完全不同的风格如果你只是想突突突那根本没有必要买突袭3因为大多数时候硕大的地图里你可能很久很久都是一个人在漫步当你觉得老子不拿枪也蛋事儿没有的时候远处枪声响起你倒下了这不是游戏这是身临其境的战斗你几乎需要用到键盘上所有的按键来做出各种动作即使你是军事模拟类游戏的铁杆粉丝在很多时候也会觉得烦躁和抓狂但是这游戏不会叫你马上删掉你依然想在漫无边际的地图上进行着一次又一次的尝试100个小时对于突袭3来说也许只是个开始以前我认为战地4是多人射击战术模拟游戏做的很棒的但是玩了突袭3你会发现什么是真正的军事模拟一场战斗进行一两个小时在这里几乎就是家常便饭有时就是这样你也许并不喜欢突袭3但是只要你玩过它很久以后你也依然会记得它可能有一天你对年货系列和荣誉勋章系列都没有什么印象了但你依然会记得和小队的人在地图中探索的片段这就是突袭3这里没有游戏只有真实和耐心虽然我在和同伴跋山涉水之后将子弹兴奋的射向了刚刚看见的一群人类之后被告知你的子弹没有浪费干死的都是自己人但我依然要向大家推荐这款游戏它值得你花大把的时间去研究武装突袭3是个好游戏也配得上一个推荐" weight="1.0"/>
+<edge source="44715" target="136983" label="其实玩腻了文明玩玩这个也不错" weight="1.0"/>
+<edge source="51736" target="43520" label="那个破dotaplus啥的还我血汗钱" weight="1.0"/>
+<edge source="51736" target="82984" label="这游戏画面和优化还有待提高但是玩法和完成度上很牛逼我电脑不行画质开全底的情况下玩的不亦乐乎全战系列牛逼战锤牛逼期待战锤三诶话说回来这游戏画质太好了岂不是电脑要爆炸了额" weight="1.0"/>
+<edge source="51920" target="82984" label="画面和音效比上一代都有了很大的提升甚至读条速度也比以前快了2到3倍现在唯一的问题就是掉帧比较严重后期更新优化及时解决那就perfect了spoilerchaos的炮车是这个游戏里最恶心的兵种没有之一5台炮车开局直接派骑兵去偷骑兵还没到精英主力部队死了一半另外后期不要造凤凰尤 其 是 火 凤 凰  spoiler" weight="1.0"/>
+<edge source="51920" target="136983" label="关于没有中文论坛版主回复的帖子httpsforumparadoxplazacomforumindexphpthreadsistheranyplantoaddchinesesupportinck2E38081eu4E38081hoi4andstellarisEFBC9F1077611帖子里说的很明白了老游戏太老不做中文了新游戏销量少收益率低不做要玩的话去玩有中文的城市天际线为HOI4移除steam国区做评估群星要中文去找腾讯最后以帖子超过了他服务的范围结束了争论虽说论坛的版主说的不是很讨好但是就这么个事情我觉得也没有必要来回刷差评炒的太过了很多人都是不明所以为了要中文跟着一起差评" weight="1.0"/>
+<edge source="52955" target="53323" label="好玩是好玩就是得肝等级" weight="1.0"/>
+<edge source="52955" target="127870" label="买了黄金版到现在只杀过一个队友零个敌人" weight="1.0"/>
+<edge source="53041" target="43520" label="傻逼valve老子一没开挂二没挂机凭几个不停bb的心胸狭隘白皮智障的举报就锁老子功能csgo还更甚他妈的白皮猪投票踢了老子你还给老子锁7天还他妈靠玩家来决定别人的匹配声望valve饭桶脑残员工一天死一个妈" weight="1.0"/>
+<edge source="53041" target="136983" label="日常" weight="1.0"/>
+<edge source="54210" target="53323" label="好好好" weight="1.0"/>
+<edge source="54210" target="77634" label="We need SIMPLIFIED CHINESE好吧你赢了真的出了" weight="1.0"/>
+<edge source="54210" target="96738" label="爽" weight="1.0"/>
+<edge source="55021" target="119303" label="作为一个玩了文明5几百个小时的骨灰玩家文明6买来几个月了才玩了66个小时实在不好玩实在玩不下去绝对不推荐还是回去玩文明5吧无论托还是谁怎么争辩卡通化都是这代最大的硬伤这种大局观的战略游戏卡通化了就不会有任何翻身的可能另外系统方面也不如文明5好比如那种一回合就完成的建造系统" weight="1.0"/>
+<edge source="55125" target="148855" label="不会玩谁可以教教我" weight="1.0"/>
+<edge source="55898" target="53323" label="地图大依然空旷无趣所谓的兴趣点也就是宝箱刺杀任务可能就这次的有点意思罢了" weight="1.0"/>
+<edge source="55898" target="105500" label="希望后续更新出更多动物 大型猛兽 增加些挑战更多有意思的DLC免费和收费的说很久看不到猎物 不觉得反正买了到现在只玩了2H左右 已经杀了20左右的猎物大多数还是鹿希望后续可以出现飞禽类的" weight="1.0"/>
+<edge source="56862" target="53323" label="育碧出品必精品啊画面和交互比上一代强了很多终于从战士信条变回来了不过还是有太多的养成和升级元素了bug很少而且现在大多已经被恢复了算是刺客年代相当造的一部份了吧没有了刺客的传承没有了圣殿骑士更多的介绍了先行者的背景秘密很快就会被揭开了呢补充亚特兰提斯DLC的地图我吹爆 画面太美了好么" weight="1.0"/>
+<edge source="56862" target="136983" label="一款非常好的策略类游戏" weight="1.0"/>
+<edge source="56862" target="148855" label="买游戏之前我觉得朕是这座城市的主人统领麾下子民买回来之后玩上手发现城市里养了一群活祖宗而我是他们的仆人游戏设计十分到位无论是从操作方式还是到视角界面还是到城市运营中的各种系统都十分出色与合理建造系统也十分好用能让玩家很自如的就建造出自己想看到的城市" weight="1.0"/>
+<edge source="58157" target="53323" label="自动退出游戏防沉迷功能好评" weight="1.0"/>
+<edge source="58157" target="77634" label="之前政治正确女性武将头像我就不想和傻逼白左管理讲话这下给我来个网易合作朋友不要这样全部全战已给差评" weight="1.0"/>
+<edge source="58157" target="136983" label="好吧居然有官中了" weight="1.0"/>
+<edge source="58323" target="119303" label="幸亏这次在下鸡汁的等了几个月才买有DLC又打折哼哼更2K斗要智勇双全才行游戏嘛当然是不错的啦虽然玩的不久" weight="1.0"/>
+<edge source="58541" target="77634" label="谁不想看小兵互A呢" weight="1.0"/>
+<edge source="58541" target="82984" label="A就完事了" weight="1.0"/>
+<edge source="59962" target="119303" label="666666666666666666666666669" weight="1.0"/>
+<edge source="59962" target="156349" label="6" weight="1.0"/>
+<edge source="60840" target="82984" label="我就想问为什么混沌的傻逼要劳师远征穿过8个敌对领土带着残兵败将来劫掠我莫非出土过什么矮人灭混沌的石碑这种鬼东西吗" weight="1.0"/>
+<edge source="60840" target="96738" label="简直吹爆" weight="1.0"/>
+<edge source="61266" target="136983" label="睿智的群星玩家100愚蠢的CPU调用100" weight="1.0"/>
+<edge source="61266" target="148855" label="最近几年玩到的最舒服的城市经营类游戏赞" weight="1.0"/>
+<edge source="69739" target="136983" label="好玩不解释" weight="1.0"/>
+<edge source="70698" target="62854" label="游戏不错值得一玩" weight="1.0"/>
+<edge source="70698" target="77634" label="为了凡世帝国入了感谢大佬" weight="1.0"/>
+<edge source="70698" target="156349" label="当然好的游戏当年盗版通关的现在补票了结果发现竟然有简体中文了这票补的值" weight="1.0"/>
+<edge source="72674" target="77634" label="好游戏" weight="1.0"/>
+<edge source="72674" target="136983" label="好游戏" weight="1.0"/>
+<edge source="72674" target="156349" label="很好玩" weight="1.0"/>
+<edge source="73429" target="77634" label="搞不清楚情况的同学们可以去了解一下Minecraft在中国的遭遇你们现在的承诺我一个标点符号都不会信中国特供版全战上线之后我还能戳进这个页面的话再来改好评" weight="1.0"/>
+<edge source="75272" target="144761" label="联机太卡了加速器也拯救不了" weight="1.0"/>
+<edge source="75752" target="72219" label="好游戏不氪金也能玩我玩了一年从没花过一分钱照样美滋滋的玩着" weight="1.0"/>
+<edge source="77669" target="119303" label="文明6应该是我接触的第一款这种类型的游戏了可以说是我strategy的老师之前一直觉得文明很好玩知道我接触了p社游戏XD不过相比于隔壁p社游戏价格来说相当实惠而且内容还不错画面精美可以说是性价比之作" weight="1.0"/>
+<edge source="77683" target="148855" label="群星自14中文回炉现在重出中文了P社游戏真好玩shut up and take my money" weight="1.0"/>
+<edge source="77727" target="82984" label="全面战争2游戏玩起来就像坐哆啦A梦的时光机游戏超级好玩但是兽是鼠各种族都在秀只有我的帝国在挨揍QAQ" weight="1.0"/>
+<edge source="77727" target="87413" label="漫步游戏每个地图这里的一花一草都是那么的熟悉不想忘记但是我要因该怎么学会走路呢深思o" weight="1.0"/>
+<edge source="77727" target="127870" label="彩虹六号心得木门贴片温雷不扔瞎丢闪光带包抓野俄式救援腰射泼水祖传小车带包不下开局封门炸墙TK机窗探头穿烟对狙近战拆包龟速打野摄像不看小车刷分单挑大盾防守对枪rush被审战地空降电麦不关报点不听 敌我不分反补队友耿直WiFi夹子列队诡雷封窗瞎打气罐蛊雷瞎扔棒子插地火花射人CG榴弹盾兵乱晃热切破门左轮庸医黑眼狂扫龙鳞封窗IQ打车女鬼守家心跳找妈反放黑镜见墙就锤满血自奶大盾害怕狙不开镜烧烤人质护甲不放电车追人电网铺地机枪尬舞肥宅守门ADS贴窗闪光三连扔完就走人质杀手见窗就咚o" weight="1.0"/>
+<edge source="77727" target="156349" label="巫师3我口袋里的独角兽在震动这附近一定有女术士  " weight="1.0"/>
+<edge source="78184" target="77634" label="我觉得 海星" weight="1.0"/>
+<edge source="78184" target="136983" label="好 就是cpu不行了" weight="1.0"/>
+<edge source="78423" target="77634" label="h1好矮子就是死矮子比死矮子更好的是死前透露其他矮子位置的矮子绿皮某位蘸酱h1" weight="1.0"/>
+<edge source="78423" target="119303" label="h1 晋中朝时有民王质伐木至石室中见童子四人联机文明质因留上线加入之童子以一物如枣核与质质含之便不复饥俄顷童子曰其归承声而去斧柯漼然烂尽既归质去家已数十年亲情凋落无复向时比矣                                                                                                                              郦道元水经注h1" weight="1.0"/>
+<edge source="82184" target="77634" label="一直以来都是全战黑户人士如今为信仰充值了220讲真的游戏很棒既然头一次为信仰充值也绝对会有未来的充值毕竟G胖提供了一个能支持正版的平台咱们这群祖国形势一片大好人民安居乐业政府为民着想人人小康生活的围观群众自然也会开开荷包拯救一下国外水生火热战火连天的游戏开发商好吧问题来了既然咱们都诚心诚意的掏票了你就不能大发慈悲的出中文么" weight="1.0"/>
+<edge source="82184" target="105500" label="我就是个傻逼追着一只发情的公鹿翻山越岭的追了现实一个多小时终于顺着脚印给我逮到了美滋滋的近距离拍了张照然后用DLC送的枪对着鹿头来了一发嗯居然没死最后居然连尸体都没搜到一股浓浓的挫败感冒上头顶" weight="1.0"/>
+<edge source="82184" target="148855" label="浪费时间和生命的游戏" weight="1.0"/>
+<edge source="82481" target="113162" label="GOOD GAME " weight="1.0"/>
+<edge source="84388" target="82984" label="本来是对魔幻题材不太感冒的CA做的太精致了玩了就上瘾上上评给三国全战别鸽我" weight="1.0"/>
+<edge source="84388" target="148855" label="肝了一会儿一开始弄不懂钱结果翻了几次车城市规划体验很好城市造的虽然丑了点丑了点但是是自己一手建造起来的啊" weight="1.0"/>
+<edge source="86643" target="136983" label="Games that have been sold do not count because well they are already sold  we cant charge them extra for Chinese localisation done after they bought那就这样吧" weight="1.0"/>
+<edge source="98252" target="144761" label="wdnmd千万别买这游戏要朋友的" weight="1.0"/>
+<edge source="98252" target="148855" label="我靠dlc忒多了吧" weight="1.0"/>
+<edge source="103485" target="119303" label="没怎么玩过算是喜加一了" weight="1.0"/>
+<edge source="103485" target="173253" label="真的好玩不过最近的版本改的太离谱让游戏变得难了一个档次" weight="1.0"/>
+<edge source="1920" target="82984" label="爽死了" weight="1.0"/>
+<edge source="1920" target="87413" label="我可能是个假人jpg" weight="1.0"/>
+<edge source="1920" target="113162" label="没吹的那么神也没贬的那么低" weight="1.0"/>
+<edge source="2912" target="105500" label="bquote欢迎订阅我的鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquotebh1刚开始h1虽然有枪但并不需要像个士兵那样血脉喷张虽然有对手但对手是猎物并非敌人你要做的不是在紧张的音乐中咬紧牙关而是放松下来感受风吹草动追寻猎物的足迹慢慢前行又或者布置雌性动物的荷尔蒙模仿它的叫声躲在掩体中静静等待猎物被蛊惑虽然一动不动的潜伏着等待着但心脏却是不安分的跳动着期盼着当猎物出现的那一刻扣下扳机然后任凭兴奋感满足感还有愧疚感传遍你身体里的每一处h1到后来h1有个游戏叫猎人荒野的召唤不仅玩法难任务也非常难最难的任务当属找到一只基本不刷的赤鹿然后打它那颗占身体几十分之一的心脏并且评分要在黄金以上四天后的今天我终于完成了这一壮举这时Windows提醒我更新系统重启后蓝屏无法开机没错这就是鼎鼎大名毁机不倦的1803号补丁我一边擦掉嘴边的鲜血一边重做系统软件驱动插件设置当我再次打开这款游戏时Steam云存档将一个全技能全武器全地图解锁的大拿变成了等级3的小赤佬在满眼猩红中我按下了卸载" weight="1.0"/>
+<edge source="2912" target="113162" label="bquote欢迎订阅我的鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquoteb民用军事模拟器我记得该开发商还有给美国军事方面开发软件总之上手并不是很简单一切以仿真为主strike可惜的是32位让你时不时卡顿strike于17年3月已更新64位游戏方式则是跑步半小时交战三十秒" weight="1.0"/>
+<edge source="2912" target="144761" label="bquote欢迎订阅我的个人鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquoteb顶顶大名的分手厨房1代的时候只能本地联机到了2代终于添加了在线合作模式这带来最大的好处不是可以和网友们一起玩了而是翻车的时候你再也无法和身边的朋友打的头破血流了" weight="1.0"/>
+<edge source="4810" target="43520" label="好" weight="1.0"/>
+<edge source="4810" target="175357" label="好" weight="1.0"/>
+<edge source="15204" target="77634" label="全战系列很多年了战锤是不同以往的全战系列在全战的系列中加入魔幻因素是一个挑战也是一个创新就目前来说做的很不错战锤里的场面很宏大操作起来也很有feel将领不在有年龄问题接触了以往全战好不容易把将领练到高级结果就快进墓地的遗憾很不错的作品" weight="1.0"/>
+<edge source="15204" target="87413" label="逗比欢乐多人物很傻逼但很有乐趣的小游戏适合几个朋友一起傻" weight="1.0"/>
+<edge source="15847" target="148855" label="玩起来并没有那么神  我希望要素能再多些" weight="1.0"/>
+<edge source="15847" target="173253" label="玩了30小时音乐很棒129版本没有汉化我降到128玩的为什么点返回会重开游戏强迫症很难受" weight="1.0"/>
+<edge source="16559" target="156349" label="666666" weight="1.0"/>
+<edge source="17085" target="136983" label="来差评接好话说这不算四萌之一吧居然也跑合集包去了" weight="1.0"/>
+<edge source="20674" target="82984" label="这个测试版的启动器是个什么垃圾玩意一个启动器卡的比游戏还厉害mod加载还不一定全用着用着会变灰测试版当我们都是小白鼠啊" weight="1.0"/>
+<edge source="21391" target="87413" label="好游戏推荐" weight="1.0"/>
+<edge source="21436" target="13883" label="很好玩的屏保滑稽十分推荐购买老司机欢迎加入" weight="1.0"/>
+<edge source="21436" target="53323" label="超级好玩风景党必备但是显卡要求很高没有七八千的主机基本 帧数很低期待新的DLC" weight="1.0"/>
+<edge source="21436" target="72219" label="新手一脸懵逼指示的东西较少但还挺真实" weight="1.0"/>
+<edge source="21656" target="87413" label="晕3D者慎入晕3D者慎入晕3D者慎入如果你晕车那你基本晕这个出现症状请立马点击退款不然就像我一样看这三小时游戏时间干瞪眼什么玩意啊劲也太大了" weight="1.0"/>
+<edge source="21656" target="156349" label="好游戏就是不想玩" weight="1.0"/>
+<edge source="22070" target="53323" label="刺客信条的巅峰有美丽的希腊风景丰富的剧情自由度高代入感强有各种刺杀方式添加了装备和技能你甚至能当一名猎人或者战士难度推荐选择困难不至于能够无双噩梦难度的话就和黑魂差不多了有人说玩着卡影响FPS大的就是阴影和反锯齿开低就行了实测和开高画面差距不是很大本人笔记本I57400  16G  1050TI 开的1080P阴影和反锯齿低其他全高景深的话看自己喜好全程50FPS左右几乎不跳帧" weight="1.0"/>
+<edge source="22070" target="144761" label="玩起来很欢乐看很多人说线上联机卡然而我玩了半小时一直都很流畅啊" weight="1.0"/>
+<edge source="22070" target="164639" label="寝室联机很欢乐就是后期刷珠子麻烦小改怡情大改腻游滑稽" weight="1.0"/>
+<edge source="22791" target="53323" label="在我心中刺客信条永远是最好玩儿的一个系列" weight="1.0"/>
+<edge source="22791" target="119303" label="打到天亮" weight="1.0"/>
+<edge source="22791" target="144761" label="非常的棒与女朋友一起玩儿" weight="1.0"/>
+<edge source="22891" target="77634" label="很不错的一个游戏不说了我要统一帝国去了" weight="1.0"/>
+<edge source="23003" target="13883" label="我看评论说买了这款动态屏幕软件身体日见消瘦我以为是吹牛直到我不小心点击了购买" weight="1.0"/>
+<edge source="23003" target="53323" label="好顶赞" weight="1.0"/>
+<edge source="23422" target="13883" label="推荐它不需要理由" weight="1.0"/>
+<edge source="23422" target="33764" label="对新手真的不友好完全不知道该干什么感觉干啥都行" weight="1.0"/>
+<edge source="23422" target="82984" label="就这样吧好游戏不需要过多吹捧" weight="1.0"/>
+<edge source="23465" target="105500" label="这风景真好打呸不是这动物真好看呸我怎么就是说不清了呢算了我还是去打风景呸看动物呸感谢这款游戏现在我野外摄影技术进步了很多" weight="1.0"/>
+<edge source="23537" target="13883" label="非常好用的一款壁纸软件" weight="1.0"/>
+<edge source="23537" target="119303" label="一点都不好玩  啥玩意  原价199就这游戏  买来吃灰  喜加一了   打折都不划算  真的不好玩" weight="1.0"/>
+<edge source="23537" target="127870" label="试玩一下挺好玩 还行吧" weight="1.0"/>
+<edge source="24147" target="53323" label="7210优点1航海战真是很不错2剧情很丰富值得去慢慢品味甚至可以学习到很多知识3基本没有bug缺点1结局太扯了吧有点烂尾的意思无敌的德莫斯就这么投诚了2节奏有点拖沓出现过连续好几级做不了主线的时候感觉探索开放世界还是应该留在通关后3毕达哥拉斯的支线也太跳戏了吧我不能接受" weight="1.0"/>
+<edge source="24147" target="87413" label="看直播的时候真的爆笑虽然玩起来会差点意思可人家也不是单机游戏呀不是嘛但是还是很棒关卡设计也很有趣大写的好评另有一点回忆和遗憾在这个游戏里" weight="1.0"/>
+<edge source="24147" target="96738" label="老子孙坚征战巴蜀十余年 夫人随周瑜征战闽南十余年 为啥十年之后我就儿孙满堂了" weight="1.0"/>
+<edge source="39711" target="33764" label="不要钱刷刷刷" weight="1.0"/>
+<edge source="39711" target="82984" label="很好玩期待三国" weight="1.0"/>
+<edge source="41454" target="77634" label="看了CA全战系列都有刷网易差评的醉了" weight="1.0"/>
+<edge source="41454" target="136983" label="现在买来纯粹就是看星星看月亮了" weight="1.0"/>
+<edge source="41691" target="136983" label="炒鸡好van特别是打上各种战舰武器mod之后真是男人的浪漫" weight="1.0"/>
+<edge source="42142" target="77634" label="全战战锤我在买之前关注了很久主要是希望世嘉这个说了就从没算过的公司能有那么一旦诚意你们日本人特别喜欢研究天朝历史 人文甚至是生活习惯你们应该知道言而有信是一种态度如果贵社的头儿不是女人就应该做事像个爷们哪怕你是个岛国爷们国区的玩家虽然在全球的steam版图上还不大但是你们岛国公司的爸比G胖都已经越来越重视这个区的剁手党了很多大作在国区的销售量都排在世界前列 文明 辐射4 GTA5等等越来越多的中国玩家把兜里的金币放到了这里世嘉在游戏界是一家大公司我不管是英国世嘉还是世嘉株式会社你们都叫SEGA预购的时候写着中文发售之后放鸽子就这态度下架了它都不过分不能因为中国有3dm有游侠你就说国区的市场就如何如何就跟我们不能因为你们有苍井空 泷泽萝拉 东京热就说贵国是 皮条国度一个道理请尊重国区玩家兑现你们的承诺下面该说说游戏了这个游戏我认为可玩性很高因为如果你是全战的老玩家罗马 中世纪美国独立战争和日本明治维新都玩过了从穿着兽皮的远古时代 到加特林和蒸汽机铁甲舰都领略过了这次的奇幻风格让人眼前一亮每一个奇幻的种族和魔幻的兵种都能给玩家带来无限的惊喜优化比阿提拉要好很多所以这游戏本身的素质还是系列中很过硬的玩家们自己可以用葭萌的汉化达到比较完整的中文版体验游戏品质尚可但是世嘉的dlc坑爹指数在不断攀升流血都要充值15的信仰以后还有更多的DLC去让玩家献血这方面我是不指着日系公司去厚道了所以就不单独骂世嘉了最后游戏我推荐但是依然要说一句言而无信的世嘉去你大爷的" weight="1.0"/>
+<edge source="42142" target="136983" label="群星以前只是听到过这个名字 本人对星空 和宇宙一向有点觉得过于宏大而不敢尝试趁着今年的圣诞特价买来试试说真的30来块的游戏 将近3万人在线从哪方面都能证明它的性价比是不错的在没玩这个游戏之前 我一直认为文明系列是时间的大杀器下一回合天就亮 那是常有的事不过群星帮我重新定义了下一回合浩瀚的宇宙 繁密的星系和无穷尽的探索让一小时的时间仿佛10分钟一样迅速蒸发从昨天买了到现在不知不觉7小时已经过去了而且和文明6 那种找个理由就开战的翻车AI不同群星可以让你安安稳稳的种田 去发现未知当然前提是你要把难度选的脆一点而且现在有了中文 这将游戏直接推到了神作的光明顶上当然P社的游戏本体好说DLC趸货这是他们祖传的规矩想要更好的体验游戏多掏点钱买点扩充内容的DLC反正现在降价 你花三五十买来的游戏还真就未必有群星一个DLC有意思当然这么说好像 辐射4 DOOM 巫师3和文明6等等等都不太高兴是是是你们都是时间杀手自从买了你们我就觉得一天只吃一厘米 不得不用保温杯里放枸杞来延续更好的精力不光要钱更要命总的来说这游戏现在买很值好评" weight="1.0"/>
+<edge source="42142" target="148855" label="马化腾让P社也出了汉化" weight="1.0"/>
+<edge source="51736" target="164639" label="还测评啥呀写点东西凑个数我街霸5牛逼额我没走错场" weight="1.0"/>
+<edge source="52955" target="148855" label="有时候会闪退得及时存档到后期不能用加速就很难受" weight="1.0"/>
+<edge source="53041" target="173253" label="不做中文就给好评" weight="1.0"/>
+<edge source="54210" target="82984" label="棒" weight="1.0"/>
+<edge source="54545" target="156349" label="1010分CDPR就是我大哥几十块就能买如此大作真乃业界良心" weight="1.0"/>
+<edge source="55021" target="77634" label="对于中国玩家背景资料介绍太少上手不易" weight="1.0"/>
+<edge source="55021" target="82984" label="还可以" weight="1.0"/>
+<edge source="55021" target="156349" label="神作" weight="1.0"/>
+<edge source="55125" target="156349" label="走过路过千万不要错过" weight="1.0"/>
+<edge source="55898" target="173253" label="我不列颠国王 可以做大明的臣子dog真的光宗耀祖传播儒教照亮欧罗巴和新世界驱逐异端基督教事做为大明忠诚仆人理所应当的" weight="1.0"/>
+<edge source="56032" target="82984" label="延迟同步jpg如果自己玩是会很不错但合作战役基本gg" weight="1.0"/>
+<edge source="56032" target="119303" label="文明太空的潮起dlc加上之后游戏性完全达到了碾压本作的水平这让我很难过在预购时买了豪华版而到目前为止却看不到官方的任何诚意这也让我很难过再想到未来虚无缥缈的希望我tm更难过了" weight="1.0"/>
+<edge source="56862" target="87413" label="找上几个好基友在这款游戏中你就收获了无限的快乐" weight="1.0"/>
+<edge source="58157" target="173253" label="这没有官中啊我就是来无脑差评的" weight="1.0"/>
+<edge source="58323" target="164639" label="这个游戏有一个跟只狼一样的问题找不着路都说圣歌那个游戏蠢但是那游戏老子起码从来没走丢过" weight="1.0"/>
+<edge source="58541" target="96738" label="无要玩吕布" weight="1.0"/>
+<edge source="58541" target="156349" label="我万人迷本尊不止有前戏" weight="1.0"/>
+<edge source="59962" target="53323" label="真香" weight="1.0"/>
+<edge source="59962" target="72219" label="很好就是老是击杀队友真的不怪我啊你要信我啊" weight="1.0"/>
+<edge source="59962" target="148855" label="6" weight="1.0"/>
+<edge source="60840" target="72219" label="you know why" weight="1.0"/>
+<edge source="61266" target="53323" label="发售前什么奥德赛不过就是起源的DLC骗钱玩意发售后什么起源不过就是奥德赛的测试版本奥德赛真香" weight="1.0"/>
+<edge source="61266" target="105500" label="去掉打猎的部分看看风景都值回票价了适合不知道自己想玩什么但是就是想玩游戏的兄弟只要入了门完全不用思考怎么打猎好找个点一边蹲着一边看风景听到脚步声了就准备开枪突出一个佛系" weight="1.0"/>
+<edge source="61266" target="173253" label="P社5萌只要你喜欢策略类游戏那么应该每一款你都会喜欢只是看哪一款更适合你欧陆风云娱乐性上不如CK2但是喜欢历史的玩家应该会很喜欢" weight="1.0"/>
+<edge source="65879" target="136983" label="还不错" weight="1.0"/>
+<edge source="65879" target="148855" label="可以打折的时候入" weight="1.0"/>
+<edge source="69739" target="62854" label="好玩不解释 希望天堂也有这游戏" weight="1.0"/>
+<edge source="69739" target="77634" label="My english is very bad but f uck you SEGA i still know how to say           " weight="1.0"/>
+<edge source="69739" target="156349" label="不错 虽然没玩多少时间 但是我盗版玩的多啊" weight="1.0"/>
+<edge source="70698" target="136983" label="一玩就是一天的游戏当然了DLC 真贵" weight="1.0"/>
+<edge source="70842" target="87413" label="                                                                                                                                                                     O                                                                0                                                                                                                                                     " weight="1.0"/>
+<edge source="72674" target="72219" label="让二雷去死吧" weight="1.0"/>
+<edge source="72674" target="82984" label="很好玩" weight="1.0"/>
+<edge source="73429" target="72219" label="在9102年的今天如果其他游戏用这傻逼游戏的匹配机制玩一款moba游戏你1级进游戏买了双鞋出门对线发现对面英雄已经6级了学好大招了玩mmorpg游戏排个PVP模式你一个穿着练级装备没满级的角色能排到满级神装的肝帝在这个傻逼游戏奇葩的分房机制下你进入游戏之后大概率只能扮演一个工具人小概率可能扮演其他等级碾压你的玩家的人头然后游戏结束的时候再用感人的经济收益对你补刀让你明白你下载这个游戏的决定是多么的傻逼" weight="1.0"/>
+<edge source="73429" target="144761" label="游戏已经买了你们说的女朋友在哪里领啊" weight="1.0"/>
+<edge source="75272" target="136983" label="P社 DLC狂魔" weight="1.0"/>
+<edge source="76465" target="119303" label="再也不会买豪华版了生气" weight="1.0"/>
+<edge source="76465" target="136983" label="p社5盟宇宙世界观文科生不懂天文真的很难受好多东西没百度看不懂" weight="1.0"/>
+<edge source="76768" target="113162" label="这游戏太牛逼了一上手就根本停不下来武装突袭3的拟真性并不是战地和使命召唤能比的不是军迷或纯正fps玩家请仔细考虑后再入手" weight="1.0"/>
+<edge source="76768" target="136983" label="不是说游戏品质问题游戏本身不错不过比钢铁雄心4难太多了而且dlc还贵的要死操作也比钢铁雄心4复杂多了买来只能自己玩根本玩不动mmp也许我上手可能要很长时间太空战争策略类游戏还是推荐太阳帝国的原罪和家园2这个真的太难上手了反正和太阳帝国的原罪比我觉得群星的上手难度实在太大和太阳帝国的原罪比我觉得群星比不上" weight="1.0"/>
+<edge source="77669" target="96738" label="三国期待了很久了可惜等到的成品并不让我满意兵力大于一切并且个人感觉有点单调可能是胃口被战锤养刁了吧" weight="1.0"/>
+<edge source="77669" target="164639" label="说实话这游戏游戏性不错但是为什么要给差评呢太肝了感觉这种刷刷刷的游戏如果不能让玩家感到持续性的爽快很难去继续玩下去这游戏的现状就是新手刷高级龙刷不过你想要好装备吧又得去刷高级的有点无语虽然很多魂系玩家可能喜欢这种调调但是说实话真的不适合一个刷刷刷的游戏" weight="1.0"/>
+<edge source="77683" target="105500" label="动物成精开镜太晃移动龟速可就是这么好玩spoiler 做梦都在玩spoilerh1 优点h1游戏性没得说不过就是动物多样性较差希望能出更多的动物当然免费更新动物更好而不是加入DLC套餐游戏优化很不错我破电脑帧数稳在4050风景真的很不错慢慢逛这么大的地图有时候会有新的发现背景音乐也很放松很惬意h1我认为的不足h1人物血条到底有什么用动物根本不会反击希望能加一些凶猛的进攻性动物动物智商是个迷有时候几百米就看见我了有时候拿着左轮贴脸都不跑甚至当面打死同伴都没反应说实话多人系统感觉非常非常极其鸡肋都是各打各的没有交流互动连个地图猎物都不能共享队友间要不加个类似包围效果的那还差不多接上面那条没有队友的话单人模式甚至连个NPC都看不到孤独到死为什么连个猎犬也没有呢技能不能点满很难受拉栓上弹真的慢死了给我个半自动武器吧不奢求全自动我要无双割草" weight="1.0"/>
+<edge source="78184" target="96738" label="太棒了 我需要换电脑" weight="1.0"/>
+<edge source="78184" target="156349" label="好" weight="1.0"/>
+<edge source="78184" target="173253" label="出了官中我就买全部dlc" weight="1.0"/>
+<edge source="78260" target="105500" label="在不透光的森林中踱步缓行寻找猎物等待时机有时猎物中了数枪才毙命这不是一场狩猎更是生存的竞争人与自然意志的对决正如海明威你可以消灭我但我永远也无法被打败" weight="1.0"/>
+<edge source="78260" target="148855" label="享受这种建设者的感觉从无到有的白手起家一座城市的拔地而起" weight="1.0"/>
+<edge source="78423" target="105500" label="这是一个推理破案的游戏耐心恒心和即便失败线索中断也依然坚持调查追踪的决心有了这些恭喜你最伟大的侦探非你莫属h1对于一个缺乏耐心的世界来说坚韧而耐心地受苦这本身就是最宝贵的榜样                                                                                                 福尔摩斯与带面纱的房客h1spoiler我希望有一条像华生一样的狗帮我破案不帮我打猎spoilerstrike我真的走不动了啊strike" weight="1.0"/>
+<edge source="78423" target="148855" label="h1城市是诞生奇迹之所是人类最伟大的发明与最美好的希望是最健康最绿色最富裕最宜居的地方而成功的城市必须建造房子以便满足人们不断增长的居住需求但这并不意味着建造房子会带来成功因为真正决定一座城市成功的因素是人而非建筑h1" weight="1.0"/>
+<edge source="79529" target="77634" label="就游戏品质来说我觉得还是不错的兵种多样化势力区别大加上多维度的战斗感觉不错尤其是很明智的控制了军队规模让CA那人多尸体多任你1080也得跪下叫爸爸的优化不那么明显实际游戏起来感觉顺畅很多至于题材萝卜青菜各有所爱这是个喜好的问题全战新的尝试固然好但是我觉得历史模拟是全战的精华所在哈作为非战锤系列的粉丝对于中古战锤的题材不是非常喜欢还是在历史画卷中征战更加能让我热血沸腾啊魔幻题材固然有自己不错的特色不过对于我这样在游戏中找真实感的钢铁脑壳们就不太有吸引力了不过对全面战争游戏本身而言在操作上表现了一些不平衡战锤世界观里不同兵种之间的实力差距可以用碾压来形容而在之前的系列里比如阿提拉初级兵与高级兵的差距并没有大到手操无法控制结果的情况前作几乎都是如此拿破仑尤为明显三排变两排民兵变近卫233所以作为全战系列的玩家初接触的时候还不是太适应而且经常有无力回天的感觉不是城镇守军几百人对抗侵略军几万人的无力感而是明明有这么多兵好像能赢结果看着自己的兵被切菜的绝望感换个方面讲其中一些兵种的存在感在游戏进行中下降的过于迅速了如果我是全战加战锤的粉丝的话我会给好评但作为单纯历史向的全战玩家来说我不是非常喜欢加之政治正确也就不推荐了顺带吐槽一句这个系列又打算沿用罗马2的系统吗不创新创新嘛这是个减分项哦" weight="1.0"/>
+<edge source="79529" target="148855" label="我可以说脏话吗可以这游戏怎么这么TM的好玩哪怕什么都不做就静静看着自己的城市日升日落缓缓运转就能花去我一整天的时间非常放松又舒适愉悦我唯一的希望就是能去除上限限制或者把各种限制拉高让我更随心所欲建设城市就好了当然这个愿望不大可能实现就是了" weight="1.0"/>
+<edge source="82184" target="119303" label="厉害了我自己买完群星群星降价买完文明6文明6接着降价我该买几条红内裤穿穿了" weight="1.0"/>
+<edge source="82481" target="136983" label="知错就改 善莫大焉官中 牛逼" weight="1.0"/>
+<edge source="84388" target="113162" label="一直关注的一款游戏美军装备巨帅了有没有人物动作实战语音都很逼真几年前的游戏画质不输当今大作太真了太真了太真了玄学后坐力让你感受压枪的痛苦建议新人多玩玩教程和训练先把基本操作熟悉对战这个一直被别人统治就拿来开开载具 打打任务了" weight="1.0"/>
+<edge source="84388" target="119303" label="打折入的游戏是好游戏受全战影响挺大的觉得太肝了可能这种战略规划不适合我吧这游戏没有宏观的战斗场面反正仁者见仁智者见智不一定适合每一个人" weight="1.0"/>
+<edge source="84388" target="136983" label="睿智的群星玩家着实上手很难对新手不太友好但是慢慢走上正轨真香" weight="1.0"/>
+<edge source="84921" target="113162" label="说起来你可能不信 我只想玩单机" weight="1.0"/>
+<edge source="84921" target="144761" label="就冲着这几个免费更新我给好评而且这一作还可以网络联机" weight="1.0"/>
+<edge source="86643" target="105500" label="开枪一秒钟追踪两小时友情提示猎物仅被打成皮毛伤还是别追的好别问我怎么知道的" weight="1.0"/>
+<edge source="86643" target="119303" label="什么都不说了来自豪华版玩家的问候" weight="1.0"/>
+<edge source="98252" target="96738" label="妈的不要来伤害我的硬盘了安装个游戏更新要一年" weight="1.0"/>
+<edge source="98252" target="113162" label="很真实" weight="1.0"/>
+<edge source="98252" target="136983" label="我什么没有官方中文" weight="1.0"/>
+<edge source="103485" target="156349" label="喜加一" weight="1.0"/>
+<edge source="1776" target="33764" label="这是我见过新手引导最烂的网游了" weight="1.0"/>
+<edge source="1776" target="96738" label="我需要新的dlc 不要停下来啊" weight="1.0"/>
+<edge source="1920" target="2" label="欧摩西罗伊" weight="1.0"/>
+<edge source="1920" target="77634" label="看在你有眼色出三国全战的份儿上赏你个好评" weight="1.0"/>
+<edge source="1920" target="173253" label="我英语能力就这样了我游戏体验不好所以我要给你差评" weight="1.0"/>
+<edge source="2912" target="2468" label="bquote欢迎订阅我的个人鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquoteb我是被这种蠢萌的像素风却有着十分爆炸的表现力式美术吸引的价格低画面可爱好看表现力足又是火又是烟满屏弹幕还有像元气弹一样大的飞行道具都特别带劲可惜的是打击感没有跟上导致破坏力没有被很好的表现出来所以即使战斗方式分成了两种也还是有些不尽兴另外作者因为受伤导致不能更新键盘自定义希望他能早日康复话说我到现在都不知道什么是东方系列但相关游戏却玩了不少可真是有缘" weight="1.0"/>
+<edge source="2912" target="87413" label="bquote欢迎订阅我的鉴赏家urlhttpsstoresteampoweredcomcurator11123770 DEV RULES url以及 urlhttpsspacebilibilicom2898054游戏实况url 来观看我的更多偏见想法spoiler希望有天能厉害到你会跟别人说 DEV那是我朋友诶spoilerquoteb这沙雕游戏刚出时就挺火的没想到过了两年的时间还能焕发第二春玩法很简单操纵一个软了吧唧没骨头似的沙雕角色过关解密角色可以涂鸦你可以选择涂的很大神也可以涂的很沙雕因为操纵角色跑跳抓放都不是很容易的传统游戏设定再加上后来更新的多人联机让整个游戏变的更加沙雕于是你和你的小伙伴们沙雕着并快乐着" weight="1.0"/>
+<edge source="4810" target="23800" label="不好" weight="1.0"/>
+<edge source="15847" target="43520" label="闪闪闪退卡卡卡顿以前不会最近抽风游戏还是非常好玩" weight="1.0"/>
+<edge source="15847" target="119303" label="这游戏杀时间挺好玩的玩了P社4萌之后这个就不太想玩了" weight="1.0"/>
+<edge source="17085" target="77634" label="我成功借掉了玩游戏喜欢上了买游戏尤其像你这种打折的" weight="1.0"/>
+<edge source="17085" target="119303" label="玩这游戏犯困打骨折的时候推荐入" weight="1.0"/>
+<edge source="17085" target="173253" label="买正版玩盗版系列奉劝想入坑各位直接盗版EU4R2JvakDKTJ8Cn" weight="1.0"/>
+<edge source="20674" target="13883" label="样样齐全真的是就怕你身体好spoiler真的是明目张胆散播资源spoiler" weight="1.0"/>
+<edge source="20674" target="96738" label="DEATH TO THE FAKE FEMINIST" weight="1.0"/>
+<edge source="20674" target="105500" label="这游戏能让我边等猎物边玩碧蓝航线真实养老现在还在努力掌握弹道下坠和风向误差不然打一个有时候要打23枪才倒唯一的感觉就是人跑步的时候不舒服感觉就在地上蹭一样虽然不太可能但还是想要一个创意工坊" weight="1.0"/>
+<edge source="20674" target="148855" label="啊啊啊啊啊仿佛看到了北京的交通状况更厉害的是火车都能堵" weight="1.0"/>
+<edge source="21391" target="119303" label="好游戏推荐" weight="1.0"/>
+<edge source="21656" target="96738" label="说来惭愧这三小时主要拿来打mod和补丁了打完一局没玩" weight="1.0"/>
+<edge source="21672" target="105500" label="虽然很中意这款游戏在打折结束的第二天原价购买但配置不够开全低还是20FPS自己太菜也没咋玩 是我朋友来我家住的时候一直玩的我朋友很看好这款游戏的虽然我也是时间大多都是他玩的 qwq现在极致也可以60FPS了但是也没咋玩朋友不在呀" weight="1.0"/>
+<edge source="21672" target="127870" label="同学zlc推荐买了玩了一小段时间没有加速器总是卡后来太长时间不碰发现这款游戏是真的大哎最近syx也想玩这款游戏来着本来是想更新给他玩的结果更新包太大直接劝退" weight="1.0"/>
+<edge source="21672" target="136983" label="有点像孢子的太空阶段还行吧就是看起来就需要很长时间来玩而这个条件 我恰恰没有" weight="1.0"/>
+<edge source="21672" target="156349" label="应该是个挺好玩的游戏吧但并不适合我" weight="1.0"/>
+<edge source="22070" target="13883" label="里面有很多游戏混剪CG很燃这18花的血赚" weight="1.0"/>
+<edge source="22070" target="87413" label="听说创意工坊地图可以联机玩了舒服" weight="1.0"/>
+<edge source="22070" target="113162" label="硬核军事模拟游戏步行1小时战斗5秒钟狗头" weight="1.0"/>
+<edge source="22542" target="13883" label="上車囉 咦咦咦 不懂我在說什麼" weight="1.0"/>
+<edge source="22791" target="77634" label="吹爆SEGA开冲" weight="1.0"/>
+<edge source="22791" target="96738" label="好玩儿但是好难" weight="1.0"/>
+<edge source="22891" target="148855" label="开车不随意做中国好司机求你别堵车" weight="1.0"/>
+<edge source="23003" target="82984" label="还不错希望合并地图早点到来" weight="1.0"/>
+<edge source="23003" target="136983" label="听闻22版本有官中了喜大奔普希望暴战机甲有中文谢谢" weight="1.0"/>
+<edge source="23422" target="136983" label="呵呵差评原因你懂的" weight="1.0"/>
+<edge source="23422" target="148855" label="游戏是好游戏差评原因大家都懂" weight="1.0"/>
+<edge source="23465" target="148855" label="解锁成就从8102年玩到9102年" weight="1.0"/>
+<edge source="23537" target="62854" label="更新太慢  一直检查更新  动都不动  一直在那个画面" weight="1.0"/>
+<edge source="23537" target="87413" label="这游戏很早就玩了 游戏刚出的时候跟几个妹子企鹅管理们一起玩的  现在终于有创意工坊啦" weight="1.0"/>
+<edge source="23537" target="164639" label="打折还行  可惜这游戏  不是我的菜一个人打不过去  还要找朋友玩" weight="1.0"/>
+<edge source="24147" target="43520" label="1000多个小时很难想象我会为第二个游戏投入这么长时间了我考研真的有复习够1000小时吗可能要感谢当年从PC换成Mac让我不得不后知后觉地接触到这款MOBA的鼻祖游戏一发不可收拾看着现在满地乱爬的MOBA端游手游本刀斯林还是保持着最后的倔强虽然不可挽回地变成了Dead Game但是还有Ti可以追还有本子可以冲看看直播打发最无聊的时间Dota2是我近几年最重要的游戏CN DOTA BEST DOTA" weight="1.0"/>
+<edge source="38923" target="105500" label="一到猎物旁边就追不到只能看看风景" weight="1.0"/>
+<edge source="41454" target="33764" label="这种刷刷刷的游戏实在玩不动了" weight="1.0"/>
+<edge source="41454" target="82984" label="还行吧半价入的" weight="1.0"/>
+<edge source="41454" target="148855" label="主要dlc咋不打折创意工坊不错" weight="1.0"/>
+<edge source="41691" target="33764" label="任务引导和狗屎一样我无话可说3人本都算了两个人开黑还是随便打打能过6人本呢组不到人2个人 怎么过想要快乐玩这游戏你先去找5个队友把" weight="1.0"/>
+<edge source="41691" target="72219" label="哪里都有我的小瓜游碧蓝航线牛逼O 嗷" weight="1.0"/>
+<edge source="44715" target="82984" label="绑定试销售差评" weight="1.0"/>
+<edge source="44715" target="119303" label="比起前几作变化很多野蛮6的卡片政策妹子使用次数等觉得都不错风云变化的天气系统也提高游戏性不少" weight="1.0"/>
+<edge source="51736" target="119303" label="玩了十几个小时的我不配测评但是我喜欢这游戏" weight="1.0"/>
+<edge source="51736" target="127870" label="没啥好说的继csgo下一款游戏" weight="1.0"/>
+<edge source="51736" target="156349" label="静下心来玩你会打开一个不一样的世界但前提是你的电脑得好推荐前两部都玩玩再玩这个贼有代入感" weight="1.0"/>
+<edge source="51920" target="77634" label="虽然特娘的下月要出战锤2了既然更新了简中汉化那还是给个好评支持一下吧" weight="1.0"/>
+<edge source="52955" target="43520" label="CN DOTA BEST DOTA" weight="1.0"/>
+<edge source="52955" target="87413" label="开黑才有意思" weight="1.0"/>
+<edge source="52955" target="156349" label="有时间一定通关来一把昆特牌吧" weight="1.0"/>
+<edge source="53041" target="96738" label="给差评的都是死妈孤儿" weight="1.0"/>
+<edge source="53041" target="105500" label="New Species 2019 DLC为什么买不了买不了也不送看着很难受" weight="1.0"/>
+<edge source="53041" target="148855" label="做中文你就是傻逼" weight="1.0"/>
+<edge source="54210" target="136983" label="没有中文差评送上" weight="1.0"/>
+<edge source="54545" target="53323" label="810分本以为我能左手雅典右手斯巴达希腊在我股掌之中奈何为了养肝护肝只好走为上策" weight="1.0"/>
+<edge source="54545" target="96738" label="9510分好游戏无论和谁合作都是好游戏不希望看到因此刷差评" weight="1.0"/>
+<edge source="54545" target="119303" label="9510分简直是近乎完美的神作千万不要因为好评率低就不买好评率低是游戏以外的原因与游戏本身无关风云变幻里面用石油造坦克而不是铁飞机用铝维护而不是石油总感觉很古怪希望能改进" weight="1.0"/>
+<edge source="54545" target="148855" label="9510分几乎完美的神作太棒了实现了我们童年的梦想儿时我们在纸上描绘城市的天际线如今我们在电脑上一展宏图感谢p社" weight="1.0"/>
+<edge source="55021" target="148855" label="太好玩了我玩的所有游戏能整个晚上玩到天亮的只有两个一个是文明5一个就是这个天际线" weight="1.0"/>
+<edge source="55125" target="87413" label="好玩推荐大家玩" weight="1.0"/>
+<edge source="55898" target="77634" label="前期玩久了会很无聊到现在反而越来越有趣了内容也在慢慢增加唯一一个一边骂的都要买DLC的游戏中文也快要出来了希望不会失望" weight="1.0"/>
+<edge source="55898" target="82984" label="DLC DLC 搞快出出来 我要玩古墓" weight="1.0"/>
+<edge source="55898" target="113162" label="搞了半天也没发现怎么改成中文" weight="1.0"/>
+<edge source="56032" target="53323" label="爽诶真的好玩" weight="1.0"/>
+<edge source="56032" target="105500" label="中文无法使用显示全部是白色小方块不清楚是字库没加载成功还是怎么了既然顶着中文的名头多少还是走点心吧除此之外游戏内容打猎倒还是其次最高画质下风景很不错可以带着耳机假装自己在真的打猎并不" weight="1.0"/>
+<edge source="56862" target="119303" label="下一回合下一回合嗯嗯下一回合What天怎么黑了算了下一回合下一回合下一回合卧槽天怎么亮了一款需要精心部署与思考的游戏虽然是回合制但是却能在不知不觉中 1 day 1 day" weight="1.0"/>
+<edge source="58157" target="82984" label="之前政治正确女性武将头像我就不想和傻逼白左管理讲话这下给我来个网易合作朋友不要这样全部全战已给差评" weight="1.0"/>
+<edge source="58157" target="113162" label="DLC贵的可以游戏多人难玩的可以" weight="1.0"/>
+<edge source="58323" target="82984" label="我大清朝自有国情在此220买的DLC都下不了再见" weight="1.0"/>
+<edge source="58323" target="136983" label="民间汉化组3天就汉化完的东西官方硬是不花一分钱在上面想必为了中国玩家多给差评官方也是操碎了心20180226我想问下2208年在仅有的三个路口上刷了3对1K的海盗我除了跪下认爹以外还能怎么办20180227经过在下苦思冥想一夜之后终于知道这游戏改版以后像什么了这不就是一个活生生的三国志13吗20180301实在是受不了了改成差评吧昨晚开的一局2208年家门口站俩99k的把门全堵住超空间打得人实在是太累了明明AI和我是难分伯仲然后我的战斗力4kAI的战斗力是3队4k20180303刚一局一开局我就把我的邻国AI关了一共四个星系两个出口都被我堵了发展到2258年我将近60颗星系全开发几乎满科技加成军队建设也没落下我的战斗力只有2队2k然后这邻国2队99k对我宣战一路平推把我所有星系灭了受不了了卸载了" weight="1.0"/>
+<edge source="58541" target="53323" label="我万人迷难道只有前戏" weight="1.0"/>
+<edge source="60840" target="53323" label="我拥有斯巴达王的血统我的长矛曾洞穿雅典王伯利克里的心脏我的利剑曾斩下斯巴达血狼的头颅整个希腊半岛都在我的脚下臣服最后我被一只传奇野猪咬死了" weight="1.0"/>
+<edge source="62504" target="119303" label="不是太喜欢6确实感觉文明越来越像个好玩的游戏了但是文明本身体现的人类文明发展的历史的厚重感木有了伟大的奇观建造也没有了专门的油画就好像小孩子在搭积木也许作为一个游戏在后续DLC的跟进上文明确实更好玩了更有趣了但这种简单明快的画风我个人还是不太喜欢带领一个文明从远古到现在慢慢建造奇观发展进步扩张率军攻城略地或者抵御外敌入侵带领文明进步之后反馈给给自己的满足感比起5来差很多就像滚出地球架空了历史之后也变得不好玩了一样其实ICE更喜欢的还是文明对历史的复刻6更像是一个单纯的游戏但文明的内涵似乎没有很好的体现出来" weight="1.0"/>
+<edge source="65879" target="82984" label="中古战锤很吸引我个人觉得不过错" weight="1.0"/>
+<edge source="65879" target="173253" label="好评" weight="1.0"/>
+<edge source="70698" target="72219" label="游戏不错值得一玩 大家伙上啊" weight="1.0"/>
+<edge source="70698" target="82984" label="游戏非常好玩 就是全版太贵了还有个3 几千大洋啊" weight="1.0"/>
+<edge source="70842" target="62854" label="这是一个承载着欢乐与痛苦的游戏游戏居然玩了1100多个小时想想这是我除了英雄联盟玩过的时间最长的游戏了这个游戏免费但是这确实是一个地地道道的网游网游离不开的就是充钱和肝总的来说和朋友们一起玩真的很欢乐" weight="1.0"/>
+<edge source="70842" target="77634" label="                                                                                                                                                                     O                                                                0                                                                                                                                                     " weight="1.0"/>
+<edge source="70842" target="148855" label="之前玩过特大城市也有点像的意思不过有自己独特的风格是款居家旅行必备的游戏哈哈无聊的时候打发时间也不错玩家做的创意工坊真的很棒挺喜欢玩建造类的城市游戏可以当个市长控制市场啊地价啊真的挺爽值得一玩就是为了游戏体验性要买的dlc也不是很多下雪大灾难等几个比较好的dlc值得一入不说别的雪天时真的很美" weight="1.0"/>
+<edge source="72674" target="173253" label="好游戏" weight="1.0"/>
+<edge source="73429" target="136983" label="好评给官中" weight="1.0"/>
+<edge source="75272" target="156349" label="给你们钱一定要把2077做好啊" weight="1.0"/>
+<edge source="75752" target="77634" label="好游戏虽然不喜欢魔幻题材但是我也入了" weight="1.0"/>
+<edge source="75752" target="96738" label="游戏画面910玩法810八王之乱dlc 010与网易合作5权威利润加成100全面战争国服化 100全派系公共秩序惩罚" weight="1.0"/>
+<edge source="75752" target="119303" label="不知道大家为什么对这款游戏这么痴迷我买了玩了几下休闲游戏吧不适合上班人群" weight="1.0"/>
+<edge source="75752" target="148855" label="时间从来没有感觉这么快过" weight="1.0"/>
+<edge source="76465" target="72219" label="CV rework ruined this gameWG noobs垃圾航母毁灭游戏体验WG是真的喝了甲醇做的伏特加" weight="1.0"/>
+<edge source="76465" target="96738" label="作为中国历史上的一个时期三国时代的国际知名度可以说是最高的全战此作可以看作是对中国市场的试水吧目前最好的三国题材战略游戏没有之一期待春秋战国全战目前三国题材国际知名度最高的作品基本都是日本那边的在加上本作国内游戏厂商马鹿们你们要知耻呀" weight="1.0"/>
+<edge source="76465" target="113162" label="最好的军事模拟游戏" weight="1.0"/>
+<edge source="76768" target="72219" label="以前没入Fgo坑的时候经常肝这个这游戏是我初中时的回忆啊WG战争三部曲中坚持的最长的一个现在加上其它游戏肝要硬化了不说了还想下回坦克世界呢虽然说还是战雷空战有意思但是WG的战争三部曲是我永远无法忘怀的游戏系列之一下次再补个猎杀潜航海战游戏就全了呢" weight="1.0"/>
+<edge source="76768" target="77634" label="优化有点差而且dlc相当的多玩着玩着卡机我已经把画质调低了而且部队规模也调小了我家七代i5玩起来竟然卡机" weight="1.0"/>
+<edge source="76768" target="82984" label="比1代好也很耐玩但是这么多dlc闹哪样看人家P社是DLC狂魔自己也想成为DLC狂魔2代的dlc还必须买1代的可以呵呵" weight="1.0"/>
+<edge source="77669" target="77634" label="没想到第一个通过战役的种族是野兽人挠头和混沌勾肩搭背" weight="1.0"/>
+<edge source="77669" target="105500" label="这游戏我吹爆很难想象会有这样的开放世界打猎的游戏以前玩的时候总觉得打不到猎物总觉得老是要跑路感觉很烦现在可能玩游戏就是追求一个养老心境变了这游戏也有意思起来了可以在足不出户的情况下体验到世界各地自然保护区的风光可能在风景方面很难有游戏能超越了吧    ps推荐大家用reshade修改一下画面嗷真的非常惊艳b站有演示视频和安装教学嗷" weight="1.0"/>
+<edge source="77683" target="82984" label="乞丐来了啊请上前吧你必须给观星室进贡抬起你们的屁股加入我们不行你还不够绿你当我是傻逼吗滚凡世帝国我一个宣战所有派系的齐宣王居然打崩了" weight="1.0"/>
+<edge source="77683" target="113162" label="摸索了5个小时坦克看不见人飞机起飞就炸步枪扫了2个弹夹都打不死人摸索了20个小时坦克看不见人飞机起飞就炸步枪一个弹夹一个敌人摸索了50个小时坦克看不见人飞机起飞就炸步枪一个弹夹一个敌人摸索了100个小时坦克爽到飞机起飞就炸步枪一个弹夹一个半敌人" weight="1.0"/>
+<edge source="77727" target="105500" label="嘿前面有只熊我来卧槽这熊怎么打不死完了我死了这熊怎么赌我复活点了绝望" weight="1.0"/>
+<edge source="78184" target="82984" label="你TM专门挑买过的人送券干嘛还TM只能买本体有个屁用啊" weight="1.0"/>
+<edge source="78260" target="77634" label="哇混沌不可战胜5555555" weight="1.0"/>
+<edge source="78260" target="82984" label="其实从游戏性来说感觉和一代比并没有飞跃性的差距但一些新的设定还是不错的" weight="1.0"/>
+<edge source="78260" target="119303" label="文明6可以让你体验一番文明的成长游戏性强只是不开放创意工坊实在太坑了吧等dlc圈钱不是没有问题但也不能太过了" weight="1.0"/>
+<edge source="79529" target="82984" label="真的不错虽然我不喜欢中古战锤这种奇幻题材但战锤这两游戏真的能感觉出做得很用心巨大的世界地图真正各具特色的派系相对保持了自由度的系统血腥壮观的战场绝对为全战的一个颠覆之前没有怎么玩结果一玩就迷上了在这之后的全战肯定也相当值得期待虽然配置也的确越来越爬上去了啊哈" weight="1.0"/>
+<edge source="79529" target="136983" label="改了跃迁方式后就没怎么玩过了总感觉新版本把宇宙4K游戏的精髓削减了一大半只能走既定轨道那我这宇宙舰队与高铁有什么区别" weight="1.0"/>
+<edge source="79529" target="173253" label="点数风云嘛但全球范围的策略游戏很少本身内容丰富绝对不得不品尝由于P社官方的睿智操作引起了不小的风波我个人对于汉化问题本身是比较宽容的毕竟不是完全看不懂也没有给差评求中文的习惯因此在这个问题上我原本是打算置身事外的虽然的确感到有所冒犯但我对于这家在我好球带的企业还是有一些感情的但贴吧甚至这里不少股东们力陈国人素质之低下污染评论区氛围甚至影响到外国社区环境颇有遗世独立之风韵国际主义之精神世人皆醉我独醒之态度给差评就是闹事AWWBWG要沟通去论坛别在评论区撒野OJBK既然闹事的这么多那也不缺我一个了我就是要给差评素质低是这样的游戏的素质是毫无疑问的但由于上述原因加之这篇文章说服了我我决定还是给一个我声称不针对游戏本身的差评Chinese Plzhttpszhuanlanzhihucomp34244051" weight="1.0"/>
+<edge source="82481" target="77634" label="特意过来修改测评因为官方中文的发布中国玩家信守承诺你发布并改进官中我们就修改测评作为全战10年的老玩家希望不要再让我们失望希望全战系列越来越好感谢蒹葭汉化组" weight="1.0"/>
+<edge source="82481" target="82984" label="虽说是一代的升级版但是整体感觉还是不错的汉化很给力后续一大波dlc还是要买的  全战的又一个进步虽然都是坑钱货" weight="1.0"/>
+<edge source="82481" target="105500" label="垃圾游戏不推荐dlc一个也别买" weight="1.0"/>
+<edge source="82481" target="148855" label="以前玩过模拟城市5 特大城市 还有超级垃圾的超大城市不过这写游戏在天际线面前都是渣渣天际线有超级大的地图免费的夜景丰富的mod其实这写就够了甚至还有水电模式买了绝对值得游戏" weight="1.0"/>
+<edge source="84388" target="144761" label="这个游戏太欢乐了和室友两个人玩其乐无穷原来我微操这么菜啊笑的我停不下来还是很好玩的" weight="1.0"/>
+<edge source="84921" target="96738" label="游戏很不错这是我第一款真正玩进去了的全战我觉得游戏真的下了功夫去研究三国这很值得称道有一点我觉得遗憾的就是武将的问题游戏的设计初衷我能理解继承人这个想法也很有趣只是很多武将我刚刚得到之后很快就病逝了这种感觉很不好" weight="1.0"/>
+<edge source="84921" target="173253" label="给个中文嘛" weight="1.0"/>
+<edge source="86643" target="148855" label="Games that have been sold do not count because well they are already sold  we cant charge them extra for Chinese localisation done after they bought那就这样吧" weight="1.0"/>
+<edge source="98252" target="119303" label="nmsl" weight="1.0"/>
+<edge source="98252" target="164639" label="太肝了" weight="1.0"/>
+<edge source="103485" target="96738" label="还行吧" weight="1.0"/>
+<edge source="103485" target="136983" label="可以吧就是内容有待补充" weight="1.0"/>
+<edge source="103485" target="148855" label="dlc太多了" weight="1.0"/>
+<edge source="1776" target="136983" label="你更新你妈啊 傻逼" weight="1.0"/>
+<edge source="1776" target="164639" label="见切空 登龙空 还是我太菜" weight="1.0"/>
+<edge source="1920" target="62854" label="略略略" weight="1.0"/>
+<edge source="4810" target="33764" label="好" weight="1.0"/>
+<edge source="4810" target="87413" label="好" weight="1.0"/>
+<edge source="4810" target="164639" label="好" weight="1.0"/>
+<edge source="15204" target="13883" label="一年多以前买的 一直用下来感觉不错 内容丰富画质极佳还有各种福利嗯 没错都很不错" weight="1.0"/>
+<edge source="15204" target="119303" label="文明系列呀其实我也是半路出家文明5开始玩的后来入得文明6这游戏属于极其消耗时间的玩法点亮科技研究政体充实军队扩张领土游戏在提示方面做的很不错应该即使是新玩家也能很快入手同时内容相对于5代要丰富一些多了些思路只要把建模精细度再提高些就完美了" weight="1.0"/>
+<edge source="15847" target="136983" label="挺好玩的但是比起其他P社游戏这款有浓浓的页游感而且我有个bug一个星系切换到另一个星系的时候会在交界处来回摩擦一直摩擦切换不过去必须要按M切换知道怎么解决的可以给我留个言谢谢" weight="1.0"/>
+<edge source="15847" target="164639" label="冰原出了我也买爆PS4和STEAM都买了冲冲冲" weight="1.0"/>
+<edge source="16559" target="13883" label="666666" weight="1.0"/>
+<edge source="16559" target="53323" label="66666666" weight="1.0"/>
+<edge source="16559" target="96738" label="666666" weight="1.0"/>
+<edge source="16559" target="164639" label="66666" weight="1.0"/>
+<edge source="20674" target="119303" label="其他的都好说就tm这个潜艇是怎么攻击城市的还隔着陆地" weight="1.0"/>
+<edge source="20674" target="136983" label="以前选总统看谁有能力谁当打了模组看谁漂亮谁当" weight="1.0"/>
+<edge source="21391" target="113162" label="好游戏推荐" weight="1.0"/>
+<edge source="21391" target="148855" label="好游戏推荐" weight="1.0"/>
+<edge source="21436" target="87413" label="这操作卧槽好难跳这是我玩几个小时的体验游戏是好游戏但是我过了剧情关第三关就卡关了但这不重要重要的是创意工坊兼容cxk鸡你太美" weight="1.0"/>
+<edge source="21656" target="13883" label="作为一款软件他比许多游戏可玩性都高作为一款游戏他比许多软件都实用实在是太好用了呢再起不能" weight="1.0"/>
+<edge source="21656" target="144761" label="想找个女朋友和我一起玩如果你是男的好吧骗我也可以的" weight="1.0"/>
+<edge source="21656" target="164639" label="夏促入的落灰一个多月拿出来就再也没停过见切翻滚敌人还就一个大血牛作为一个黑魂玩家你知道我有多爽吗" weight="1.0"/>
+<edge source="21672" target="87413" label="这款游戏应该是个和朋友一起玩很欢乐的游戏吧应该是个和朋友一起玩很欢乐的游戏吧是个和朋友一起玩很欢乐的游戏吧和朋友一起玩很欢乐的游戏吧朋友 一起玩 欢乐 游戏 吧朋友 欢乐朋友" weight="1.0"/>
+<edge source="22070" target="62854" label="这游戏不要钱只要命滑稽" weight="1.0"/>
+<edge source="22542" target="82984" label="坐等三國" weight="1.0"/>
+<edge source="22542" target="119303" label="再一回合就好啊 天亮了" weight="1.0"/>
+<edge source="22542" target="136983" label="時間小偷 " weight="1.0"/>
+<edge source="22891" target="13883" label="很奈斯的应用程式spoiler我的硬盘因你而不够用 spoiler" weight="1.0"/>
+<edge source="22891" target="113162" label="辣鸡游戏 耗我青春" weight="1.0"/>
+<edge source="23003" target="77634" label="官方汉化质量很高赞一个希望高质量官中游戏越来越多好难啊刚选困难被打的生活不能自理我还是玩普通算了我擦普通也很难我还是简单吧用高级英雄终极兵种吊打电脑的一群低级兵好爽看我无双woooohhh要的就是这种 感觉哈哈哈哈感觉难度过高还不如玩文明群星高难度还有随机性这上面套路基本上固定的然我们一起来无双吧 p" weight="1.0"/>
+<edge source="23003" target="119303" label="全是种族DLC你看看人家p社来点创新好不好后悔买豪华版了后悔买文明6了" weight="1.0"/>
+<edge source="23422" target="53323" label="波澜壮阔的史诗除了满世界的奥利哈刚有点恶心收集强迫症患者剧情任务技能装备设计都相当优秀装备词缀带来的不同流派丰富了战斗但装备多了后如果要同时维持等级再加上战船升级的巨大费用这可能是我玩过最肝的刺客信条了" weight="1.0"/>
+<edge source="23465" target="13883" label="抱歉你的老婆我想用就用" weight="1.0"/>
+<edge source="23465" target="136983" label="大英雄的流星一条赶紧来一发STELLA" weight="1.0"/>
+<edge source="24147" target="156349" label="滴补票一代经典无可挑剔的一款游戏有时间把同样高质量的DLC体验下" weight="1.0"/>
+<edge source="38923" target="53323" label="比上一部起源进步很大尤其是技能玩法很多跟npc对话也可以有选择买就完了" weight="1.0"/>
+<edge source="38923" target="156349" label="剧情向游戏昆特牌不错流程也很长" weight="1.0"/>
+<edge source="39711" target="144761" label="好玩需要小伙伴" weight="1.0"/>
+<edge source="41454" target="113162" label="dlc走科幻风笑出声" weight="1.0"/>
+<edge source="41691" target="82984" label="好玩 剧情也很赞 优化不错 就是战斗视角很蛋疼" weight="1.0"/>
+<edge source="41691" target="96738" label="我曹老板今天就是要匡扶魏室" weight="1.0"/>
+<edge source="41691" target="119303" label="辣鸡游戏联机第一回合就掉线" weight="1.0"/>
+<edge source="42142" target="173253" label="如果单说游戏性欧陆风云4可以打至少90分 不过这样一款繁杂而庞大的作品有中文玩起来都不见得能面面俱到更别说满屏的英文了所以差评" weight="1.0"/>
+<edge source="44715" target="43520" label="偶尔玩玩很有意思" weight="1.0"/>
+<edge source="44715" target="77634" label="差评给2代买了1代才有凡世帝国如果凡世帝国只需要买1我也能接受但是想要不缺少派系还必须把1的全DLC一起买了这是我没法接受的对于我这种又穷又有强迫症的玩家来说可太难受了" weight="1.0"/>
+<edge source="44715" target="156349" label="经典当然推荐了" weight="1.0"/>
+<edge source="44715" target="164639" label="来玩吧狩猎" weight="1.0"/>
+<edge source="51920" target="43520" label="dota2的游戏环境很差作为一款老游戏代练炸鱼的也非常多恶意举报互相谩骂强行背锅相当普遍玩家素质普遍很低是很功利一款的游戏不适合追求娱乐性的玩家还记得13年刚开始玩DOTA2的时候环境都是大家互相帮助的感觉用不满40帧的画面玩着DOTA2也是很快乐而现在呢连续3把没遇到喷子就算烧了高香了很多网络喷子对于别人吹毛求疵指指点点却看不到自己的问题所在你这么厉害怎么还匹配到你所说的彩笔呢现在DOTA2的整体环境更适合那种勾心斗角喜欢相互敌意的人群似乎这样才能激发出这些人的尔虞我诈的竞技热血和斗志与其说dota2是一款游戏不如说是人之间相互diss新式工具" weight="1.0"/>
+<edge source="51920" target="53323" label="我就不明白了在斯巴达人营地给他们做任务被赏金猎人追杀了我都没还手都追着杀我分分钟出戏呵呵还有每次任务人物在附近的时候屏幕中央就会出现召唤老鹰的提示怎么关HUD都取消不了我特么不想用老鹰标记人物想硬核玩耍还不行了垃圾" weight="1.0"/>
+<edge source="51920" target="173253" label="刚打完仗低士气状态天降叛军把我一支部队全歼游戏体验极差" weight="1.0"/>
+<edge source="53041" target="87413" label="做中文你就是傻逼" weight="1.0"/>
+<edge source="53041" target="113162" label="做中文你就是傻逼" weight="1.0"/>
+<edge source="54210" target="148855" label="比北京还堵" weight="1.0"/>
+<edge source="54545" target="164639" label="非常硬核难度较大上手困难画质粗糙购买慎重注打开dlss画质更糟糕" weight="1.0"/>
+<edge source="55021" target="53323" label="非常好非常值而且必须买机票" weight="1.0"/>
+<edge source="55125" target="53323" label="我家育碧大哥开发了一款旅游模拟器然后我上传朋友圈假装自己去旅游了" weight="1.0"/>
+<edge source="55125" target="105500" label="有人跟我play就好了" weight="1.0"/>
+<edge source="55125" target="119303" label="苏维埃大秦共和国" weight="1.0"/>
+<edge source="55898" target="72219" label="说真 好久把你们坦克世界弄上来亚服新号 匹配半天都匹配不到人车名鵺没 翻译" weight="1.0"/>
+<edge source="56032" target="72219" label="很抱歉但是在主权问题上我们绝不能退步除此之外对于游戏品质本身坦然来讲也就那样" weight="1.0"/>
+<edge source="56032" target="136983" label="虽然我身边很多人都有英文阅读能力但是我们依然很期待能够拥有中文翻译贵公司如此态度实在是为人所不齿" weight="1.0"/>
+<edge source="56862" target="113162" label="是的我是军事迷没错这款硬核游戏正是我想要的你问我为什么才玩这么短时间因为我在校园网根本登不上服务器登不上假期又没时间玩吃灰吧" weight="1.0"/>
+<edge source="58323" target="53323" label="201902081幸亏放假啊有点时间玩不然天天晚上玩K妹白天不用上班了2每次玩K妹被两个高两级的壮汉壁咚墙角活生生怼死根本滚不出去欲哭无泪3海战简单粗暴牛批" weight="1.0"/>
+<edge source="58323" target="173253" label="反复启动游戏 直到司机" weight="1.0"/>
+<edge source="58541" target="127870" label="针对菜鸡" weight="1.0"/>
+<edge source="59962" target="113162" label="我买着游戏我是傻逼" weight="1.0"/>
+<edge source="60840" target="77634" label="WE NEED CHINESE" weight="1.0"/>
+<edge source="60840" target="119303" label="等资料片" weight="1.0"/>
+<edge source="60840" target="136983" label="终于有中文啦开心endelig er den kinesiskegladSchlielich haben chinesischeGlcklich     Enfin le chinoisAmusez  vouslopuksi on kiinalainenonnellinenslutligen har den kinesiskakulEindelijk een ChineesGelukkigkonen nco nsky laastnn sfrit un chinezfericitw kocu po chiskuszczliwyFinallyCHINESE GOOOOOOOOOOOOOOD" weight="1.0"/>
+<edge source="61266" target="77634" label="我是来买DLC的还是日本厂商会骗钱啊一个游戏拆成几个游戏独立卖" weight="1.0"/>
+<edge source="61266" target="82984" label="全面战争系列顶峰之作不管喜不喜欢战锤只要喜欢奇幻风大场面战斗的应该都能找到乐趣然后我去等三国全战了233" weight="1.0"/>
+<edge source="62504" target="53323" label="啊打完阖家团圆的主线的时候还想等着看片尾的时候写评测发现没有呃是不是还要把神教的人杀完结果最后弄完之后居然没有传统的结局片尾名单之类的玩意emm好久不玩沙盒了现在已经这么开放了嘛搞的跟网游一样我还想边看片尾片花边回忆一波育碧真懒嘛总的来说挺好玩的虽然玩着玩着就发现现在这类型的作品实在是太多了有点审美疲劳从巫师3开始吧反正就是RPG然后一个世界一条主线XJB玩你甚至可以在主线决定命运的关键时刻去把地图上的支线清光再跑到隔壁的小山顶上摆个POSE拍个照emmm然后再回去回去干啥来着大概就是这种自由的感觉搞的情绪有点不连贯就好像你想干死我之前的来把昆特牌嘛一样不过这是大概也是自由沙盒游戏的代价吧恩想表达的基本上表达清楚了懒得写什么优缺点了就这样吧" weight="1.0"/>
+<edge source="62504" target="77634" label="大概用帝国玩了一把随便写点感觉自动战斗真是个极其操蛋的设定实力碾压就算了实力均衡的时候让我纠结是自己操控部队享受战场的快感还是自动战斗更好的获得胜利自己操控的话认真玩会很累完全没空观战自动的话整场都自动还玩什么全战嘛然后帝国内忧外患各种问题感觉我就是个救火员整个帝国都在悬崖边上一不管就要跪了这种设定虽然迫使我不断干干干但是玩的有点吃力呀其实我只是想种田来着那你还玩啥全战世界和平嗯2019年10月19日特地过来改个差评原因是我不喜欢全站系列的战锤1和战锤2的这种独特的捆绑模式想玩2里面那个DLC居然必须买1这样的创新确实给我这样买全的省钱了但我仍然还是不希望全站战锤3也延续这个风气" weight="1.0"/>
+<edge source="62504" target="82984" label="新DLCBUG了没法下一回合真是腰斩一刀呢11月25日更新似乎能继续玩了" weight="1.0"/>
+<edge source="62504" target="96738" label="其实还是挺好玩的但是玩久了就觉得真有达到各位心目中特别好评的程度么起码在我看来还是缺了很多东西的而且不管是前作战锤全战比起来还是和暗耻的传统三国志作比较瑕疵还是很多的嘛这么看来其实我一但玩的投入了总会发现各种问题然后给差评不如那些浅尝辄止的游戏好像有点不公呢不管了2333所以今天只有吐槽了首先吐槽的是和全战战锤相比这次这个附庸系统电脑充分发挥了自己的AI特性一但做大而且可以附庸小国就疯狂附庸主要代表派系就是袁绍和刘表2位大哥要是中前期处理不到位可能会面对四周全是他们的附庸小国无法破局的情况虽然说办法也有不少但这点外交上的AI的小心思要是不注意实在是太蛋疼了玩着会觉得很累1之后吐槽的是和暗耻的三国志系列相比这历史的贴合程度了当然这方面肯定大家各有所爱但我还是希望能有跟着任务就能做大的无脑剧本出现现在那个荣光之路还是太随意了而且只能控制自己所以我简单阐述下在我这边的世界线首先孙权去了刘表下面成立了楚公国和孙坚的吴国分庭抗礼刘备哥哥手下只有关羽张飞哥哥也去了楚国赵云在最后蜀国被灭的时候还在东北跟着他的老大哥公孙瓒打雪仗虽然还是有各种小剧情和TIPS但总之感觉有点蛋疼当然这游戏还有MOD和各种DLC吧 希望后期能有无线的可能性不过现在版本的话我觉得也就开局的时候比较好玩和有趣中期任务一过进入3国鼎立时期就是无聊的杀时间过程了希望后期能进一步跟进之后的各种剧本吧" weight="1.0"/>
+<edge source="62504" target="105500" label="大家都在说狩猎技巧但是我感觉这游戏的景色真的是一大亮点不管是狩猎途中不经意的抬头还是蹲守时惬意的向湖望天都能感受到一种惬意狩猎这种事情反而成为了我旅途中的消遣了spoiler我才不会承认其实是我找不到动物2333spoiler总之呢不管怎么样买了之后不管你怎么玩我觉得能完整的体验一天日出日落白天黑夜就算是值回票价了风景这种东西用言语来描述还是太贫乏了" weight="1.0"/>
+<edge source="65879" target="62854" label="我当作养成游戏来玩的" weight="1.0"/>
+<edge source="65879" target="77634" label="游戏本身是不错的值得推荐的有没有官方中文是不是出尔反尔这不重要它SEGA不想要它那张臭脸我们也拦不住它而且它这种DLC收费方式不太可取分割线知错就改善莫大焉重新加入中文" weight="1.0"/>
+<edge source="65879" target="96738" label="不错" weight="1.0"/>
+<edge source="65879" target="113162" label="可以打折的时候入" weight="1.0"/>
+<edge source="69739" target="82984" label="整体还行就是DLC太慢了还是吃相太难看" weight="1.0"/>
+<edge source="69739" target="96738" label="创意工坊6666" weight="1.0"/>
+<edge source="70842" target="82984" label="                                                                                                                                                                     O                                                                0                                                                                                                                                     " weight="1.0"/>
+<edge source="70842" target="96738" label="                                                                                                                                                                     O                                                                0                                                                                                                                                     " weight="1.0"/>
+<edge source="70842" target="113162" label="武装突袭3说句实在的这个游戏真的很难玩原因是啥真实太他妈真实了看个地图都要学经纬度要不你他吗连点都不会标再说说枪械很真实腰射开镜摇头做得很好就是啥麻烦捡拾物品打药疗伤繁琐的一批再说说载具载具还好开车啥的都没啥还是那句话真实完全模拟真实的战争那些想着去体验杀人快感的玩家趁早放弃吧物理系统做的无比真实他妈的开枪要计算风速子弹下坠呼吸频率想用狙击枪打人除非固定靶否则不可能想体验杀人快感的啊去隔壁吃鸡吧" weight="1.0"/>
+<edge source="73429" target="82984" label="搞不清楚情况的同学们可以去了解一下Minecraft在中国的遭遇你们现在的承诺我一个标点符号都不会信中国特供版全战上线之后我还能戳进这个页面的话再来改好评" weight="1.0"/>
+<edge source="73429" target="96738" label="搞不清楚情况的同学们可以去了解一下Minecraft在中国的遭遇按下购买按钮前请慎重至于CA你们顶着50的差评也要和猪场合污想必你们一定非常清楚的了解了我们这边神奇的东方国度的神秘审查机制猪场的口碑玩家们对买断制单机的付费意愿游戏公司也是公司也要盈利挣钱能撕破脸皮赚5毛就不会道貌岸然赚4角你们现在的承诺我一个标点符号都不会信中国特供版全战上线之后我还能戳进这个页面的话再来改好评" weight="1.0"/>
+<edge source="75272" target="72219" label="废物二雷 辣鸡白毛" weight="1.0"/>
+<edge source="75272" target="127870" label="育碧你膨胀了看看人家EA再看看你" weight="1.0"/>
+<edge source="75272" target="173253" label="we need chinese" weight="1.0"/>
+<edge source="75752" target="82984" label="好游戏虽然不喜欢魔幻题材但是我也入了就为了玩凡世大地图" weight="1.0"/>
+<edge source="76465" target="77634" label="全站第一部非历史题材的作品非常适合喜欢魔幻世界观和大场面战斗的玩家" weight="1.0"/>
+<edge source="76768" target="87413" label="奇葩游戏还行" weight="1.0"/>
+<edge source="77669" target="136983" label="第一次玩的时候还没发现还要加科研点数emmm导致了我研究一项要花100多个月当然现在知道了这游戏感觉前期种田比较牛批目前来说群星应该是这类游戏中的扛把子了可能相比于p社其他游戏来说群星比较单调但是哪个男人的心中没有星辰大海呢而且mod基本上是可以弥补这一切的strike没错我就是在说你银河strike手动滑稽" weight="1.0"/>
+<edge source="77683" target="77634" label="刷差评关我战锤系列锤子事要刷去史实那里刷" weight="1.0"/>
+<edge source="77683" target="119303" label="优点个人观点1画面较5代来说变得很舒服了卡通化的画风我个人更倾向这种画风而不是5代的2对于城市来说文明6有了不同区域划分而增建区域是有人口限制的对城市规划的要求高了这个很有意思后续的DLC估计还能继续拓展这个方面3文明5的科技还有政策到了文明6多了一个市政市政和科技政策相辅相成4宗教战争爽到5BGM真的好听啊缺点个人观点1豪华版血亏里面没什么实质性的东西只是几个新的国家罢了血亏啊卧槽2游戏后期强行重复操作城市建造项目全部完成以后就是不给你自动管理气死你3弱智AI就是一帮神经病无论干什么都谴责4没有奇观浑身不舒服spoiler 奇观误国啊陛下spoiler但文明6的奇观系统必须选择一块地形来造奇观还有建造条件我个人觉得建造条件显示不明显很容易弄错当然这游戏DLC也不完整还没出齐可以再看看PS本来想退款的结果打完已经超过两个小时了也罢嘿嘿h1 总结文明6重新定义豪华版我是傻逼买了豪华版DLC吃相难看关我资料片锤子事把我当憨批是吧昂h1除去豪华版一堆土著DLC后续出的DLC全是大幅度拓展游戏性的DLC你说我买豪华版到底有没有用而且后续的DLC一个比一个贵快跟本体一个价了照这样下去后续大包该上千了这钱真好赚哦对现在不叫DLC叫资料片DLC吃相难看关我资料片什么事有些功能本该就包含在本体里面然而却没有连个后期能自动托管城市无限循环产出科技或者金币的功能都没有那我根本没有好评的可能性种地战狂就是需要土地利刃所向即是帝国边疆没有自动管理城市后期城市一多我除了如此粗鄙之语我实在想不到别的语言了spoiler 18年末 补上迭起兴衰DLC全价入的我觉得内容不值这个价格spoilerspoiler预购的风云变幻我是憨批spoiler" weight="1.0"/>
+<edge source="77683" target="136983" label="我就是因为有中文才买的不过后来官方中文回炉重做结果到现在官方中文就这么没了测评里有别人更详细的前因后果游戏没什么问题但由于P社过于睿智导致这条评测显示为差评                                              来自一个毫无价值的中国玩家PS后续补几个DLC买归买差评不会变我依然在等中文销量前8的国家里 中国排第5 结果依然没有语言本地化而销量占比这么少的葡萄牙和巴西都有本地化能不能讲点道理Can you hear meh1PPS2018年末再次评价上面全部作废我这个人很实在你出中文了那我肯定说shut up and take my moneyP社的游戏真好玩 h1对了优化能不能稍微用点心" weight="1.0"/>
+<edge source="77727" target="77634" label="全面战争全战1经典大作就是有点伤肝嗯不对我的肝呢" weight="1.0"/>
+<edge source="78260" target="113162" label="我在哪我是谁谁在打我我该打谁我的枪呢我怎么死了" weight="1.0"/>
+<edge source="78260" target="136983" label="P社的这款作品很大程度上满足了我作为一个GE星战战锤ST光晕爱好者的幻想对未知宇宙的探索欲与对恢弘的太空大战的憧憬希望能重新上架官方中文创意工坊的改动是玩家可以丰富游戏内容这也是P社游戏一大生命力所在希望DLC能便宜点233不过不太可能毕竟DLC大厂滑稽现在怎么涨价的这么夸张还好是当年打折入的233现在一个乌托邦dlc都快接近原来本体的价格了2017112 900PM更新评测将近半年的等待仍然没有官方中文游戏是好游戏但P社对我国玩家也实在太敷衍随着购买力的提升和正版意识的觉醒现在好歹也是P社利润的一大来源至于游戏好不好玩不好玩我能300h然额就算给差评还是要玩蠢驴出DLC还是要买233这也许就是所谓口嫌体正直2332017112 902PM更新测评他最终战胜了他自己他爱老大驴最后我的梦想是做星区总督哈哈哈哈我要在贝石上种菜2018515 1916PM更新评价虽然承诺会有官中但对于给不给官中这件事我一直都觉得无所谓工坊已经有不错的汉化况且就算直接啃也不影响游戏可是P社发这样一个公告一副爱玩玩不玩滚的姿态未免吃相太难看你就直接说我们做不出来官方中文也比这样好太多2018122 2013PM格林尼治时间 更新官中马上就要出了还伴随着新DLC与22更新22更新的内容感觉快要把群星2变成群星3了还是挺感人的相比钢4大半年没更和EU4缺乏诚意的新DLC还是高下立判的我刚好125号放假129号回国可以跟小伙伴一起联机开新档真是太舒服了如果要说还有一点的话就是希望可以加入剧本模式233要不然每次自己脑补设定还是有点累hhh" weight="1.0"/>
+<edge source="78260" target="173253" label="我大萌天下无敌我永远喜欢朱祁镇" weight="1.0"/>
+<edge source="78423" target="82984" label="h1别跑我的朋友别跑暴龙是头脑简单的野兽它的视力糟糕的可以当然了和别的食肉动物一样只会追踪那些快速移动的目标这些早就写在我书里了你知道的著名巴托尼亚探险家班纳德死前最后的遗言h1" weight="1.0"/>
+<edge source="78423" target="136983" label="科幻题材内容4X游戏集大成之作P社4萌集大成之作之第五萌" weight="1.0"/>
+<edge source="79529" target="119303" label="我个人不是很喜欢文明系列但无可否认文明是素质良好的游戏比起P社游戏同样是策略战棋文明的代入感实在是太差劲野蛮人用弓箭射伤我的轰炸机的时候我是拒绝的对于拟真程度比较高以及不是很喜欢回合制的人士来说文明系列并不是很合适不过作为一款战棋文明的素质就摆在这里所以还是好评吧" weight="1.0"/>
+<edge source="82184" target="82984" label="调到最高画质的我依然看不懂这画面到底美在哪我不知道是不是只有我一个人会产生一种当年玩16位3D游戏那既视感还有就是坐等DLC吊打哈 你说有中文就必须好评你说是就是咯" weight="1.0"/>
+<edge source="82184" target="136983" label="很好刚买两天就降价" weight="1.0"/>
+<edge source="84921" target="82984" label="被朋友拉入的全战坑第一作买的就是这个怎么说游戏是个好游戏不太适合我等出全战三国了再试试" weight="1.0"/>
+<edge source="84921" target="148855" label="真TMD堵啊" weight="1.0"/>
+<edge source="86643" target="82984" label="更新后手动第一战游戏崩溃经反复测试与派系无关未启用任何MOD请修正BUG" weight="1.0"/>
+<edge source="86643" target="173253" label="Games that have been sold do not count because well they are already sold  we cant charge them extra for Chinese localisation done after they bought那就这样吧" weight="1.0"/>
+</edges>
+</graph>
+</gexf>
