@@ -22,8 +22,8 @@ import scala.util.Random
  * steam_5_20W 96 452
  * hours_7_30W 103 535
  * steam_7_30W 103 535
- * hours_6_30W 103 535
- * steam_6_30W 103 535
+ * hours_6_30W 178 1060
+ * steam_6_30W 175 1039
  *
  */
 object GraphProcess {
