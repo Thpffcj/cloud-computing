@@ -2,8 +2,7 @@ package cn.edu.nju
 
 import org.apache.spark.SparkConf
 import org.apache.spark.ml.evaluation.RegressionEvaluator
-import org.apache.spark.ml.recommendation.ALS
-import org.apache.spark.ml.recommendation.ALS.Rating
+import org.apache.spark.ml.recommendation.{ALS, ALSModel}
 import org.apache.spark.sql.SparkSession
 
 /**
@@ -13,7 +12,12 @@ object SteamGameRecommendation {
 
   def main(args: Array[String]): Unit = {
 
-    val conf = new SparkConf().setMaster("local").setAppName("SteamGameRecommendation")
+    test()
+  }
+
+  def train() = {
+
+    val conf = new SparkConf().setMaster("local[4]").setAppName("SteamGameRecommendation")
     val spark = SparkSession.builder().config(conf).getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
 
@@ -21,14 +25,16 @@ object SteamGameRecommendation {
       .option("header", "true")
       .option("inferSchema", "true")
       .load("src/main/resources/steam_rating.csv")
-      .select("userId", "steamName", "rating")
+      .select("userId", "gameId", "gameName", "rating", "random")
+      .sort("random")
+      .select("userId", "gameId", "rating")
 
-    val Array(train, test) = data.randomSplit(Array(0.8, 0.2))
+    val Array(train, test) = data.randomSplit(Array(0.7, 0.3))
 
     val als = new ALS()
       .setMaxIter(20)
       .setUserCol("userId")
-      .setItemCol("steamName")
+      .setItemCol("gameId")
       .setRatingCol("rating")
       // 正则化参数
       .setRegParam(0.01)
@@ -39,15 +45,8 @@ object SteamGameRecommendation {
     model.setColdStartStrategy("drop")
 
     val predictions = model.transform(test)
-    // 根据(userID,steamName)预测rating
+    // 根据(userId, gameId)预测rating
     predictions.show(false)
-
-    // MovieLens数据集(学术界可靠的一种数据集) 给196号用户推荐10部电影
-    import spark.implicits._
-    val users = spark.createDataset(Array(196)).toDF("userID")
-
-    users.show(false)
-    model.recommendForUserSubset(users, 10).show(false)
 
     // 模型评估
     val evaluator = new RegressionEvaluator()
@@ -58,12 +57,28 @@ object SteamGameRecommendation {
     val rmse = evaluator.evaluate(predictions)
     println(s"Root-mean-square error is $rmse \n")
 
-    //     Spark机器学习模型的持久化
-    //     模型保存
-//    model.save("src/main/resources/model/game_recommendation.model")
-    //     模型加载
-    //     val model = ALS.load("xxxx")
+    // Spark机器学习模型的持久化
+    // 模型保存
+    model.save("src/main/resources/model/game_recommendation.model")
+
+    spark.stop()
   }
 
+  def test() = {
 
+    val conf = new SparkConf().setMaster("local").setAppName("SteamGameRecommendation")
+    val spark = SparkSession.builder().config(conf).getOrCreate()
+    spark.sparkContext.setLogLevel("WARN")
+
+    // 模型加载
+    val model = ALSModel.load("src/main/resources/model/game_recommendation.model")
+
+    import spark.implicits._
+    val users = spark.createDataset(Array(1)).toDF("userId")
+    users.show(false)
+
+    model.recommendForUserSubset(users, 5).show(false)
+
+    spark.stop()
+  }
 }
