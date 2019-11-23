@@ -14,20 +14,14 @@ object DataProcessing {
 
   def main(args: Array[String]): Unit = {
 
-  }
-
-  def getEnglishContent() = {
-    val conf = new SparkConf().setMaster("local").setAppName("DataProcessing")
-    val spark = SparkSession.builder().config(conf).getOrCreate()
-
-
-
-    spark.stop()
+    getStreamRating()
   }
 
   def getStreamRating() = {
 
     val gameMap = new util.HashMap[String, Int]()
+    // 游戏出现次数
+    val gameNumber = new util.HashMap[String, Int]()
     val maxTimeMap = new util.HashMap[String, Double]
 
     val conf = new SparkConf().setMaster("local").setAppName("DataProcessing")
@@ -52,6 +46,12 @@ object DataProcessing {
         key = key + 1
       }
 
+      if (gameNumber.containsKey(gameName)) {
+        gameNumber.put(gameName, gameNumber.get(gameName) + 1)
+      } else {
+        gameNumber.put(gameName, 1)
+      }
+
       if (maxTimeMap.containsKey(gameName)) {
         if (duration > maxTimeMap.get(gameName)) {
           maxTimeMap.put(gameName, duration)
@@ -59,11 +59,14 @@ object DataProcessing {
       } else {
         maxTimeMap.put(gameName, duration)
       }
+
     })
 
     import spark.implicits._
     val rand = new Random()
-    val cleanData = data.map(row => {
+    val cleanData = data.filter(row => {
+      gameNumber.get(row.getAs("gameName").toString) > 2
+    }).map(row => {
 
       val userId = row.getAs("userId").toString
       val gameName = row.getAs("gameName").toString

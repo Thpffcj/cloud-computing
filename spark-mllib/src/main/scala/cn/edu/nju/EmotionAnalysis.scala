@@ -15,7 +15,7 @@ import scala.util.Random
 object EmotionAnalysis {
 
   def main(args: Array[String]): Unit = {
-    train()
+    test()
   }
 
   /**
@@ -51,8 +51,6 @@ object EmotionAnalysis {
       .setInputCol("words")
       .setOutputCol("hashing")
       .transform(data)
-
-    hashingTf.show()
 
     val idfModel = new IDF()
       .setInputCol("hashing")

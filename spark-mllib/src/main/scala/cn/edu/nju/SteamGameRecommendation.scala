@@ -77,7 +77,7 @@ object SteamGameRecommendation {
     val users = spark.createDataset(Array(1)).toDF("userId")
     users.show(false)
 
-    model.recommendForUserSubset(users, 5).show(false)
+    model.recommendForUserSubset(users, 20).show(false)
 
     spark.stop()
   }
