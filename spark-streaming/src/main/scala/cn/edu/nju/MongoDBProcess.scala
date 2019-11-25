@@ -18,7 +18,7 @@ object MongoDBProcess {
     val spark = SparkSession.builder()
       .master("local[2]")
       .appName("MongoDBProcess")
-      .config("spark.mongodb.input.uri", "mongodb://steam:steam@101.132.176.87:27017/steam_db.China.games")
+      .config("spark.mongodb.input.uri", "mongodb://steam:steam@***.***.***.***:27017/steam_db.China.games")
       .getOrCreate()
 
     val frame: DataFrame = MongoSpark.load(spark)

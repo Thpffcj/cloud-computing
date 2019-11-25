@@ -5,7 +5,7 @@ import pymongo
 
 
 # 连接数据库
-client1 = pymongo.MongoClient("101.132.176.87", 27017)
+client1 = pymongo.MongoClient("***.***.***.***", 27017)
 
 db1 = client1['steam_db']
 db1.authenticate("steam", "steam")
