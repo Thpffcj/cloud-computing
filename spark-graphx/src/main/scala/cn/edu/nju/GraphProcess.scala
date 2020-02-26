@@ -114,30 +114,11 @@ object GraphProcess {
         weightMap.put(gamePoint, 1)
       }
 
-//      println(gameKey + " " + gamePoint)
-
-
-//      println("---------")
-//      println(playerPoint)
-//      println(gamePoint)
-
       edgeMap1.put((playerPoint, gamePoint), review)
       edgeMap2.put((playerPoint, gamePoint), hours)
     })
 
     println("foreach 结束")
-
-//    val weightSet = weightMap.keySet()
-//    val weight_iter = weightSet.iterator
-//    while (weight_iter.hasNext) {
-//      val key = weight_iter.next
-//      if (weightMap.get(key) > 5000) {
-//        println("----------")
-//        println(key)
-//        println(weightMap.get(key))
-//        println("-----------")
-//      }
-//    }
 
     // 点集
     var vertexArray = Seq((0L, ("test", "test")))

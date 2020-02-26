@@ -96,7 +96,7 @@ object SteamProcess {
     rollups.foreachRDD(rdd => {
       rdd.foreachPartition(partitionOfRecords => {
         val list = new ListBuffer[(String, Int, Int, Int)]
-
+        
         partitionOfRecords.foreach(record => {
           record._2.split("},").foreach(data => {
             val rollUp = jsonToRollUp(data + "}")
